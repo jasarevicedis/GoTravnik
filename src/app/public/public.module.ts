@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PublicRoutingModule } from './public-routing.module';
 import { PublicComponent } from './public.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 
 
@@ -11,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
   declarations: [
     PublicComponent,
     HeaderComponent,
+    HomepageComponent,
     
   ],
   imports: [
