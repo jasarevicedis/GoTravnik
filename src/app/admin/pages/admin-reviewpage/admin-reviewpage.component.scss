@@ -1,0 +1,24 @@
+:host {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    background-color: rgb(253, 220, 175);
+    flex-direction: column;
+    align-items: center;
+    .table-header {
+        margin-top: 40px;
+        width: 90%;
+        height: 80px;
+        display: flex;
+        background-color: white;
+    }
+    .reviews-table {
+        margin-top: 5px;
+        width: 90%;
+        height: 400px;
+        display: flex;
+        background-color: lightgreen;
+    }
+}
