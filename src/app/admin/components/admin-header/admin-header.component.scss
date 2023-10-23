@@ -4,4 +4,45 @@
     height: 60px;
     background-color: white;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .admin-logo-container {
+        width: 160px;
+        height: 40px;
+        display: flex;
+        background-color: lightblue;
+        margin-left: 20px;
+    }
+    .admin-header-nav {
+        width: 240px;
+        height: 40px;
+        display: flex;
+        //background-color: lightblue;
+        margin-right: 20px;
+        align-items: center;
+        .notification-box {
+            margin-left: 25px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            //background-color: antiquewhite;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            svg {
+                width: 25px;
+                height: 25px;
+                
+            }
+        }
+        .admin-profile-box {
+            margin-left: 5px;
+            width: 180px;
+            height: 40px;
+            display: flex;
+            background-color: lightpink;
+            border-radius: 8px;
+        }
+    }
 }
