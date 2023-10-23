@@ -13,5 +13,21 @@
         background-repeat: no-repeat;
         background-position: -13rem;
         background-size: 143%;*/
+        .date-and-time {
+            display: none;
+            margin-left: 380px;
+            margin-top: 400px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            background-color: red;
+            flex-direction: column;
+            svg {
+                height: 50px;
+                width: 50px;
+                fill: blue;
+                
+            }
+        }
     }
 }

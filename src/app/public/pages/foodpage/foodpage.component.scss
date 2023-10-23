@@ -1,0 +1,13 @@
+:host {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 211, 173);
+    .page-banner {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        background-color: aliceblue;
+    }
+}
