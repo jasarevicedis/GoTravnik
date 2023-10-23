@@ -6,6 +6,7 @@ import { PublicComponent } from './public.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { FoodpageComponent } from './pages/foodpage/foodpage.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -15,6 +16,7 @@ import { FoodpageComponent } from './pages/foodpage/foodpage.component';
     HeaderComponent,
     HomepageComponent,
     FoodpageComponent,
+    FooterComponent,
     
   ],
   imports: [
