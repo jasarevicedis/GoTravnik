@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PublicComponent } from './public/public.component';
+import { AdminComponent } from './admin/admin.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'', component: PublicComponent},
+  {path: 'admin', loadChildren:()=> import('./admin/admin.module').then(x => x.AdminModule)},
+  
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ enableTracing: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
