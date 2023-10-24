@@ -4,8 +4,8 @@ import { PublicComponent } from './public/public.component';
 import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
-  {path:'', component: PublicComponent},
-  {path: 'admin', loadChildren:()=> import('./admin/admin.module').then(x => x.AdminModule)},
+  {path:'', loadChildren:()=> import('./public/public.module').then(x => x.PublicModule)},
+  {path: 'admin', loadChildren:()=> import('./admin/admin.module').then(x => x.AdminModule)}
   
 ];
 

@@ -57,11 +57,48 @@
         position: absolute;
         top: 60px;
         display: none;
+        
         &.is-open-search {
+            flex-direction: column;
+            
             display: flex;
             width: 100%;
-            height: 400px;
+            height: calc(100vh - 60px);
             background-color: lightblue;
+        }
+        .search-container {
+            margin-left: 7.5%;
+            width: 85%;
+            height: 40px;
+            margin-top: 40px;
+            display: flex;
+            background-color: cornsilk;
+            input {
+                width: 90%;
+            }
+            button {
+                width: 10%;
+                height: 100%;
+            }
+        }
+        p {
+            font-size: 30px;
+            margin-left: 7.5%;
+            margin-top: 10px;
+        }
+        .keywords-container {
+            margin-left: 7.5%;
+            margin-top: 20px;
+            width: 85%;
+            height: 200px;
+            display: grid;
+            background-color: rgb(198, 244, 255);
+            .keyword {
+                width: 100px;
+                height: 30px;
+                border-radius: 8px;
+                background-color: darkcyan;
+            }
         }
     }
     .burger-menu {
