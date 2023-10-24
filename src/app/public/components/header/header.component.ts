@@ -7,9 +7,19 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isMenuOpen = false;
-
+  isSearchOpen = false;
   toggleMenu(): void {
+    if (this.isSearchOpen) {
+      this.isSearchOpen = false;
+    }
     this.isMenuOpen = !this.isMenuOpen;
+    
+  }
+  toggleSearch(): void {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+    }
+    this.isSearchOpen = !this.isSearchOpen;
   }
 
 }
