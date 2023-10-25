@@ -9,6 +9,8 @@ import { FoodpageComponent } from './pages/foodpage/foodpage.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PlantrippageComponent } from './pages/plantrippage/plantrippage.component';
 import { AccomodationpageComponent } from './pages/accomodationpage/accomodationpage.component';
+import { AttractionspageComponent } from './pages/attractionspage/attractionspage.component';
+import { AttractionCardComponent } from './components/attraction-card/attraction-card.component';
 
 
 
@@ -21,6 +23,8 @@ import { AccomodationpageComponent } from './pages/accomodationpage/accomodation
     FooterComponent,
     PlantrippageComponent,
     AccomodationpageComponent,
+    AttractionspageComponent,
+    AttractionCardComponent,
     
   ],
   imports: [
