@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { FoodpageComponent } from './pages/foodpage/foodpage.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PlantrippageComponent } from './pages/plantrippage/plantrippage.component';
+import { AccomodationpageComponent } from './pages/accomodationpage/accomodationpage.component';
 
 
 
@@ -17,6 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomepageComponent,
     FoodpageComponent,
     FooterComponent,
+    PlantrippageComponent,
+    AccomodationpageComponent,
     
   ],
   imports: [
