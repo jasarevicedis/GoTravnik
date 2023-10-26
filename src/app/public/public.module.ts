@@ -13,6 +13,7 @@ import { AttractionspageComponent } from './pages/attractionspage/attractionspag
 import { AttractionCardComponent } from './components/attraction-card/attraction-card.component';
 import { EventpageComponent } from './pages/eventpage/eventpage.component';
 import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
+import { EventCardComponent } from './components/event-card/event-card.component';
 
 
 
@@ -29,6 +30,7 @@ import { AreguidepageComponent } from './pages/areguidepage/areguidepage.compone
     AttractionCardComponent,
     EventpageComponent,
     AreguidepageComponent,
+    EventCardComponent,
     
   ],
   imports: [
