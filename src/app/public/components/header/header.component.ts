@@ -21,5 +21,6 @@ export class HeaderComponent {
     }
     this.isSearchOpen = !this.isSearchOpen;
   }
-
+  
 }
+
