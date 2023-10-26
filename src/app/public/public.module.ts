@@ -11,6 +11,8 @@ import { PlantrippageComponent } from './pages/plantrippage/plantrippage.compone
 import { AccomodationpageComponent } from './pages/accomodationpage/accomodationpage.component';
 import { AttractionspageComponent } from './pages/attractionspage/attractionspage.component';
 import { AttractionCardComponent } from './components/attraction-card/attraction-card.component';
+import { EventpageComponent } from './pages/eventpage/eventpage.component';
+import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
 
 
 
@@ -25,6 +27,8 @@ import { AttractionCardComponent } from './components/attraction-card/attraction
     AccomodationpageComponent,
     AttractionspageComponent,
     AttractionCardComponent,
+    EventpageComponent,
+    AreguidepageComponent,
     
   ],
   imports: [
