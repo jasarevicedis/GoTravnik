@@ -9,6 +9,7 @@ import { AttractionspageComponent } from './pages/attractionspage/attractionspag
 import { EventpageComponent } from './pages/eventpage/eventpage.component';
 import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
 
+
 const routes: Routes = [
   {path:'', component: PublicComponent,
     children: [
@@ -18,7 +19,8 @@ const routes: Routes = [
       {path:'accomodation', component: AccomodationpageComponent},
       {path:'attractions', component: AttractionspageComponent},
       {path:'events', component: EventpageComponent},
-      {path:'areaguide', component:AreguidepageComponent}
+      {path:'areaguide', component:AreguidepageComponent},
+      
     ]
   }
   

@@ -1,0 +1,13 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+:host {
+    overflow: auto;
+    display: flex;
+    width: 100vw !important;
+    height: 100vh;
+    background-color: rgb(194, 195, 255);
+    max-width: none !important;
+}

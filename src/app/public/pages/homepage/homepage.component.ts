@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OpenWeatherPopupService } from '../../services/open-weather-popup.service';
 
 @Component({
   selector: 'app-homepage',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
-
+  constructor(private openWeatherService: OpenWeatherPopupService) {}
+  openWeatherPopup(): void {
+    this.openWeatherService.openWeatherPopup();
+  }
 }

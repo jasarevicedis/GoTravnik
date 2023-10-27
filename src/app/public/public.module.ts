@@ -14,6 +14,8 @@ import { AttractionCardComponent } from './components/attraction-card/attraction
 import { EventpageComponent } from './pages/eventpage/eventpage.component';
 import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
+import { WeatherPopupComponent } from './components/weather-popup/weather-popup.component';
+//import { WeatherpageComponent } from './pages/weatherpage/weatherpage.component';
 
 
 
@@ -31,6 +33,8 @@ import { EventCardComponent } from './components/event-card/event-card.component
     EventpageComponent,
     AreguidepageComponent,
     EventCardComponent,
+    WeatherPopupComponent,
+    //WeatherpageComponent,
     
   ],
   imports: [
