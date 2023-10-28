@@ -52,8 +52,11 @@
         .main-info-box {
             width: 95%;
             align-self: center;
-            margin-top: 75%;
+            //margin-top: 75%;
+            position: relative;
+            margin-top: calc(70vh - 150px);
             margin-left: 5%;
+            
             #city-name {
                 font-size: 70px;
                 color: rgb(255, 255, 255);
