@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { HostListener, Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  
+
   isMenuOpen = false;
   isSearchOpen = false;
   toggleMenu(): void {
