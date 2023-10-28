@@ -3,40 +3,97 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(253, 192, 220);
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
+    align-items: center;
     .page-banner {
-        margin-top: 60px;
         width: 100%;
-        height: 100px;
+        height: 250px;
+        display: flex;
+        background-color: aqua;
+        background: url("https://www.ekapija.com/thumbs/plava_voda_travnik_4_250221_tw1024.jpg");
+        background-size: cover;
+        background-position-y: -80px;
+        
+        .page-header {
+            margin-top: 160px;
+            display: flex;
+            align-items: center;
+            
+            svg {
+                margin-left: 30px;
+                width: 40px;
+                height: 40px;
+                fill: white;
+            }
+            p {
+                color: white;
+                font-size: 40px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .accommodation-nav {
+        height: 200px;
+        width: 100%;
         display: flex;
         background-color: aliceblue;
-    }
-    .hotels-nav {
-        width: 100%;
-        height: 60px;
-        display: flex;
-        background-color: rgb(255, 255, 255);
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        button {
-            height: 40px;
+        flex-direction: column;
+        .search-and-filter {
             display: flex;
-            background-color: transparent;
-            border-radius: 8px;
+            margin-left: 30px;
+            width: calc(100% - 60px);
+            justify-content: space-between;
+            margin-top: 30px;
+            .accommodation-search-bar {
+                width: 370px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid rgb(200, 200, 200);
+                border-radius: 8px;
+            }
+            .filter-accommodation {
+                width: 40px;
+                height: 40px;
+                background-color: lightseagreen;
+                border-radius: 50%;
+                border: none;
+            }
         }
-        .hotels-filter {
-            width: 250px;
+        .accommodation-number {
+            font-size: 25px;
+            color: rgb(80, 80, 80);
+            margin-top: 30px;
+            margin-left: 30px;
         }
-        .hotels-sort {
-            width: 130px;
+        .tags-container {
+            margin-top: 20px;
+            display: flex;
+            margin-left: 30px;
+            .accommodation-tag {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(255, 255, 255);
+                height: 35px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 20px;
+                margin-right: 10px;
+                border: 1px solid lightseagreen;
+                color: lightseagreen;
+                font-size: 13px;
+            }
         }
     }
-    .hotels-container {
-        width: 100%;
+    .accommodation-container {
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
-        min-height: calc(100vh - 220px);
+        align-items: center;
+        width: 100%;
+        min-height: 300px;
+        background-color: rgb(255, 255, 255);
+
     }
 }

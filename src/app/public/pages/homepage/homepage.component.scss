@@ -158,10 +158,21 @@
                 }
                 p {
                     font-size: 24px;
+                    color: rgb(236, 62, 100);;
+                }
+            }
+            .shortcut:hover {
+                background-color: rgb(236, 62, 100);
+                svg {
+                    fill: white;
+                }
+                p {
+                    color: white;
                 }
             }
             margin-bottom: 100px;
         }
+        
     }
     .plan-section {
         width: 100%;
