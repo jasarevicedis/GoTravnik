@@ -9,6 +9,6 @@ export class PublicComponent {
   isScrolled = false;
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 100;
+    this.isScrolled = window.scrollY > 60;
   }
 }
