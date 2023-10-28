@@ -20,12 +20,15 @@ export class HeaderComponent {
     }
     this.isMenuOpen = !this.isMenuOpen;
     
+    
   }
   toggleSearch(): void {
     if (this.isMenuOpen) {
       this.isMenuOpen = false;
     }
     this.isSearchOpen = !this.isSearchOpen;
+    
+
   }
   
 }

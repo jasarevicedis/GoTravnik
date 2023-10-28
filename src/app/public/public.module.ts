@@ -16,6 +16,7 @@ import { AreguidepageComponent } from './pages/areguidepage/areguidepage.compone
 import { EventCardComponent } from './components/event-card/event-card.component';
 import { WeatherPopupComponent } from './components/weather-popup/weather-popup.component';
 import { AccommodationCardComponent } from './components/accommodation-card/accommodation-card.component';
+import { FoodCardComponent } from './components/food-card/food-card.component';
 //import { WeatherpageComponent } from './pages/weatherpage/weatherpage.component';
 
 
@@ -36,6 +37,7 @@ import { AccommodationCardComponent } from './components/accommodation-card/acco
     EventCardComponent,
     WeatherPopupComponent,
     AccommodationCardComponent,
+    FoodCardComponent,
     //WeatherpageComponent,
     
   ],
