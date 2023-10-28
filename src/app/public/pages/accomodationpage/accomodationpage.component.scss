@@ -39,18 +39,21 @@
         display: flex;
         background-color: aliceblue;
         flex-direction: column;
-        .search-and-filter {
+        .nav-and-filter {
             display: flex;
             margin-left: 30px;
             width: calc(100% - 60px);
             justify-content: space-between;
             margin-top: 30px;
-            .accommodation-search-bar {
-                width: 370px;
-                height: 40px;
-                background-color: white;
-                border: 1px solid rgb(200, 200, 200);
-                border-radius: 8px;
+            .nav {
+                display: flex;
+                align-items: center;
+                a {
+                    font-size: 16px;
+                    color: lightseagreen;
+                    margin-right: 20px;
+                    text-decoration: none;
+                }
             }
             .filter-accommodation {
                 width: 40px;

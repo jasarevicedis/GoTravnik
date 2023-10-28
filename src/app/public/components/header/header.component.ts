@@ -6,7 +6,11 @@ import { HostListener, Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  
+  isScrolled = false;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 60;
+  }
 
   isMenuOpen = false;
   isSearchOpen = false;

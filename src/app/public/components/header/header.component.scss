@@ -39,7 +39,10 @@
                 justify-content: center;
                 width: 30px;
                 height: 30px;
-                fill: white;
+                fill: rgb(255, 255, 255);
+            }
+            .moving-svg {
+                fill: rgb(0, 0, 0);
             }
         }
         .nav-burger-button {
@@ -49,9 +52,12 @@
             width: 40px;
             height: 40px;
             svg {
-                fill: white;
+                fill: rgb(255, 255, 255);
                 width: 30px;
                 height: 30px;
+            }
+            .moving-svg {
+                fill: rgb(0, 0, 0);
             }
         }
         .nav-burger-button-open {
@@ -161,4 +167,5 @@
     }
     
 }
+
 
