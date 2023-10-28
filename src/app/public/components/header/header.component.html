@@ -8,6 +8,39 @@
     </div>
 </div>
 <div class="burger-menu" [class.is-open-burger]="isMenuOpen" >
+    <div class="main-nav-item">
+        <button class="main-nav-button">
+            <p>See & Do</p>
+        </button>
+        <ul>
+            <li routerLink="food"><a routerLink="food">Food & Drink</a></li>
+            <li routerLink="attractions"><a routerLink="attractions">Attractions</a></li>
+            <li><a >Activities</a></li>
+            <li><a >Shop</a></li>
+        </ul>
+    </div>
+    <div class="main-nav-item">
+        <button class="main-nav-button">
+            <p>Plan your trip</p>
+        </button>
+        <ul>
+            <li routerLink="planthetrip"><a routerLink="planthetrip">Trip planner*</a></li>
+            <li routerLink="accomodation"><a routerLink="accomodation">Accommodation</a></li>
+            
+        </ul>
+    </div>
+    <div [routerLink]="['areaguide']" class="main-nav-item">
+        <button class="main-nav-button">
+            <p>Area Guide</p>
+        </button>
+    </div>
+    <div [routerLink]="['events']" class="main-nav-item">
+        <button class="main-nav-button">
+            <p>Events</p>
+        </button>
+    </div>
+    <div class="language-switch"></div>
+    <!--
     <ul class="burger-menu-content">
         <li><a href="#">Things to do</a></li>
         <div class="sub-line"></div>
@@ -20,7 +53,7 @@
         <li><a href="events">Event Calendar</a></li>
         <div class="sub-line"></div>
         
-    </ul>
+    </ul>-->
 </div>
 <div class="search-menu" [class.is-open-search]="isSearchOpen">
     <div class="search-container">
