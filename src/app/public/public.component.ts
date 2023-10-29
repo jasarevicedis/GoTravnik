@@ -6,6 +6,8 @@ import { HostListener, Component } from '@angular/core';
   styleUrls: ['./public.component.scss']
 })
 export class PublicComponent {
+
+  
   isScrolled = false;
   @HostListener('window:scroll', [])
   onWindowScroll() {
