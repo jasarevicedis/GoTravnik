@@ -106,11 +106,12 @@
         background-color: rgb(59, 99, 114);
         display: flex;
        //background: url("https://travnik.ba/wp-content/uploads/2020/06/travnik.jpg");
-        background: url("https://wonderguide.com/_next/image?url=https%3A%2F%2Fstatic.wonderguide.com%2Fmedia%2Fimage%2Fthe-multi-coloured-mosque.jpg&w=2048&q=75");
+       background: url("https://furaj.ba/wp-content/uploads/2017/09/adnan-bubalo-Copy.jpg");
+        //background: url("https://wonderguide.com/_next/image?url=https%3A%2F%2Fstatic.wonderguide.com%2Fmedia%2Fimage%2Fthe-multi-coloured-mosque.jpg&w=2048&q=75");
         //background: url("https://3.bp.blogspot.com/-rJKIm_JTx5c/XNauPxM_KXI/AAAAAAAAH3k/B_J90lmvTj0Wh1758EdSieTvVm1EqU_IwCLcBGAs/s1600/IMG_20190510_173415_753.jpg");
         background-size: cover;
         background-blend-mode: darken;
-        
+        background-position-x: -140px;
         filter:opacity(0.9);
         
         
@@ -129,9 +130,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        word-wrap: break-word;
         .city-description {
             font-size: 22px;
             margin-top: 80px;
+            width: 90%;
         }
         .subtitle {
             margin-top: 40px;
