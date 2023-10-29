@@ -52,7 +52,12 @@
                         height: 40px;
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
                         background-color: rgb(161, 208, 242);
+                    }
+                    .item-tag {
+                        font-size: 14px;
+                        color: rgb(33, 35, 168);
                     }
                 }
                 .review-rating {
@@ -69,6 +74,16 @@
                 }
                 .review-status {
                     width: 130px;
+                    .status {
+                        background-color: lightgreen;
+                        width: 100px;
+                        height: 20px;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
         }

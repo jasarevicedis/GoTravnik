@@ -26,14 +26,14 @@
         }
     }
     .admin-header-nav {
-        width: 240px;
+        width: 90px;
         height: 40px;
         display: flex;
         //background-color: lightblue;
         margin-right: 20px;
         align-items: center;
         .notification-box {
-            margin-left: 25px;
+            //margin-left: 25px;
             width: 30px;
             height: 30px;
             display: flex;
@@ -49,11 +49,14 @@
         }
         .admin-profile-box {
             margin-left: 5px;
-            width: 180px;
+            width: 40px;
             height: 40px;
             display: flex;
             background-color: lightpink;
-            border-radius: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            background: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg");
+            background-size: cover;
         }
     }
 }
