@@ -11,6 +11,10 @@ import { AdminEventpageComponent } from './pages/admin-eventpage/admin-eventpage
 import { DataSectionCardComponent } from './components/data-section-card/data-section-card.component';
 import { AdminDatapageComponent } from './pages/admin-datapage/admin-datapage.component';
 import { AdminReviewpageComponent } from './pages/admin-reviewpage/admin-reviewpage.component';
+import { AdminFoodPageComponent } from './pages/subpages/admin-food-page/admin-food-page.component';
+import { AdminAttractionsPageComponent } from './pages/subpages/admin-attractions-page/admin-attractions-page.component';
+import { AdminAccommodationPageComponent } from './pages/subpages/admin-accommodation-page/admin-accommodation-page.component';
+import { AdminActivitiesPageComponent } from './pages/subpages/admin-activities-page/admin-activities-page.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { AdminReviewpageComponent } from './pages/admin-reviewpage/admin-reviewp
     AdminEventpageComponent,
     DataSectionCardComponent,
     AdminDatapageComponent,
-    AdminReviewpageComponent
+    AdminReviewpageComponent,
+    AdminFoodPageComponent,
+    AdminAttractionsPageComponent,
+    AdminAccommodationPageComponent,
+    AdminActivitiesPageComponent
   ],
   imports: [
     CommonModule,
