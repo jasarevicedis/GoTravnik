@@ -6,6 +6,9 @@ import { AdminEventpageComponent } from './pages/admin-eventpage/admin-eventpage
 import { AdminDatapageComponent } from './pages/admin-datapage/admin-datapage.component';
 import { AdminReviewpageComponent } from './pages/admin-reviewpage/admin-reviewpage.component';
 import { AdminFoodPageComponent } from './pages/subpages/admin-food-page/admin-food-page.component';
+import { AdminAccommodationPageComponent } from './pages/subpages/admin-accommodation-page/admin-accommodation-page.component';
+import { AdminActivitiesPageComponent } from './pages/subpages/admin-activities-page/admin-activities-page.component';
+import { AdminAttractionsPageComponent } from './pages/subpages/admin-attractions-page/admin-attractions-page.component';
 
 const adminRoutes: Routes = [
   {path:'', component: AdminComponent,
@@ -14,6 +17,9 @@ const adminRoutes: Routes = [
       {path:'eventcalendar', component: AdminEventpageComponent},
       {path:'data', component: AdminDatapageComponent},
       {path:'data/food', component: AdminFoodPageComponent},
+      {path:'data/accommodation', component: AdminAccommodationPageComponent},
+      {path:'data/activities', component:AdminActivitiesPageComponent},
+      {path:'data/attractions', component: AdminAttractionsPageComponent},
       {path:'reviews', component:AdminReviewpageComponent}
     ]
   }

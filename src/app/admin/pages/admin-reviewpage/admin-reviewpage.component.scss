@@ -1,10 +1,11 @@
 :host {
     width: calc(100% - 200px);
     margin-left: 200px;
-    min-height: calc(100vh - 60px);
+    //min-height: calc(100vh - 60px);
+    
     margin-top: 60px;
     display: flex;
-    background-color: rgb(253, 220, 175);
+    background-color: rgb(255, 238, 185);
     flex-direction: column;
     align-items: center;
     .table-header {
@@ -12,12 +13,13 @@
         width: 90%;
         height: 80px;
         display: flex;
-        background-color: white;
+        background-color: rgb(255, 198, 198);
     }
     .reviews-table {
+        margin-bottom: 50px;
         margin-top: 5px;
         width: 90%;
-        height: 400px;
+        min-height: 400px;
         display: flex;
         flex-direction: column;
         background-color: lightgreen;

@@ -1,0 +1,31 @@
+:host {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    background-color: rgb(253, 220, 175);
+    flex-direction: column;
+    
+    a {
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+    .table-header {
+        margin-top: 10px;
+        width: 90%;
+        height: 80px;
+        display: flex;
+        background-color: white;
+        align-self: center;
+    }
+    .accommodation-table {
+        align-self: center;
+        margin-top: 5px;
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgreen;
+    }
+}

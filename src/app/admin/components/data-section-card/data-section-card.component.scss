@@ -1,6 +1,6 @@
 :host {
-    width: 120px;
-    height: 140px;
+    width: 140px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +9,11 @@
     align-self: center;
     justify-self: center;
     border-radius: 8px;
+    cursor: pointer;
     .section-image {
         border-radius: 8px;
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
         //display: flex;
         //background-color: lightblue;
     }
