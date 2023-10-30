@@ -10,3 +10,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .disapear-body {
     overflow: hidden !important;
  }
+
+.disapear-scroll::-webkit-scrollbar {
+    display: none;
+}

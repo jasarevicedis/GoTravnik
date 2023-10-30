@@ -10,5 +10,14 @@ export class HomepageComponent {
   constructor(private openWeatherService: OpenWeatherPopupService) {}
   openWeatherPopup(): void {
     this.openWeatherService.openWeatherPopup();
+    document.body.className = "disapear-scroll"
   }
+
+  
+    
+    
+  
+  
+  
 }
+

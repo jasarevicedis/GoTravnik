@@ -5,4 +5,13 @@
     margin-top: 60px;
     display: flex;
     background-color: rgb(253, 220, 175);
+    .visitors-graph-container {
+        width: 500px;
+        height: 250px;
+        display: flex;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
