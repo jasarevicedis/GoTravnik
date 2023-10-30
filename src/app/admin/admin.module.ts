@@ -15,6 +15,7 @@ import { AdminFoodPageComponent } from './pages/subpages/admin-food-page/admin-f
 import { AdminAttractionsPageComponent } from './pages/subpages/admin-attractions-page/admin-attractions-page.component';
 import { AdminAccommodationPageComponent } from './pages/subpages/admin-accommodation-page/admin-accommodation-page.component';
 import { AdminActivitiesPageComponent } from './pages/subpages/admin-activities-page/admin-activities-page.component';
+import { AddeventPopupComponent } from './components/addevent-popup/addevent-popup.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AdminActivitiesPageComponent } from './pages/subpages/admin-activities-
     AdminFoodPageComponent,
     AdminAttractionsPageComponent,
     AdminAccommodationPageComponent,
-    AdminActivitiesPageComponent
+    AdminActivitiesPageComponent,
+    AddeventPopupComponent
   ],
   imports: [
     CommonModule,

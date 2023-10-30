@@ -2,7 +2,51 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: burlywood;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(189, 68, 255);
+    //align-items: center;
+    //justify-content: center;
+    flex-direction: column;
+    .footer-logo-container {
+        width: 200px;
+        height: 80px;
+        display: flex;
+        background-color: rgb(127, 104, 74);
+        margin-top: 100px;
+        align-self: center;
+    }
+    .tourist-centar-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 50px;
+        //margin-bottom: 50px;
+        .tourist-centar-name {
+            font-size: 20px;
+            color: white;
+            
+        }
+        .tourist-centar-item {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            svg {
+                margin-right: 15px;
+                fill: white;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .privacy {
+        margin-top: 50px;
+    }
+    .cookies {
+        margin-top: 10px;
+    }
 }

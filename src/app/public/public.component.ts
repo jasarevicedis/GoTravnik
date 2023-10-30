@@ -13,4 +13,6 @@ export class PublicComponent {
   onWindowScroll() {
     this.isScrolled = window.scrollY > 60;
   }
+
+  
 }
