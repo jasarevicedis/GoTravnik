@@ -1,8 +1,69 @@
 :host {
+    width: 95%;
     display: flex;
-    width: 280px;
-    height: 200px;
     background-color: white;
-    border-radius: 10px;
+    height: 290px;
+    flex-direction: column;
+    //border-radius: 10px;
+    margin-bottom: 20px;
     justify-self: center;
+    border-radius: 12px;
+    .event-image-container {
+        margin-top: 10px;
+        align-self: center;
+        width: 90%;
+        height: 210px;
+        background-color: lightcoral;
+        
+        background: url("https://ichef.bbci.co.uk/images/ic/1200x675/p0fq9cyz.jpg");
+        background-size: cover;
+        background-position-y: -40px;
+        .event-timing {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 200px;
+            height: 32px;
+            display: flex;
+            background-color: orange;
+            border-radius: 8px;
+            align-items: center;
+            justify-content: space-evenly;
+            p {
+                color: white;
+                font-size: 15px;
+            }
+            .vertical-line {
+                height: calc(100% - 20px);
+                width: 1px;
+                background-color: white;
+            }
+        }
+    }
+    .event-data {
+        .upper-row {
+            margin-left: 5%;
+            display: flex;
+            font-size: 13px;
+            margin-top: 10px;
+            p {
+            margin-right: 10px;
+            }
+            
+        }
+        #event-name {
+            margin-left: 5%;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+    }
+    .edit-event {
+        display: none;
+    }
+    .delete-event {
+        display: none;
+    }
+    :hover {
+        opacity: 0.5;
+    }
 }
+
