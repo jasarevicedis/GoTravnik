@@ -11,10 +11,7 @@ export class OpenAddEventService {
 
   openAddEventPopup(): void {
     this.dialog.open(AddeventPopupComponent, {
-      maxWidth: '60vW',
-      maxHeight: '70vh',
-      height: '100%',
-      width: '100%',
+      
     });
 
   }
