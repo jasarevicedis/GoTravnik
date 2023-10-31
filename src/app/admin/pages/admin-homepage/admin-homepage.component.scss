@@ -5,14 +5,63 @@
     margin-top: 60px;
     display: flex;
     background-color: rgb(244, 234, 255);
-    
-    .visitors-graph-container {
-        width: 500px;
-        height: 250px;
-        display: flex;
-        background-color: white;
-        border-radius: 15px;
+    flex-direction: column;
+    #greeting {
+        margin-top: 50px;
+        margin-left: 60px;
+        font-size: 25px;
+    }
+    .visitors-section {
         margin-top: 20px;
-        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        .visitors-table-section {
+            width: 450px;
+            height: 250px;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            .visitors-table-section-header {
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    margin-left: 15px;
+                }
+                a {
+                    margin-right: 15px;
+                    text-decoration: none;
+                }
+            }
+            .visitors-mini-table {
+                width: 95%;
+                height: 200px;
+                margin-top: 10px;
+                background-color: rgb(246, 235, 255);
+                border-radius: 8px;
+                thead {
+                    width: 100%;
+                    height: 30px;
+                    background-color: rgb(238, 212, 255);
+                    tr {
+                        font-size: 13px;
+                        
+                    }
+                }
+            }
+        }
+        .visitors-graph-container {
+            width: 450px;
+            height: 250px;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+
+        }
     }
 }
