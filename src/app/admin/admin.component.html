@@ -1,5 +1,5 @@
 <app-admin-header *ngIf="showHeader"></app-admin-header>
 <div class="main-window">
     <app-admin-sidebar *ngIf="showSidebar"></app-admin-sidebar>
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="showHideNavSidebar($event)"></router-outlet>
 </div>

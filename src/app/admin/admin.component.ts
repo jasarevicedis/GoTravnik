@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';
+import { AdminLoginpageComponent } from './pages/admin-loginpage/admin-loginpage.component';
 
 @Component({
   selector: 'app-admin',
@@ -7,25 +8,14 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent {
-  showHeader: boolean = false;
-  showSidebar: boolean = false;
+  showHeader: boolean = true;
+  showSidebar: boolean = true;
 
   ngOnInit() {
   }
 
-  constructor(private router: Router) {
-  // on route change to '/login', set the variable showHead to false
-    router.events.forEach((event) => {
-      if (event instanceof NavigationStart) {
-        if (event['url'] == '/login') {
-          this.showHeader = false;
-          this.showSidebar = false;
-        } else {
-          // console.log("NU")
-          this.showHeader = true;
-          this.showSidebar = true;
-        }
-      }
-    });
-  }
+  showHideNavSidebar(event: any){
+    this.showHeader= !(event instanceof AdminLoginpageComponent);   
+    this.showSidebar= !(event instanceof AdminLoginpageComponent);                                        
+  } 
 }
