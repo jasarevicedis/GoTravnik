@@ -36,7 +36,25 @@
         height: 80px;
         display: flex;
         background-color: rgb(255, 255, 255);
-        
+        align-items: center;
+        select {
+            width: 130px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        input {
+            width: 100px;
+            height: 30px;
+            margin-left: 20px;
+
+        }
+        .search-events-bar {
+            width: 260px;
+            height: 30px;
+            border: 1px solid purple;
+            border-radius: 12px;
+            margin-left: 120px;
+        }
     }
     .events-container {
         width: 90%;
