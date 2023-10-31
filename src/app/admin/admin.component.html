@@ -1,5 +1,5 @@
-<app-admin-header></app-admin-header>
+<app-admin-header *ngIf="showHeader"></app-admin-header>
 <div class="main-window">
-    <app-admin-sidebar></app-admin-sidebar>
+    <app-admin-sidebar *ngIf="showSidebar"></app-admin-sidebar>
     <router-outlet></router-outlet>
 </div>
