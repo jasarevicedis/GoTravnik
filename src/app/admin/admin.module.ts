@@ -18,6 +18,10 @@ import { AdminActivitiesPageComponent } from './pages/subpages/admin-activities-
 import { AddeventPopupComponent } from './components/addevent-popup/addevent-popup.component';
 import { AdminEventCardComponent } from './components/admin-event-card/admin-event-card.component';
 import { AdminLoginpageComponent } from './pages/admin-loginpage/admin-loginpage.component';
+//import { AddattractionpopupComponent } from './components/addattractionpopup/addattractionpopup.component';
+import { AddattractionPopupComponent } from './components/addattraction-popup/addattraction-popup.component';
+import { AddfoodPopupComponent } from './components/addfood-popup/addfood-popup.component';
+import { AddaccommodationPopupComponent } from './components/addaccommodation-popup/addaccommodation-popup.component';
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { AdminLoginpageComponent } from './pages/admin-loginpage/admin-loginpage
     AdminActivitiesPageComponent,
     AddeventPopupComponent,
     AdminEventCardComponent,
-    AdminLoginpageComponent
+    AdminLoginpageComponent,
+    //AddattractionpopupComponent,
+    AddattractionPopupComponent,
+    AddfoodPopupComponent,
+    AddaccommodationPopupComponent
   ],
   imports: [
     CommonModule,
