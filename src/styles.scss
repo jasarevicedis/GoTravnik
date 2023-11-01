@@ -9,6 +9,17 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .disapear-body {
     overflow: hidden !important;
+    .main-header {
+        background-color: rgb(255, 255, 255);
+        
+            box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    div {
+        .moving-svg {
+            fill: black;
+        } 
+    }        
+    }
+    
  }
 
 .disapear-scroll::-webkit-scrollbar {

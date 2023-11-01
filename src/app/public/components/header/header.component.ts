@@ -24,6 +24,7 @@ export class HeaderComponent {
     }
     else {
       document.body.className="";
+      
     }
     if (this.isSearchOpen) {
       this.isSearchOpen = false;

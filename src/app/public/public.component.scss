@@ -9,11 +9,16 @@
 :host ::ng-deep {
     .moving-header {
         .main-header {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
-            fill: black; 
+            fill: rgb(0,0,0); 
+            
+
         }
+        
     }
+    
+    
 }
 
 
