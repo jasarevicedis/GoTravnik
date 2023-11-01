@@ -19,29 +19,29 @@
             <p>See & Do</p>
         </button>
         <ul>
-            <li routerLink="food"><a routerLink="food">Food & Drink</a></li>
-            <li routerLink="attractions"><a routerLink="attractions">Attractions</a></li>
-            <li><a >Activities</a></li>
-            <li><a >Shop</a></li>
+            <li (click)="toggleMenu()" routerLink="food"><a routerLink="food">Food & Drink</a></li>
+            <li (click)="toggleMenu()" routerLink="attractions"><a routerLink="attractions">Attractions</a></li>
+            <li (click)="toggleMenu()"><a >Activities</a></li>
+            <li (click)="toggleMenu()"><a >Shop</a></li>
         </ul>
     </div>
     <div class="main-nav-item">
         <button class="main-nav-button">
-            <p>Plan your trip</p>
+            <p (click)="toggleMenu()">Plan your trip</p>
         </button>
         <ul>
-            <li routerLink="planthetrip"><a routerLink="planthetrip">Trip planner*</a></li>
-            <li routerLink="accomodation"><a routerLink="accomodation">Accommodation</a></li>
+            <li (click)="toggleMenu()" routerLink="planthetrip"><a routerLink="planthetrip">Trip planner*</a></li>
+            <li (click)="toggleMenu()" routerLink="accomodation"><a routerLink="accomodation">Accommodation</a></li>
             
         </ul>
     </div>
     <div [routerLink]="['areaguide']" class="main-nav-item">
-        <button class="main-nav-button">
+        <button (click)="toggleMenu()" class="main-nav-button">
             <p>Area Guide</p>
         </button>
     </div>
     <div [routerLink]="['events']" class="main-nav-item">
-        <button class="main-nav-button">
+        <button (click)="toggleMenu()" class="main-nav-button">
             <p>Events</p>
         </button>
     </div>
