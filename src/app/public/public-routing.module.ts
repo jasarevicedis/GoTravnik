@@ -8,6 +8,7 @@ import { AccomodationpageComponent } from './pages/accomodationpage/accomodation
 import { AttractionspageComponent } from './pages/attractionspage/attractionspage.component';
 import { EventpageComponent } from './pages/eventpage/eventpage.component';
 import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
+import { AttractionDetailsComponent } from './pages/attraction-details/attraction-details.component';
 
 
 const routes: Routes = [
@@ -17,9 +18,15 @@ const routes: Routes = [
       {path: 'food', component: FoodpageComponent},
       {path:'planthetrip', component: PlantrippageComponent},
       {path:'accomodation', component: AccomodationpageComponent},
-      {path:'attractions', component: AttractionspageComponent},
+      {path:'attractions', 
+        children: [
+          {path: '', component: AttractionspageComponent},
+          {path:'starigrad', component: AttractionDetailsComponent}
+        ]
+      },
       {path:'events', component: EventpageComponent},
       {path:'areaguide', component:AreguidepageComponent},
+      
       
     ]
   }

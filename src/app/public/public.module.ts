@@ -21,6 +21,7 @@ import { HomepageShortcutComponent } from './components/homepage-shortcut/homepa
 import { FoodItempageComponent } from './itempages/food-itempage/food-itempage.component';
 import { AttractionShortcutComponent } from './components/attraction-shortcut/attraction-shortcut.component';
 import { RestaurantShortcutComponent } from './components/restaurant-shortcut/restaurant-shortcut.component';
+import { AttractionDetailsComponent } from './pages/attraction-details/attraction-details.component';
 //import { WeatherpageComponent } from './pages/weatherpage/weatherpage.component';
 
 
@@ -46,6 +47,7 @@ import { RestaurantShortcutComponent } from './components/restaurant-shortcut/re
     FoodItempageComponent,
     AttractionShortcutComponent,
     RestaurantShortcutComponent,
+    AttractionDetailsComponent,
     //WeatherpageComponent,
     
   ],
