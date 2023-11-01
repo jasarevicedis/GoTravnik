@@ -253,6 +253,17 @@
             margin-bottom: 20px;
             border: none;
         }
+        .slider {
+            //width: 400px;
+            //height: 420px;
+            display: flex;
+            box-sizing: border-box;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
 
     }
 }
