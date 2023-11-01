@@ -47,11 +47,33 @@
     a {
         text-decoration: none;
         color: white;
+        margin-left: 20px;
+    }
+    .contact-us {
+        margin-top: 30px;
     }
     .privacy {
-        margin-top: 50px;
+        margin-top: 10px;
     }
     .cookies {
         margin-top: 10px;
+    }
+    .social-medias {
+        align-self: center;
+        margin-top: 20px;
+        width: 200px;
+        height: 40px;
+        //background-color: lightblue;
+        display: flex;
+        justify-content: space-evenly;
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+            display: flex;
+        }
+        svg:hover {
+            fill: rgb(235, 142, 235);
+        }
     }
 }
