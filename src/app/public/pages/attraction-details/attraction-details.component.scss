@@ -57,5 +57,28 @@
         .attraction-title {
             font-size: 30px;
         }
+        .description {
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+        .attraction-text {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            
+            width: 100%;
+            background-color: lightblue;
+            .text-subtitle {
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .text-section {
+                margin-bottom: 10px;
+
+                font-size: 16px;
+            }
+        }
     }
 }
