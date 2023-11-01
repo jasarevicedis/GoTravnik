@@ -10,8 +10,8 @@
         width: 100%;
         height: 250px;
         display: flex;
-        background-color: aqua;
-        background: url("https://travnik.ba/wp-content/uploads/2020/06/travnik-1024x683.jpg");
+        background-color: rgb(111, 80, 221);
+        //background: url("https://travnik.ba/wp-content/uploads/2020/06/travnik-1024x683.jpg");
         background-size: cover;
         
         
@@ -34,56 +34,40 @@
         }
     }
     .attractions-nav {
-        height: 150px;
+        height: 120px;
         width: 100%;
         display: flex;
         background-color: aliceblue;
         flex-direction: column;
-        .nav-and-filter {
-            display: flex;
-            margin-left: 30px;
-            width: calc(100% - 60px);
-            //justify-content: space-between;
-            margin-top: 30px;
+        
             .nav {
                 display: flex;
-                align-items: center;
+                margin-top: 20px;
+                box-sizing: border-box;
+                overflow-x: scroll;
+                white-space: nowrap;
                 margin-left: 30px;
-                a {
-                    font-size: 16px;
-                    color: lightseagreen;
-                    margin-right: 20px;
-                    text-decoration: none;
+                .category-button {
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid black;
+                    background-color: white;
+                    margin-right: 10px;
+                    border-radius: 10px;
+                }
+                :nth-child(1){
+                    background-color: rgb(255, 193, 78);
                 }
             }
-            .attraction-filter {
-                width: 40px;
-                height: 40px;
-                background-color: lightseagreen;
-                border-radius: 50%;
-                border: none;
+            .nav::-webkit-scrollbar {
+                display: none;
             }
-        }
+            p {
+                margin-left: 30px;
+                margin-top: 20px;
+                font-size: 22px;
+            }
         
-        .tags-container {
-            margin-top: 20px;
-            display: flex;
-            margin-left: 30px;
-            .attraction-tag {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: rgb(255, 255, 255);
-                height: 35px;
-                padding-left: 10px;
-                padding-right: 10px;
-                border-radius: 20px;
-                margin-right: 10px;
-                border: 1px solid lightseagreen;
-                color: lightseagreen;
-                font-size: 13px;
-            }
-        }
     }
     .attraction-container {
         padding-top: 30px;
