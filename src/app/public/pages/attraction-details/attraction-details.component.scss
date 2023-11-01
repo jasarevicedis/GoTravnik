@@ -1,15 +1,61 @@
 :host {
     display: flex;
-    background-color: lightslategrey;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     min-height: 100vh;
     flex-direction: column;
-    .attraction-data {
+    .image-nav-link {
+        margin-top: 70px;
+        
+        height: 30px;
+        background-color: rgb(238, 220, 251);
+    }
+    .img-container {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        img {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(245, 218, 255);
+        }
+        .image-slider {
+            width: 95%;
+            height: 50px;
+            //background-color: blue;
+            display: flex;
+            box-sizing: border-box;
+            overflow-x: scroll;
+            white-space: nowrap;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            .img-slide {
+                width: 70px;
+                height: 40px;
+                background-color: rgb(234, 218, 249);
+                border-radius: 7px;
+               // margin-right: 10px;
+            }
+            
+        }
+        .image-slider::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+    .attraction-data {
+        width: calc(100% - 40px);
         height: 700px;
         display: flex;
         flex-direction: column;
         background-color: rgb(255, 255, 255);
-        margin-top: 300px;
+        margin-top: 20px;
+        margin-left: 20px;
+        //margin-top: 300px;
+        .attraction-title {
+            font-size: 30px;
+        }
     }
 }
