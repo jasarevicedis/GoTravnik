@@ -19,6 +19,8 @@ import { AccommodationCardComponent } from './components/accommodation-card/acco
 import { FoodCardComponent } from './components/food-card/food-card.component';
 import { HomepageShortcutComponent } from './components/homepage-shortcut/homepage-shortcut.component';
 import { FoodItempageComponent } from './itempages/food-itempage/food-itempage.component';
+import { AttractionShortcutComponent } from './components/attraction-shortcut/attraction-shortcut.component';
+import { RestaurantShortcutComponent } from './components/restaurant-shortcut/restaurant-shortcut.component';
 //import { WeatherpageComponent } from './pages/weatherpage/weatherpage.component';
 
 
@@ -42,6 +44,8 @@ import { FoodItempageComponent } from './itempages/food-itempage/food-itempage.c
     FoodCardComponent,
     HomepageShortcutComponent,
     FoodItempageComponent,
+    AttractionShortcutComponent,
+    RestaurantShortcutComponent,
     //WeatherpageComponent,
     
   ],
