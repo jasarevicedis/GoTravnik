@@ -65,9 +65,76 @@ body::-webkit-scrollbar {
         }
     }
     .weather-content {
+        width: calc(100vw - 60px);
         height: 800px;
-        width: 100%;
+        //width: 100%;
         display: flex;
+        flex-direction: column;
         margin-top: 200px;
+        padding-left: 30px;
+        #today {
+            font-size: 20px;
+            margin-top: 25px;
+        }
+        .date-and-time {
+            margin-top: 5px;
+            display: flex;
+            .date {
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                display: flex;
+                p {
+                    font-size: 15px;
+                }
+            }
+            .time {
+                margin-left: 15px;
+                display: flex;
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .icon-and-temp {
+            margin-top: 50px;
+            align-self: center;
+            display: flex;
+            gap: 80px;
+            svg {
+                width: 80px;
+                height: 80px;
+            }
+            p {
+                font-size: 50px;
+            }
+        }
+        .sun-graph {
+            align-self: center;
+            width: 430px;
+            height: 150px;
+            display: flex;
+            background-color: red;
+            margin-top: 50px;
+        }
+        .days-container {
+            width: 430px;
+            height: 80px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            background-color: lightblue;
+        }
+        
     }
+  
+
+
 }
