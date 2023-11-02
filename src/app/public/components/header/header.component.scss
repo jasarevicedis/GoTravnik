@@ -202,6 +202,26 @@
             }
             
         }*/
+        .contact-us-container {
+            width: calc(100% - 80px);
+            margin-left: 40px;
+            margin-top: 50px;
+            height: 300px;
+            background-color: white;
+            border:1px solid purple;
+            display: flex;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .language-switch {
+            margin-top: 100px;
+            width: 100%;
+            //height: 300px;
+            display: flex;
+            //background-color: rgb(135, 56, 56);
+        }
         .main-nav-item {
             width: calc(100% - 80px);
                 margin-left: 40px;
@@ -217,8 +237,8 @@
             .main-nav-button {
                 
                 cursor: pointer;
-                margin-top: 15px;
-                margin-bottom: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
                 background: none;
                 border: none;
                 min-height: 20px;
@@ -226,17 +246,23 @@
                 display: flex;
                 
                 
-                justify-content: start;
+                justify-content: space-between;
                
                 //background-color: red;
                 p {
                     font-size: 18px;
                     color: purple;
                 }
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    fill: purple;
+                }
             }
             ul {
                 
                 margin-top: 10px;
+                display: none;
                 li {
                     display: flex;
                     //background-color: red;
@@ -254,6 +280,10 @@
                 }
                 
             }
+            .is-open-list {
+                display: flex;
+                flex-direction: column;
+            }
             
             
         }
@@ -266,13 +296,7 @@
     }
     
 
-.language-switch {
-    margin-top: 100px;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    background-color: rgb(135, 56, 56);
-}
+
 
 
 

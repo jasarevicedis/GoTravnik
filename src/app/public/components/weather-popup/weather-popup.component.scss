@@ -125,10 +125,11 @@ body::-webkit-scrollbar {
             margin-top: 50px;
         }
         .days-container {
-            width: 430px;
-            height: 80px;
+            width: 100%;
+            background-color: lightgray;
+            height: 300px;
             margin-top: 50px;
-            margin-bottom: 50px;
+            //margin-bottom: 50px;
             display: flex;
             background-color: lightblue;
         }

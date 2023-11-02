@@ -46,7 +46,16 @@ export class HeaderComponent {
     }
     this.isSearchOpen = !this.isSearchOpen;
     
+  }
 
+  isList1Open=false;
+  isList2Open=false;
+
+  toggleList1(): void  {
+    this.isList1Open = !this.isList1Open;
+  }
+  toggleList2(): void  {
+    this.isList2Open = !this.isList2Open;
   }
   
 }

@@ -14,22 +14,24 @@
     </div>
 
 <div class="burger-menu" [class.is-open-burger]="isMenuOpen" >
-    <div class="main-nav-item">
+    <div (click)="toggleList1()"   class="openable" class="main-nav-item">
         <button class="main-nav-button">
             <p>See & Do</p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
         </button>
-        <ul>
+        <ul [class.is-open-list]="isList1Open">
             <li (click)="toggleMenu()" routerLink="food"><a routerLink="food">Food & Drink</a></li>
             <li (click)="toggleMenu()" routerLink="attractions"><a routerLink="attractions">Attractions</a></li>
             <li (click)="toggleMenu()"><a >Activities</a></li>
             <li (click)="toggleMenu()"><a >Shop</a></li>
         </ul>
     </div>
-    <div class="main-nav-item">
+    <div (click)="toggleList2()" class="openable"  class="main-nav-item" >
         <button class="main-nav-button">
-            <p (click)="toggleMenu()">Plan your trip</p>
+            <p >Plan your trip</p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
         </button>
-        <ul>
+        <ul [class.is-open-list]="isList2Open">
             <li (click)="toggleMenu()" routerLink="planthetrip"><a routerLink="planthetrip">Trip planner*</a></li>
             <li (click)="toggleMenu()" routerLink="accomodation"><a routerLink="accomodation">Accommodation</a></li>
             
@@ -44,6 +46,9 @@
         <button (click)="toggleMenu()" class="main-nav-button">
             <p>Events</p>
         </button>
+    </div>
+    <div class="contact-us-container">
+        <img src="" alt="">
     </div>
     <div class="language-switch">aa</div>
     <!--
