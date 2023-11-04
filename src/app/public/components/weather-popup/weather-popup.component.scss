@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 
 
 :host {
-    overflow: auto;
+    
     
     //width: calc(100vw - 40px);
     height: 100vh;
@@ -15,11 +15,11 @@ body::-webkit-scrollbar {
     flex-direction: column;
     position: absolute;
     .weather-header {
-        position: fixed;
+        position: static;
         width: 100%;
         height: 200px;
         
-        background-color: rgb(135, 54, 143);
+        background-color: rgb(105, 185, 255);
         display: flex;
         flex-direction: column;
         .close-weather {
@@ -62,36 +62,44 @@ body::-webkit-scrollbar {
             display: flex;
             background-color: white;
             border-radius: 20px;
+            margin-bottom: 10px;
         }
     }
     .weather-content {
+        
         width: 100%;
         height: 800px;
         //width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
+       // margin-top: 200px;
         //padding-left: 30px;
         #today {
             font-size: 20px;
             margin-top: 25px;
+            margin-left: 30px;
         }
         .date-and-time {
+            margin-left: 30px;
+
             margin-top: 5px;
             display: flex;
             .date {
+                align-items: center;
+                display: flex;
                 svg {
                     width: 15px;
                     height: 15px;
                     margin-right: 5px;
                 }
-                display: flex;
+                
                 p {
-                    font-size: 15px;
+                    font-size: 12px;
                 }
             }
             .time {
                 margin-left: 15px;
+                align-items: center;
                 display: flex;
                 svg {
                     width: 15px;
@@ -99,7 +107,7 @@ body::-webkit-scrollbar {
                     margin-right: 5px;
                 }
                 p {
-                    font-size: 15px;
+                    font-size: 12px;
                 }
             }
         }
@@ -111,8 +119,12 @@ body::-webkit-scrollbar {
             svg {
                 width: 80px;
                 height: 80px;
+                fill: rgb(105, 185, 255);
+
             }
             p {
+                color: rgb(105, 185, 255);
+
                 font-size: 50px;
             }
         }
@@ -121,17 +133,17 @@ body::-webkit-scrollbar {
             width: 430px;
             height: 150px;
             display: flex;
-            background-color: red;
+            background-color: rgb(237, 245, 247);
             margin-top: 50px;
         }
         .days-container {
             width: 100%;
-            background-color: lightgray;
+           
             height: 300px;
             margin-top: 50px;
             //margin-bottom: 50px;
             display: flex;
-            background-color: lightblue;
+            background-color: rgb(243, 244, 245);
             flex-direction: column;
             .this-week {
                 margin-left: 30px;
@@ -150,7 +162,7 @@ body::-webkit-scrollbar {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
-                    background-color: lightcyan;
+                    background-color: rgb(255, 255, 255);
                     .day {
                         margin-top: 10px;
                     }
@@ -162,10 +174,12 @@ body::-webkit-scrollbar {
                         margin-top: 20px;
                         width: 25px;
                         height:25px;
+                        fill: rgb(105, 185, 255);
+
                     }
                     .temp-div {
                         width: 100%;
-                        background-color: lightgoldenrodyellow;
+                        background-color: rgb(221, 221, 221);
                         height: 100px;
                         margin-top: 20px;
                         display: flex;
