@@ -50,7 +50,7 @@
         margin-left: 20px;
     }
     .contact-us {
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .privacy {
         margin-top: 10px;
@@ -60,8 +60,8 @@
     }
     .social-medias {
         align-self: center;
-        margin-top: 20px;
-        width: 200px;
+        margin-top: 40px;
+        width: 250px;
         height: 40px;
         //background-color: lightblue;
         display: flex;
@@ -73,7 +73,13 @@
             display: flex;
         }
         svg:hover {
-            fill: rgb(235, 142, 235);
+            fill: rgb(189, 237, 255);
         }
+    }
+    .rights {
+        font-size: 12px;
+        color: white;
+        margin-top: 70px;
+        align-self: center;
     }
 }
