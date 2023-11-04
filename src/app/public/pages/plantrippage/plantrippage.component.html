@@ -1,1 +1,76 @@
-<p>plantrippage works!</p>
+<div class="planner-header">
+    <p>Enter trip details:</p>
+</div>
+<form action="" class="planner">
+    
+    <mat-form-field>
+        <mat-label>Start date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>End date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Your country</mat-label>
+        <mat-select >
+          <mat-option>None</mat-option>
+          <!--<mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>-->
+        </mat-select>
+    </mat-form-field>
+
+
+    <mat-label>Have you been to Travnik before?</mat-label>
+    <mat-radio-group>
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+    </mat-radio-group>
+
+    <mat-label>Will you have a car for your trip?</mat-label>
+    <mat-radio-group>
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>How many people are in your group? </mat-label>
+        <input type="number" matInput >
+    </mat-form-field>
+
+    <mat-label>What are your age groups? </mat-label>
+    <section>
+        
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+
+    </section>
+
+    <mat-label>Interests </mat-label>
+    <section>    
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+    </section>
+    
+    <button class="plan-button">Build your trip</button>
+
+</form>

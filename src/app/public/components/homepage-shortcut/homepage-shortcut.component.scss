@@ -14,15 +14,16 @@
     svg {
         width: 70px;
         height: 70px;
-        fill: rgb(236, 62, 100);
+        fill: rgb(62, 166, 236);
     }
     p {
         font-size: 24px;
-        color: rgb(236, 62, 100);;
+        color: rgb(62, 166, 236);
+        
     }
 }
 :host:hover {
-    background-color: rgb(236, 62, 100);
+    background-color: rgb(95, 223, 255);
     svg {
         fill: white;
     }

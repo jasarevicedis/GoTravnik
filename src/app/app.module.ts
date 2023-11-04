@@ -7,6 +7,12 @@ import { PublicModule } from './public/public.module';
 import { AdminModule } from './admin/admin.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PublicModule,
     AdminModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule, 
+    MatInputModule,
+     MatDatepickerModule,
+      MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

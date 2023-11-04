@@ -24,7 +24,14 @@ import { RestaurantShortcutComponent } from './components/restaurant-shortcut/re
 import { AttractionDetailsComponent } from './pages/attraction-details/attraction-details.component';
 //import { WeatherpageComponent } from './pages/weatherpage/weatherpage.component';
 
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
+import {FormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -48,12 +55,23 @@ import { AttractionDetailsComponent } from './pages/attraction-details/attractio
     AttractionShortcutComponent,
     RestaurantShortcutComponent,
     AttractionDetailsComponent,
+    
     //WeatherpageComponent,
+    
     
   ],
   imports: [
     CommonModule,
-    PublicRoutingModule
+    PublicRoutingModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatDatepickerModule, 
+    MatNativeDateModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCheckboxModule
   ],
   exports: [
     PublicComponent
