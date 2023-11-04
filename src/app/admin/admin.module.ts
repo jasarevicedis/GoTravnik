@@ -22,6 +22,7 @@ import { AdminLoginpageComponent } from './pages/admin-loginpage/admin-loginpage
 import { AddattractionPopupComponent } from './components/addattraction-popup/addattraction-popup.component';
 import { AddfoodPopupComponent } from './components/addfood-popup/addfood-popup.component';
 import { AddaccommodationPopupComponent } from './components/addaccommodation-popup/addaccommodation-popup.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -45,11 +46,13 @@ import { AddaccommodationPopupComponent } from './components/addaccommodation-po
     //AddattractionpopupComponent,
     AddattractionPopupComponent,
     AddfoodPopupComponent,
-    AddaccommodationPopupComponent
+    AddaccommodationPopupComponent,
+    
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    MatPaginatorModule
   ],
   exports: [
     AdminComponent

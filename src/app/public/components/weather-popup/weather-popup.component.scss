@@ -65,13 +65,13 @@ body::-webkit-scrollbar {
         }
     }
     .weather-content {
-        width: calc(100vw - 60px);
+        width: 100%;
         height: 800px;
         //width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 200px;
-        padding-left: 30px;
+        //padding-left: 30px;
         #today {
             font-size: 20px;
             margin-top: 25px;
@@ -132,6 +132,49 @@ body::-webkit-scrollbar {
             //margin-bottom: 50px;
             display: flex;
             background-color: lightblue;
+            flex-direction: column;
+            .this-week {
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+            .days-cards {
+                margin-left: 30px;
+                width: calc(100% - 60px);
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                .day-card {
+                   
+                    width: 120px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: lightcyan;
+                    .day {
+                        margin-top: 10px;
+                    }
+                    .date {
+                        margin-top: 7%;
+                        font-size: 13px;
+                    }
+                    svg {
+                        margin-top: 20px;
+                        width: 25px;
+                        height:25px;
+                    }
+                    .temp-div {
+                        width: 100%;
+                        background-color: lightgoldenrodyellow;
+                        height: 100px;
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        p {}
+                    }
+                }
+            }
         }
         
     }
