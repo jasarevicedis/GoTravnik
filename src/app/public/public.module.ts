@@ -33,6 +33,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { AccommodationFilterComponent } from './filters/accommodation-filter/accommodation-filter.component';
+import { FoodFilterComponent } from './filters/food-filter/food-filter.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     AttractionShortcutComponent,
     RestaurantShortcutComponent,
     AttractionDetailsComponent,
+    AccommodationFilterComponent,
+    FoodFilterComponent,
     
     //WeatherpageComponent,
     
