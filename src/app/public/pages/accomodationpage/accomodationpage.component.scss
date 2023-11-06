@@ -34,60 +34,30 @@
         }
     }
     .accommodation-nav {
-        height: 200px;
+        height: 100px;
         width: 100%;
         display: flex;
         background-color: aliceblue;
-        flex-direction: column;
-        .nav-and-filter {
+        align-items: center;
+        justify-content: space-between;
+        button {
+            width: 120px;
+            height: 30px;
             display: flex;
-            margin-left: 30px;
-            width: calc(100% - 60px);
-            justify-content: space-between;
-            margin-top: 30px;
-            .nav {
-                display: flex;
-                align-items: center;
-                a {
-                    font-size: 16px;
-                    color: lightseagreen;
-                    margin-right: 20px;
-                    text-decoration: none;
-                }
-            }
-            .filter-accommodation {
-                width: 40px;
-                height: 40px;
-                background-color: lightseagreen;
-                border-radius: 50%;
-                border: none;
-            }
+            //background-color: aqua;
+            border: NONE;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
         }
-        .accommodation-number {
-            font-size: 25px;
-            color: rgb(80, 80, 80);
-            margin-top: 30px;
-            margin-left: 30px;
+        .accommodation-filter-opener {
+            margin-left: 5%;
         }
-        .tags-container {
-            margin-top: 20px;
-            display: flex;
-            margin-left: 30px;
-            .accommodation-tag {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: rgb(255, 255, 255);
-                height: 35px;
-                padding-left: 10px;
-                padding-right: 10px;
-                border-radius: 20px;
-                margin-right: 10px;
-                border: 1px solid lightseagreen;
-                color: lightseagreen;
-                font-size: 13px;
-            }
+        .map-list-toggle {
+            margin-right: 5%;
         }
+        
+        
     }
     .accommodation-container {
         padding-top: 30px;

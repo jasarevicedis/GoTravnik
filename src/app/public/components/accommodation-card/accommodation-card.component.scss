@@ -1,35 +1,48 @@
 :host {
-    width: 80%;
+    width: 90%;
     display: flex;
-    background-color: white;
-    height: 300px;
-    flex-direction: column;
-    border-radius: 10px;
+    border: 1px solid lightgray;
+    //border-radius: 10px;
+    height: 140px;
+    
+    //border-radius: 10px;
     margin-bottom: 20px;
-    border: 1px solid rgb(208, 208, 208);
+    
     .accommodation-image-container {
-        width: 100%;
-        height: 210px;
-        background-color: lightcoral;
-        border-radius: 10px 10px 0 0;
-        background: url("https://q-xx.bstatic.com/xdata/images/hotel/max500/209173902.jpg?k=71e948c12dabf4d5418d351acf6be63d28fda80ff1d498ecba46b43e1f7662d5&o=");
+        background: url("https://magnum.ba/wp-content/uploads/2020/08/lipa2.jpg");
         background-size: cover;
-        //background-position-y: -40px;
+        height: 130px;
+        width: 130px;
+        //border-radius: 10px 10px 0 0;
+        align-self: center;
+        margin-left: 5px;
     }
-    .accomodation-data {
-        height: 90px;
-        width: 100%;
+    .accommodation-data {
+        height: 140px;
+        padding-left: 20px;
+        
         display: flex;
         flex-direction: column;
-        #location {
-            margin-left: 20px;
-            font-size: 12px;
-            margin-top: 20px;
+        .accommodation-name {
+            margin-top: 5px;
         }
-        #accommodation-name {
+        .accommodation-address {
             margin-top: 10px;
-            margin-left: 20px;
-            font-size: 20px;
+            font-size: 13px;
+        }
+        .rating-section {
+            width: 130px;
+            height: 15px;
+            background-color: lightgreen;
+            margin-top: 10px;
+        }
+        .website {
+            width: 130px;
+            height: 25px;
+            border: 2px solid black;
+            background: transparent;
+            margin-top: 10px;
+            font-size: 11px;
         }
     }
 }
