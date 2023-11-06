@@ -35,6 +35,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { AccommodationFilterComponent } from './filters/accommodation-filter/accommodation-filter.component';
 import { FoodFilterComponent } from './filters/food-filter/food-filter.component';
+import { BlogShortcutComponent } from './components/blog-shortcut/blog-shortcut.component';
+import { BigBlogShortcutComponent } from './components/big-blog-shortcut/big-blog-shortcut.component';
 
 
 
@@ -62,6 +64,8 @@ import { FoodFilterComponent } from './filters/food-filter/food-filter.component
     AttractionDetailsComponent,
     AccommodationFilterComponent,
     FoodFilterComponent,
+    BlogShortcutComponent,
+    BigBlogShortcutComponent,
     
     //WeatherpageComponent,
     

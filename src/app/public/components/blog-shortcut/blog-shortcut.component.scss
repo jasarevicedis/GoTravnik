@@ -1,0 +1,47 @@
+/*
+<div class="blog-image-container"></div>
+<div class="blog-data">
+    <p class="blog-category">BUDGET TRAVEL</p>
+    <p class="blog-title">How to visit Travnik on a budget</p>
+    <p class="blog-date">SEP 30, 2023</p>
+</div>
+*/
+:host {
+    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgb(241, 252, 255);
+    height: 130px;
+    border-radius: 8px;
+    border: 1px solid rgb(199, 211, 238);
+    display: flex;
+    align-items: center;
+    .blog-image-container {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        background-color: pink;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .blog-data {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .blog-category {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+        .blog-title {
+            
+            margin-top: 10px;
+            
+        }
+        .blog-date {
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    }
+
+}
+
