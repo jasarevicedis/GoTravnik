@@ -9,13 +9,17 @@ import { AttractionspageComponent } from './pages/attractionspage/attractionspag
 import { EventpageComponent } from './pages/eventpage/eventpage.component';
 import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
 import { AttractionDetailsComponent } from './pages/attraction-details/attraction-details.component';
+import { FoodItempageComponent } from './itempages/food-itempage/food-itempage.component';
 
 
 const routes: Routes = [
   {path:'', component: PublicComponent,
     children: [
       {path: '', component: HomepageComponent},
-      {path: 'food', component: FoodpageComponent},
+      {path: 'food', children: [
+        {path: '', component: FoodpageComponent},
+        {path: 'fooditem', component: FoodItempageComponent}
+      ]},
       {path:'planthetrip', component: PlantrippageComponent},
       {path:'accomodation', component: AccomodationpageComponent},
       {path:'attractions', 

@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class HomepageShortcutComponent {
   @Input() text: string = "";
-  @Input() svgLink: string = "";
+  
 }
