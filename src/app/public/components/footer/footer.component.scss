@@ -44,31 +44,32 @@
         }
     }
     
-    a {
-        text-decoration: none;
-        color: white;
-        margin-left: 20px;
-    }
-    .contact-us {
-        margin-top: 40px;
-    }
-    .privacy {
-        margin-top: 10px;
-    }
-    .cookies {
-        margin-top: 10px;
+    .buttons-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        align-items: center;
+        button {
+            width: 80%;
+            background-color: transparent;
+            border: 2px solid rgb(255, 255, 255);
+            color: white;
+            height: 35px;
+            margin-bottom: 10px;
+        }
     }
     .social-medias {
         align-self: center;
-        margin-top: 40px;
-        width: 250px;
+        margin-top: 30px;
+        width: 350px;
         height: 40px;
         //background-color: lightblue;
         display: flex;
         justify-content: space-evenly;
         svg {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             fill: white;
             display: flex;
         }
@@ -79,7 +80,7 @@
     .rights {
         font-size: 12px;
         color: white;
-        margin-top: 70px;
+        margin-top: 20px;
         align-self: center;
     }
 }

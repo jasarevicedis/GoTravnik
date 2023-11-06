@@ -309,7 +309,7 @@
             background-color: transparent;
             border: 2px solid cornflowerblue;
             font-size: 16px;
-            margin-top: 30px;
+            margin-top: 70px;
         }
     }
     .attractions-section {
@@ -325,6 +325,7 @@
             height: 15px;
             background-color: rgb(94, 187, 253);
             width: 200px;
+            align-self: center;
             
             p {
                 margin-top: -30px;
@@ -336,12 +337,14 @@
             //margin-left: 7%;
             width: 120px;
             height: 40px;
-            background-color: purple;
-            border-radius: 15px;
-            color: white;
-            margin-top: 30px;
+            background-color: transparent;
+            border: 3px solid rgb(94, 187, 253);
+            align-self: center;
+            //border-radius: 15px;
+            color: rgb(94, 187, 253);
+            margin-top: 20px;
             margin-bottom: 20px;
-            border: none;
+            //border: none;
         }
         .slider {
             //width: 400px;
@@ -350,6 +353,7 @@
             box-sizing: border-box;
             overflow-x: scroll;
             white-space: nowrap;
+            margin-top: 30px;
         }
         .slider::-webkit-scrollbar {
             display: none;
@@ -364,25 +368,36 @@
         background-color: rgb(255, 255, 255);
         padding-left: 7%;
         
-        p {
-            margin-top: 50px;
-            font-size: 40px;
+        .section-title {
+            margin-top: 30px;
+            height: 15px;
+            background-color: rgb(255, 224, 139);
+            width: 200px;
+            align-self: center;
             
+            p {
+                margin-top: -30px;
+                font-size: 40px;
+                
+            }
         }
         .view-all {
             //margin-left: 7%;
             width: 120px;
             height: 40px;
-            background-color: purple;
-            border-radius: 15px;
-            color: white;
-            margin-top: 30px;
+            background-color: transparent;
+           // border-radius: 15px;
+           border: 3px solid rgb(251, 212, 107);
+            color: rgb(251, 212, 107);
+            margin-top: 20px;
             margin-bottom: 20px;
-            border: none;
+            align-self: center;
+            //border: none;
         }
         .slider {
             //width: 400px;
             //height: 420px;
+            margin-top: 30px;
             display: flex;
             box-sizing: border-box;
             overflow-x: scroll;
