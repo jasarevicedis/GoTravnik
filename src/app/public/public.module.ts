@@ -36,6 +36,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { AccommodationFilterComponent } from './filters/accommodation-filter/accommodation-filter.component';
 import { FoodFilterComponent } from './filters/food-filter/food-filter.component';
 
+
+
 @NgModule({
   declarations: [
     PublicComponent,
@@ -77,7 +79,8 @@ import { FoodFilterComponent } from './filters/food-filter/food-filter.component
     MatSelectModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    
   ],
   exports: [
     PublicComponent
