@@ -2,23 +2,47 @@
     width: 90%;
     display: flex;
     border: 1px solid lightgray;
-    border-radius: 10px;
-    height: 290px;
-    flex-direction: column;
+    //border-radius: 10px;
+    height: 130px;
+    
     //border-radius: 10px;
     margin-bottom: 20px;
     
-    img {
-        height: 200px;
-        width: 100%;
-        border-radius: 10px 10px 0 0;
+    .img-section {
+        background: url("https://cdn.tasteatlas.com/Images/Dishes/a5abc85497774e3f8ba9a7f25c1914df.jpg");
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+        //border-radius: 10px 10px 0 0;
+        align-self: center;
+        margin-left: 5px;
     }
     .food-data {
-        height: 90px;
+        height: 130px;
         padding-left: 20px;
-        padding-right: 20px;
+        
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        .food-name {
+            margin-top: 5px;
+        }
+        .food-address {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .rating-section {
+            width: 130px;
+            height: 15px;
+            background-color: lightgreen;
+            margin-top: 10px;
+        }
+        .website {
+            width: 130px;
+            height: 25px;
+            border: 2px solid black;
+            background: transparent;
+            margin-top: 10px;
+            font-size: 11px;
+        }
     }
 }
