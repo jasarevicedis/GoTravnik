@@ -11,6 +11,7 @@ import { AreguidepageComponent } from './pages/areguidepage/areguidepage.compone
 import { AttractionDetailsComponent } from './pages/attraction-details/attraction-details.component';
 import { FoodItempageComponent } from './itempages/food-itempage/food-itempage.component';
 import { EventItempageComponent } from './itempages/event-itempage/event-itempage.component';
+import { BlogpageComponent } from './pages/blogpage/blogpage.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
         {path:'eventitem', component: EventItempageComponent}
       ]},
       {path:'areaguide', component:AreguidepageComponent},
+      {path:'blog', component: BlogpageComponent}
       
       
     ]

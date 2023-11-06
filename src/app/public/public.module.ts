@@ -38,6 +38,7 @@ import { FoodFilterComponent } from './filters/food-filter/food-filter.component
 import { BlogShortcutComponent } from './components/blog-shortcut/blog-shortcut.component';
 import { BigBlogShortcutComponent } from './components/big-blog-shortcut/big-blog-shortcut.component';
 import { EventItempageComponent } from './itempages/event-itempage/event-itempage.component';
+import { BlogpageComponent } from './pages/blogpage/blogpage.component';
 
 
 
@@ -68,6 +69,7 @@ import { EventItempageComponent } from './itempages/event-itempage/event-itempag
     BlogShortcutComponent,
     BigBlogShortcutComponent,
     EventItempageComponent,
+    BlogpageComponent,
     
     //WeatherpageComponent,
     
