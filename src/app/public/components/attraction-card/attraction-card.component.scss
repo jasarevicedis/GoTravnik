@@ -1,47 +1,37 @@
 :host {
+    width: 90%;
     display: flex;
+    border: 1px solid lightgray;
+    //border-radius: 10px;
+    height: 170px;
     background-color: white;
-    width: 400px;
-    height: 300px;
-    background-color: rgb(252, 246, 255);
-    //border: 1px solid black;
-    border-radius: 10px;
+    //border-radius: 10px;
     margin-bottom: 20px;
-    flex-direction: column;
-    .img-container {
-        height: 220px;
-        width: 100%;
-        img {
-            display: flex;
-            height: 200px;
-            width: 380px;
-            margin-top: 10px;
-            margin-left: 10px;
-        }
+    cursor: pointer;
+    
+    .img-section {
+        background: url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/314520575.jpg?k=1e2ba3d842fbe4799e70cf58db5fdeede190fc8828dfc4e45dd5108852fc0b3d&o=&hp=1");
+        background-size: cover;
+        height: 160px;
+        width: 180px;
+        //border-radius: 10px 10px 0 0;
+        align-self: center;
+        margin-left: 5px;
     }
     .attraction-data {
+        height: 140px;
+        padding-left: 20px;
+        
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 80px;
-        .attraction-title {
-            font-size: 20px;
-            margin-left: 10px;
+        .attraction-name {
+            margin-top: 5px;
+            font-weight: bold;
         }
-        .location-and-rating {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            margin-top: 20px;
-            .location {
-                display: flex;
-                margin-left: 10px;
-            }
-            .rating {
-                display: flex;
-                margin-right: 10px;
-
-            }
+        .attraction-address {
+            margin-top: 10px;
+            font-size: 13px;
         }
+        
     }
 }
