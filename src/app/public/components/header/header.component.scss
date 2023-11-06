@@ -222,6 +222,26 @@
             }
             
         }
+        .buttons-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 50px;
+            align-items: center;
+            button {
+            width: calc(100% - 80px);
+            
+                background-color: transparent;
+                border: 2px solid rgb(103, 154, 255);
+                color: rgb(103, 154, 255);
+                height: 35px;
+                margin-bottom: 10px;
+            }
+            button:hover {
+                background-color: rgb(103, 154, 255);
+                color: rgb(255, 255, 255);
+            }
+        }
         .language-switch {
             margin-top: 150px;
             width: 100%;
