@@ -37,6 +37,7 @@ import { AccommodationFilterComponent } from './filters/accommodation-filter/acc
 import { FoodFilterComponent } from './filters/food-filter/food-filter.component';
 import { BlogShortcutComponent } from './components/blog-shortcut/blog-shortcut.component';
 import { BigBlogShortcutComponent } from './components/big-blog-shortcut/big-blog-shortcut.component';
+import { EventItempageComponent } from './itempages/event-itempage/event-itempage.component';
 
 
 
@@ -66,6 +67,7 @@ import { BigBlogShortcutComponent } from './components/big-blog-shortcut/big-blo
     FoodFilterComponent,
     BlogShortcutComponent,
     BigBlogShortcutComponent,
+    EventItempageComponent,
     
     //WeatherpageComponent,
     
