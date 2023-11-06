@@ -1,9 +1,12 @@
 <div class="planner-header">
-    <p>Enter trip details:</p>
+    <p class="title">TRAVNIK TRIP PLANNER</p>
+    <p class="subtitle">
+        Looking for the best local tips to plan your future trip to Travnik? Use our newest trip planning service provided by those who know the city best!
+    </p>
 </div>
 <form action="" class="planner">
     
-    <mat-form-field>
+    <mat-form-field id="start-date-field">
         <mat-label>Start date</mat-label>
         <input matInput [matDatepicker]="picker">
         <mat-hint>MM/DD/YYYY</mat-hint>
@@ -11,7 +14,7 @@
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field id="end-date-field">
         <mat-label>End date</mat-label>
         <input matInput [matDatepicker]="picker">
         <mat-hint>MM/DD/YYYY</mat-hint>
@@ -19,7 +22,7 @@
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field id="country-field">
         <mat-label>Your country</mat-label>
         <mat-select >
           <mat-option>None</mat-option>

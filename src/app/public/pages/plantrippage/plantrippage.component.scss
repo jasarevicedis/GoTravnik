@@ -3,7 +3,27 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(173, 238, 241);
+    background-color: rgb(255, 255, 255);
+    .planner-header {
+        margin-top: 60px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(193, 249, 255);
+        
+        .title {
+            font-size: 30px;
+            margin-left: 5%;
+            margin-top: 150px;
+        }
+        .subtitle {
+            margin-top: 20px;
+            align-self: center;
+            font-size: 16px;
+            width: 90%;
+        }
+    }
     form {
         align-self: center;
         margin-top: 100px;
@@ -11,6 +31,17 @@
         display: flex;
         flex-direction: column;
         width: 400px;
-        
+        #start-date-field {
+            margin-bottom: 20px;
+        }
+        #end-date-field {
+            margin-bottom: 20px;
+        }
+        .plan-button {
+            align-self: center;
+            width: 170px;
+            height: 35px;
+            margin-bottom: 30px;
+        }
     }
 }
