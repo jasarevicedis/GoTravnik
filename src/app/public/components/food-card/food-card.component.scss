@@ -7,6 +7,7 @@
     background-color: white;
     //border-radius: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
     
     .img-section {
         background: url("https://cdn.tasteatlas.com/Images/Dishes/a5abc85497774e3f8ba9a7f25c1914df.jpg");
@@ -25,6 +26,7 @@
         flex-direction: column;
         .food-name {
             margin-top: 5px;
+            font-weight: bold;
         }
         .food-address {
             margin-top: 10px;
@@ -33,15 +35,24 @@
         .rating-section {
             width: 130px;
             height: 15px;
-            background-color: lightgreen;
-            margin-top: 10px;
+            //background-color: lightgreen;
+            margin-top: 13px;
+            display: flex;
+            font-size: 11px;
+            svg {
+                fill: orange;
+            }
+            .rating-value {}
+            .num-reviews {
+                margin-left: 40px;
+            }
         }
         .website {
             width: 130px;
             height: 25px;
             border: 2px solid black;
             background: transparent;
-            margin-top: 10px;
+            margin-top: 17px;
             font-size: 11px;
         }
     }
