@@ -1,6 +1,85 @@
-<a routerLink="../">Back</a>
-<div class="table-header">
-    <button class="addActivityButton">Add activity</button>
-</div>
-<table class="activities-table"></table>
 
+<div class="activitiespage-header">
+    
+    <p>Manage Activities</p>
+    <button class="addActivityButton">Add Activity</button>
+    
+</div>
+
+<div class="table-header">
+    
+</div>
+<table class="activities-table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Rating</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Restaurant A</td>
+        <td>Italian</td>
+        <td>4.5</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Restaurant B</td>
+        <td>Japanese</td>
+        <td>4.2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Restaurant C</td>
+        <td>Mexican</td>
+        <td>4.8</td>
+    </tr>
+    <!-- Add more rows as needed -->
+</table>
+<mat-paginator class="paginator" [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>

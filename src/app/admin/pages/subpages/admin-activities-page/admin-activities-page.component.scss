@@ -4,12 +4,33 @@
     min-height: calc(100vh - 60px);
     display: flex;
     background-color: transparent;
-    flex-direction: column;
     
-    a {
-        margin-left: 5%;
+    flex-direction: column;
+    .activitiespage-header {
+        align-self: center;
         margin-top: 40px;
+        height: 40px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        //background-color: white;
+        p {
+            font-size: 22px;
+        }
+        .addActivityButton {
+            width: 140px;
+            height: 30px;
+            display: flex;
+            background-color: lightseagreen;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 10px;
+        }
     }
+    
+    
     .table-header {
         margin-top: 10px;
         width: 90%;
@@ -18,13 +39,55 @@
         background-color: white;
         align-self: center;
     }
-    .activities-table {
+    table {
         align-self: center;
         margin-top: 5px;
         width: 90%;
-        height: 400px;
+        
         display: flex;
         flex-direction: column;
-        background-color: lightgreen;
+        background-color: rgb(255, 255, 255);
+        
+        tr {
+            
+            display: flex;
+            th {
+                
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                padding-left: 10px;
+            }
+            td {
+                padding-left: 10px;
+                display: flex;
+                align-items: center;
+            }
+            height: 50px;
+            border: 1px solid black;
+            :nth-child(1) {
+                width: 50px;
+            }
+            :nth-child(2) {
+                width: 300px;
+            }
+            :nth-child(3) {
+                width: 400px;
+            }
+            :nth-child(4) {
+                width: calc(100% - 750px);
+            }
+        }
+    }
+    table tr:not(:first-child) {
+        cursor: pointer;
+    }
+    .paginator {
+        width: 90%;
+        margin-top: 20px;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
     }
 }
