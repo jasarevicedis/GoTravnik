@@ -1,0 +1,75 @@
+:host {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: center;
+    .page-banner {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        background-color: aqua;
+        background: url("https://avaz.ba/media/2020/06/18/1275433/vlasic.jpg");
+        background-size: cover;
+        
+        
+        .page-header {
+            margin-top: 160px;
+            display: flex;
+            align-items: center;
+            
+            svg {
+                margin-left: 30px;
+                width: 40px;
+                height: 40px;
+                fill: white;
+            }
+            p {
+                color: white;
+                font-size: 40px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .activities-nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        background-color: aliceblue;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            width: 120px;
+            height: 30px;
+            display: flex;
+            //background-color: aqua;
+            border: NONE;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+        }
+        .activities-filter-opener {
+            margin-left: 5%;
+        }
+        .map-list-toggle {
+            margin-right: 5%;
+        }
+        
+        
+    }
+    .activities-container {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 300px;
+        background-color: rgb(255, 255, 255);
+
+    }
+    .paginator {
+        margin-bottom: 30px;
+    }
+}

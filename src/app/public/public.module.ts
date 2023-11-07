@@ -39,6 +39,9 @@ import { BlogShortcutComponent } from './components/blog-shortcut/blog-shortcut.
 import { BigBlogShortcutComponent } from './components/big-blog-shortcut/big-blog-shortcut.component';
 import { EventItempageComponent } from './itempages/event-itempage/event-itempage.component';
 import { BlogpageComponent } from './pages/blogpage/blogpage.component';
+import { ActivitiespageComponent } from './pages/activitiespage/activitiespage.component';
+import { ActivityCardComponent } from './components/activity-card/activity-card.component';
+import { ActivityItempageComponent } from './itempages/activity-itempage/activity-itempage.component';
 
 
 
@@ -70,6 +73,9 @@ import { BlogpageComponent } from './pages/blogpage/blogpage.component';
     BigBlogShortcutComponent,
     EventItempageComponent,
     BlogpageComponent,
+    ActivitiespageComponent,
+    ActivityCardComponent,
+    ActivityItempageComponent,
     
     //WeatherpageComponent,
     
