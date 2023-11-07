@@ -23,7 +23,10 @@ import { AddattractionPopupComponent } from './components/addattraction-popup/ad
 import { AddfoodPopupComponent } from './components/addfood-popup/addfood-popup.component';
 import { AddaccommodationPopupComponent } from './components/addaccommodation-popup/addaccommodation-popup.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatTabsModule,
+    MatTableModule,
+    MatIconModule,
+    MatBadgeModule
   ],
   exports: [
     AdminComponent

@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 9999;
     .admin-logo-container {
         width: 160px;
         height: 40px;
@@ -33,6 +34,8 @@
         //background-color: lightblue;
         margin-right: 20px;
         align-items: center;
+        gap: 10px;
+        /*
         .notification-box {
             //margin-left: 25px;
             width: 30px;
@@ -47,7 +50,8 @@
                 height: 22px;
                 
             }
-        }
+        }*/
+        
         .admin-profile-box {
             margin-left: 5px;
             width: 40px;

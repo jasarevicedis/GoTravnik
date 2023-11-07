@@ -1,12 +1,16 @@
-<p>Data categories: </p>
-<div class="data-items-grid">
-    <app-data-section-card [routerLink]="['food']" [sectionName]="'Food&Drink'" [sectionImageSource]="'https://health.clevelandclinic.org/wp-content/uploads/sites/3/2021/01/fastFoods1-1199461884-770x533-1-650x428.jpg'" ></app-data-section-card>
-    <app-data-section-card [routerLink]="['attractions']" [sectionName]="'Attractions'" [sectionImageSource]="'https://www.usnews.com/object/image/00000180-6260-d187-a5cb-fefd67170001/eiffel-tower-outro-stock.jpg?update-time=1650917926219&size=responsive640'" ></app-data-section-card>
-    <app-data-section-card [routerLink]="['activities']" [sectionName]="'Activities'" [sectionImageSource]="'https://www.whistlerreservations.com/wp-content/uploads/pic7-660x439.jpg'"></app-data-section-card>
-    <app-data-section-card [routerLink]="['accommodation']" [sectionName]="'Accommodation'" [sectionImageSource]="'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg'"></app-data-section-card>
-    <app-data-section-card [routerLink]="['food']" [sectionName]="'Food&Drink'" [sectionImageSource]="'https://health.clevelandclinic.org/wp-content/uploads/sites/3/2021/01/fastFoods1-1199461884-770x533-1-650x428.jpg'" ></app-data-section-card>
-    <app-data-section-card [routerLink]="['attractions']" [sectionName]="'Attractions'" [sectionImageSource]="'https://www.usnews.com/object/image/00000180-6260-d187-a5cb-fefd67170001/eiffel-tower-outro-stock.jpg?update-time=1650917926219&size=responsive640'" ></app-data-section-card>
-    <app-data-section-card [routerLink]="['activities']" [sectionName]="'Activities'" [sectionImageSource]="'https://www.whistlerreservations.com/wp-content/uploads/pic7-660x439.jpg'"></app-data-section-card>
-    <app-data-section-card [routerLink]="['accommodation']" [sectionName]="'Accommodation'" [sectionImageSource]="'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg'"></app-data-section-card>
+<mat-tab-group>
+    <mat-tab label="Food&Drink">
+        <app-food-subpage></app-food-subpage>
+    </mat-tab>
+    <mat-tab label="Attractions">
+        <app-attractions-subpage></app-attractions-subpage>
+    </mat-tab>
+    <mat-tab label="Activities">
+        <app-activities-subpage></app-activities-subpage>
+    </mat-tab>
+    <mat-tab label="Accommodation">
+        <app-accommodation-subpage></app-accommodation-subpage>
+    </mat-tab>
 
-</div>
+</mat-tab-group>
+
