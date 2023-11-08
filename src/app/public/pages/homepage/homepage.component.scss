@@ -250,6 +250,12 @@
             margin-left: 30px;
             width: calc(100% - 60px);
             padding-top: 100px;
+            
+            .panel {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: rgb(227, 246, 255);
+            }
             .about-link {
                 width: 100%;
                 height: 50px;
@@ -533,7 +539,11 @@
         .newsletter-image {
             width: 100px;
             height: 130px;
-            border: 1px solid black;
+            border: 1px solid rgb(209, 209, 209);
+            background: url("https://q-xx.bstatic.com/xdata/images/hotel/max500/351364602.jpg?k=f77e51abeb4f0f181b47f9900aa1077705a8169abc18c760266603ac90b92717&o=");
+            background-size: 160%;
+            background-position-x: -20px;
+            background-position-y: -40px;
         }
         .title {
             margin-top: 15px;
@@ -558,6 +568,11 @@
             align-items: center;
             justify-content: center;
 
+        }
+        .sign-up:hover {
+            background-color: lightskyblue;
+            color: white;
+            cursor: pointer;
         }
     }
 }

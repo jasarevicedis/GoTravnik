@@ -1,5 +1,6 @@
 import { HostListener, Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-public',
@@ -7,7 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
   styleUrls: ['./public.component.scss']
 })
 export class PublicComponent {
-
+  constructor(public router: Router) {}
   /*
   isHeaderChanging = false;
   

@@ -1,5 +1,7 @@
 :host {
-    width: 100%;
+    width: 100vw; /* Set the width of the viewport */
+  
+  
     height:100vh;
     display: flex;
     background-color: lightsalmon;

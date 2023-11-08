@@ -48,7 +48,8 @@ import { Shortcut2PageComponent } from './itempages/shortcut2-page/shortcut2-pag
 import { Shortcut3PageComponent } from './itempages/shortcut3-page/shortcut3-page.component';
 import { Shortcut4PageComponent } from './itempages/shortcut4-page/shortcut4-page.component';
 import { NewsletterPopupComponent } from './components/newsletter-popup/newsletter-popup.component';
-
+import { AreaNavComponent } from './pages/areguidepage/components/area-nav/area-nav.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -87,6 +88,7 @@ import { NewsletterPopupComponent } from './components/newsletter-popup/newslett
     Shortcut3PageComponent,
     Shortcut4PageComponent,
     NewsletterPopupComponent,
+    AreaNavComponent,
     
     //WeatherpageComponent,
     
@@ -105,11 +107,13 @@ import { NewsletterPopupComponent } from './components/newsletter-popup/newslett
     MatRadioModule,
     MatCheckboxModule,
     MatPaginatorModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatChipsModule
     
   ],
   exports: [
-    PublicComponent
+    PublicComponent,
+    HeaderComponent
   ]
 })
 export class PublicModule { }

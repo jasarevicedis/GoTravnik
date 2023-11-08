@@ -1,0 +1,41 @@
+:host {
+    
+    
+    
+    
+    display: grid;
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+    background-color: transparent;
+    margin-top: 60px;
+    height: 60px;
+    ::-webkit-scrollbar {
+        display: none;
+      }
+    .tags {
+        margin-left: 20px;
+        width: 800px;
+        height: 60px;
+        align-items: center;
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        .tag {
+            display: grid;
+            
+        }
+        ::-webkit-scrollbar {
+            display: none;
+          }
+    }
+    ::-webkit-scrollbar {
+        display: none;
+      }
+}
+:host::-webkit-scrollbar {
+    display: none;
+  }

@@ -25,9 +25,11 @@
             align-self: center;
             width: 120px;
             height: 120px;
-            border: 1px solid black;
+            //border: 1px solid black;
             display: flex;
             margin-top: 20px;
+            background: url("https://cdn-icons-png.flaticon.com/512/5893/5893924.png");
+            background-size: cover;
         }
         .form-section {
             display: flex;
