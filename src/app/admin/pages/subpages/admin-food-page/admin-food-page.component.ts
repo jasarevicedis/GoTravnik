@@ -11,8 +11,13 @@ import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.s
 })
 export class AdminFoodPageComponent {
   
-  constructor(private openAddFood: OpenAdminPopupService) {}
+  constructor(private adminService: OpenAdminPopupService) {}
   openAddFoodPopup(): void {
-    this.openAddFood.openAddFoodPopup();
+    this.adminService.openAddFoodPopup();
+  }
+
+  
+  openFoodDetailsPopup(): void {
+    this.adminService.openDetailedFoodPopup();
   }
 }

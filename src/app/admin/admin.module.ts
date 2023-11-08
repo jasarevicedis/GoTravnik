@@ -31,6 +31,7 @@ import { DetailedFoodPopupComponent } from './components/detailed-food-popup/det
 import { DetailedAccommPopupComponent } from './components/detailed-accomm-popup/detailed-accomm-popup.component';
 import { DetailedActivityPopupComponent } from './components/detailed-activity-popup/detailed-activity-popup.component';
 import { DetailedAttractionPopupComponent } from './components/detailed-attraction-popup/detailed-attraction-popup.component';
+import { AddactivityPopupComponent } from './components/addactivity-popup/addactivity-popup.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { DetailedAttractionPopupComponent } from './components/detailed-attracti
     DetailedAccommPopupComponent,
     DetailedActivityPopupComponent,
     DetailedAttractionPopupComponent,
+    AddactivityPopupComponent,
     
   ],
   imports: [

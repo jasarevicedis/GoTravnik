@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.service';
 
 @Component({
   selector: 'app-accommodation-subpage',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-accommodation-page.component.scss']
 })
 export class AdminAccommodationPageComponent {
-
+  constructor(private openAccommDetails: OpenAdminPopupService) {}
+  openAccommDetailsPopup(): void {
+    this.openAccommDetails.openDetailedAccommodationPopup();
+  }
 }
