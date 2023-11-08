@@ -32,7 +32,10 @@ import { DetailedAccommPopupComponent } from './components/detailed-accomm-popup
 import { DetailedActivityPopupComponent } from './components/detailed-activity-popup/detailed-activity-popup.component';
 import { DetailedAttractionPopupComponent } from './components/detailed-attraction-popup/detailed-attraction-popup.component';
 import { AddactivityPopupComponent } from './components/addactivity-popup/addactivity-popup.component';
-
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -69,7 +72,8 @@ import { AddactivityPopupComponent } from './components/addactivity-popup/addact
     MatTabsModule,
     MatTableModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    FormsModule, MatFormFieldModule, MatInputModule, MatCheckboxModule
   ],
   exports: [
     AdminComponent
