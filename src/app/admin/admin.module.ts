@@ -27,6 +27,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
+import { DetailedFoodPopupComponent } from './components/detailed-food-popup/detailed-food-popup.component';
+import { DetailedAccommPopupComponent } from './components/detailed-accomm-popup/detailed-accomm-popup.component';
+import { DetailedActivityPopupComponent } from './components/detailed-activity-popup/detailed-activity-popup.component';
+import { DetailedAttractionPopupComponent } from './components/detailed-attraction-popup/detailed-attraction-popup.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,10 @@ import {MatBadgeModule} from '@angular/material/badge';
     AddattractionPopupComponent,
     AddfoodPopupComponent,
     AddaccommodationPopupComponent,
+    DetailedFoodPopupComponent,
+    DetailedAccommPopupComponent,
+    DetailedActivityPopupComponent,
+    DetailedAttractionPopupComponent,
     
   ],
   imports: [

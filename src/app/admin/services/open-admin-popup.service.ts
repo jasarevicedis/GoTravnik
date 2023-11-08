@@ -4,6 +4,10 @@ import { AddeventPopupComponent } from '../components/addevent-popup/addevent-po
 import { AddattractionPopupComponent } from '../components/addattraction-popup/addattraction-popup.component';
 import { AddfoodPopupComponent } from '../components/addfood-popup/addfood-popup.component';
 import { AddaccommodationPopupComponent } from '../components/addaccommodation-popup/addaccommodation-popup.component';
+import { DetailedActivityPopupComponent } from '../components/detailed-activity-popup/detailed-activity-popup.component';
+import { DetailedAccommPopupComponent } from '../components/detailed-accomm-popup/detailed-accomm-popup.component';
+import { DetailedFoodPopupComponent } from '../components/detailed-food-popup/detailed-food-popup.component';
+import { DetailedAttractionPopupComponent } from '../components/detailed-attraction-popup/detailed-attraction-popup.component';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +28,19 @@ export class OpenAdminPopupService {
   openAddAccommodationPopup(): void {
     this.dialog.open(AddaccommodationPopupComponent, {});
   }
+  openDetailedActivityPopup() : void {
+    this.dialog.open(DetailedActivityPopupComponent, {});
+  }
+  openDetailedAccommodationPopup() : void {
+    this.dialog.open(DetailedAccommPopupComponent, {});
+  }
+  openDetailedFoodPopup() : void {
+    this.dialog.open(DetailedFoodPopupComponent, {});
+  }
+  openDetailedAttractionPopup() : void {
+    this.dialog.open(DetailedAttractionPopupComponent, {});
+  }
+  
 }
 
 
