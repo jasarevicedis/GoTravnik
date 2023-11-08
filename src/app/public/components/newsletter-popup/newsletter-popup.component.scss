@@ -1,0 +1,68 @@
+/*
+<button class="close"></button>
+<div class="content">
+    <div class="logo-section"></div>
+    <form class="form-section">
+        <p>Subscribe to our Newsletter!</p>
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="example@gmail.com">
+          </mat-form-field>
+          <button class="subscribe">Subscribe</button>
+    </form>
+</div>*/
+:host {
+    .close {
+        width: 20px;
+        height: 20px;
+        align-self: flex-end;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .logo-section {
+            align-self: center;
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            display: flex;
+            margin-top: 20px;
+        }
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            p {
+                margin-top: 30px;
+                font-size: 20px;
+                font-weight: bold;
+                align-self: center;
+            }
+            .name-input {
+                width: 90%;
+                align-self: center;
+                margin-top: 20px;
+            }
+            .mail-input {
+                //margin-top: 20px;
+                width: 90%;
+                align-self: center;
+                
+            }
+            .subscribe {
+                border: none;
+                border-radius: 8px;
+                align-self: center;
+                width: 230px;
+                height: 35px;
+                background-color: lightgreen;
+            }
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+}

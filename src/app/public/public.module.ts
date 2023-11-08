@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { PublicComponent } from './public.component';
@@ -46,6 +47,7 @@ import { Shortcut1PageComponent } from './itempages/shortcut1-page/shortcut1-pag
 import { Shortcut2PageComponent } from './itempages/shortcut2-page/shortcut2-page.component';
 import { Shortcut3PageComponent } from './itempages/shortcut3-page/shortcut3-page.component';
 import { Shortcut4PageComponent } from './itempages/shortcut4-page/shortcut4-page.component';
+import { NewsletterPopupComponent } from './components/newsletter-popup/newsletter-popup.component';
 
 
 
@@ -84,6 +86,7 @@ import { Shortcut4PageComponent } from './itempages/shortcut4-page/shortcut4-pag
     Shortcut2PageComponent,
     Shortcut3PageComponent,
     Shortcut4PageComponent,
+    NewsletterPopupComponent,
     
     //WeatherpageComponent,
     
@@ -102,6 +105,7 @@ import { Shortcut4PageComponent } from './itempages/shortcut4-page/shortcut4-pag
     MatRadioModule,
     MatCheckboxModule,
     MatPaginatorModule,
+    MatExpansionModule
     
   ],
   exports: [
