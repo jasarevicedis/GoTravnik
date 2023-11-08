@@ -468,6 +468,40 @@
         }
 
     }
+    .instagram-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(253, 253, 157);
+        min-height: 100vh;
+        align-items: center;
+        .section-header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            .ig-title {
+                margin-top: 40px;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            .ig-subtitle {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+        .ig-post {
+            width: 90%;
+            display: flex;
+            background-color: pink;
+            height: 360px;
+            margin-top: 20px;
+        }
+        :last-child {
+            margin-bottom: 100px;
+        }
+    }
     .newsletter-section {
         align-self: center;
         width: 100%;

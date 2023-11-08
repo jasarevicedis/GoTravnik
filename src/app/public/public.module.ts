@@ -42,6 +42,10 @@ import { BlogpageComponent } from './pages/blogpage/blogpage.component';
 import { ActivitiespageComponent } from './pages/activitiespage/activitiespage.component';
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
 import { ActivityItempageComponent } from './itempages/activity-itempage/activity-itempage.component';
+import { Shortcut1PageComponent } from './itempages/shortcut1-page/shortcut1-page.component';
+import { Shortcut2PageComponent } from './itempages/shortcut2-page/shortcut2-page.component';
+import { Shortcut3PageComponent } from './itempages/shortcut3-page/shortcut3-page.component';
+import { Shortcut4PageComponent } from './itempages/shortcut4-page/shortcut4-page.component';
 
 
 
@@ -76,6 +80,10 @@ import { ActivityItempageComponent } from './itempages/activity-itempage/activit
     ActivitiespageComponent,
     ActivityCardComponent,
     ActivityItempageComponent,
+    Shortcut1PageComponent,
+    Shortcut2PageComponent,
+    Shortcut3PageComponent,
+    Shortcut4PageComponent,
     
     //WeatherpageComponent,
     
