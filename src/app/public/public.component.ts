@@ -1,6 +1,7 @@
 import { HostListener, Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { Router } from '@angular/router';
+import { AreguidepageComponent } from './pages/areguidepage/areguidepage.component';
 
 @Component({
   selector: 'app-public',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./public.component.scss']
 })
 export class PublicComponent {
+  showFooter: boolean = true;
   constructor(public router: Router) {}
   /*
   isHeaderChanging = false;
@@ -18,5 +20,8 @@ export class PublicComponent {
   }
 */
 isHeaderChanging=true;
-  
+showHide(event: any){
+  this.showFooter= !(event instanceof AreguidepageComponent);   
+                                         
+} 
 }
