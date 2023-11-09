@@ -50,7 +50,7 @@ import { Shortcut4PageComponent } from './itempages/shortcut4-page/shortcut4-pag
 import { NewsletterPopupComponent } from './components/newsletter-popup/newsletter-popup.component';
 import { AreaNavComponent } from './pages/areguidepage/components/area-nav/area-nav.component';
 import {MatChipsModule} from '@angular/material/chips';
-
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -108,7 +108,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatCheckboxModule,
     MatPaginatorModule,
     MatExpansionModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDividerModule
     
   ],
   exports: [

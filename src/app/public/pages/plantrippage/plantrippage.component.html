@@ -5,73 +5,74 @@
     </p>
 </div>
 <form action="" class="planner">
-    
+    <p class="form-question">When are you planning to travel?</p>
     <mat-form-field id="start-date-field">
-        <mat-label>Start date</mat-label>
+        <mat-label>Select date</mat-label>
         <input matInput [matDatepicker]="picker">
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <mat-form-field id="end-date-field">
-        <mat-label>End date</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
+    <mat-divider></mat-divider>
 
-    <mat-form-field id="country-field">
-        <mat-label>Your country</mat-label>
-        <mat-select >
-          <mat-option>None</mat-option>
-          <!--<mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>-->
-        </mat-select>
-    </mat-form-field>
-
-
-    <mat-label>Have you been to Travnik before?</mat-label>
-    <mat-radio-group>
-        <mat-radio-button value="1">Yes</mat-radio-button>
-        <mat-radio-button value="2">No</mat-radio-button>
-    </mat-radio-group>
-
-    <mat-label>Will you have a car for your trip?</mat-label>
-    <mat-radio-group>
-        <mat-radio-button value="1">Yes</mat-radio-button>
-        <mat-radio-button value="2">No</mat-radio-button>
-    </mat-radio-group>
-
-    <mat-form-field class="example-full-width">
-        <mat-label>How many people are in your group? </mat-label>
-        <input type="number" matInput >
-    </mat-form-field>
-
-    <mat-label>What are your age groups? </mat-label>
-    <section>
-        
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-
+    <p class="form-question">Who do you plan on traveling with on your next adventure?</p>
+    
+    <section class="members-radios">
+        <input type="radio" name="member-radio1" id="member-radio1">
+        <label for="member-radio1">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="member-radio2" id="member-radio2">
+        <label for="member-radio2">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="member-radio3" id="member-radio3">
+        <label for="member-radio3">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="member-radio4" id="member-radio4">
+        <label for="member-radio4">
+            <div class="option"></div>
+        </label>
     </section>
 
-    <mat-label>Interests </mat-label>
-    <section>    
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
-        <mat-checkbox class="example-margin">Sports/Outdoor</mat-checkbox>
+    <mat-divider></mat-divider>
+
+    <p class="form-question">Interests?</p>
+    <section class="interests-radios">
+        <input type="radio" name="interests-radio1" id="interests-radio1">
+        <label for="interests-radio1">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio2" id="interests-radio2">
+        <label for="interests-radio2">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio3" id="interests-radio3">
+        <label for="interests-radio3">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio4" id="interests-radio4">
+        <label for="interests-radio4">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio5" id="interests-radio5">
+        <label for="interests-radio5">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio6" id="interests-radio6">
+        <label for="interests-radio6">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio7" id="interests-radio7">
+        <label for="interests-radio7">
+            <div class="option"></div>
+        </label>
+        <input type="radio" name="interests-radio8" id="interests-radio8">
+        <label for="interests-radio8">
+            <div class="option"></div>
+        </label>
     </section>
     
     <button class="plan-button">Build your trip</button>

@@ -31,11 +31,58 @@
         display: flex;
         flex-direction: column;
         width: 400px;
-        #start-date-field {
-            margin-bottom: 20px;
+        .form-question {
+            font-size: 18px;
+            font-weight: 200;
+            margin-bottom: 10px;
+            margin-top: 20px;
         }
-        #end-date-field {
-            margin-bottom: 20px;
+        .form-desc {
+            font-size: 13px;
+        }
+        #start-date-field {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .option {
+            width: 192px;
+            height: 80px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+        
+        .members-radios {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 70px;
+            margin-top: 20px;
+            input {
+                display: none;
+            }
+            
+        }
+        .interests-radios {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 70px;
+            margin-top: 20px;
+            input {
+                display: none;
+            }
+            input[type="radio"]:checked + label {
+                
+                display: flex;
+                .option {
+                    border: 2px solid red;
+                }
+            }
+            
+            
         }
         .plan-button {
             align-self: center;
