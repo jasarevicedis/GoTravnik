@@ -51,6 +51,10 @@ import { NewsletterPopupComponent } from './components/newsletter-popup/newslett
 import { AreaNavComponent } from './pages/areguidepage/components/area-nav/area-nav.component';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDividerModule} from '@angular/material/divider';
+import { SubmitEventComponent } from './forms/submit-event/submit-event.component';
+import { SubmitPlaceComponent } from './forms/submit-place/submit-place.component';
+import { GiveFeedbackComponent } from './forms/give-feedback/give-feedback.component';
+import { ActivityShortcutComponent } from './components/activity-shortcut/activity-shortcut.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +93,10 @@ import {MatDividerModule} from '@angular/material/divider';
     Shortcut4PageComponent,
     NewsletterPopupComponent,
     AreaNavComponent,
+    SubmitEventComponent,
+    SubmitPlaceComponent,
+    GiveFeedbackComponent,
+    ActivityShortcutComponent,
     
     //WeatherpageComponent,
     

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OpenFormsService } from '../../services/open-forms.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  constructor(private openFormService: OpenFormsService) {}
+  openSubmitEvent(): void {
+    this.openFormService.openSubmitEventPopup();
+  }
+  openSubmitPlace(): void {
+    this.openFormService.openSubmitPlacePopup();
+  }
+  openFeedback(): void {
+    this.openFormService.openFeedbackPopup();
+  }
 }
