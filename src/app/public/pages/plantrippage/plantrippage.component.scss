@@ -51,7 +51,29 @@
             border: 1px solid grey;
             border-radius: 10px;
         }
-        
+        .days-picker {
+            margin-bottom: 20px;
+            gap: 10px;
+            display: flex;
+            button {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                background-color: rgb(226, 226, 226);
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgb(81, 81, 81);
+                svg {
+                    fill: black;
+                    width: 20px;
+                    height:20px;
+                }
+            }
+            input {
+                height: 30px;
+            }
+        }
         .members-radios {
             display: grid;
             grid-template-columns: auto auto;
