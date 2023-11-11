@@ -1,14 +1,14 @@
 :host {
     
     
-    
-    
     display: grid;
         grid-auto-flow: column;
         overflow-x: scroll;
         overscroll-behavior-inline: contain;
         scroll-snap-type: inline mandatory;
-    background-color: transparent;
+    background: transparent;
+    z-index: 9999;
+    //position: fixed;
     margin-top: 60px;
     height: 60px;
     ::-webkit-scrollbar {

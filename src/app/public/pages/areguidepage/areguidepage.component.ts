@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./areguidepage.component.scss']
 })
 export class AreguidepageComponent {
-
 }

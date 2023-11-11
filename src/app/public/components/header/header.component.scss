@@ -28,11 +28,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            svg {
-                fill: black;
+            img {
+                //fill: black;
                 //fill: white;
-                width: 40px;
-                height: 40px;
+                width: 120px;
+                height: 60px;
+                margin-left: 50px;
             }
             .moving-svg {
                 fill: rgb(0, 0, 0);
