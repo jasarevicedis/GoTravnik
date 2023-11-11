@@ -59,12 +59,22 @@
             row-gap: 16px;
             margin-bottom: 70px;
             margin-top: 20px;
-            input {
-                display: none;
+            label {
+                input {
+                    display: none;
+                }
+                input[type="radio"]:checked + .option {
+                    border: 2px solid red;
+                    
+                    
+                    .option {
+                        border: 2px solid red;
+                    }
+                }
             }
             
         }
-        .interests-radios {
+        .interests-select {
             display: grid;
             grid-template-columns: auto auto;
             column-gap: 16px;
@@ -72,19 +82,46 @@
             margin-bottom: 70px;
             margin-top: 20px;
             label {
-                
-                
-            }
-            input {
-                display: none;
-            }
-            input[type="radio"]:checked + label {
-                
-                display: flex;
-                .option {
+                input {
+                    display: none;
+                }
+                input[type="checkbox"]:checked + .option {
                     border: 2px solid red;
+                    
+                    
+                    .option {
+                        border: 2px solid red;
+                    }
                 }
             }
+            
+            
+             
+            
+            
+        }
+        .type-radios {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 70px;
+            margin-top: 20px;
+            label {
+                input {
+                    display: none;
+                }
+                input[type="radio"]:checked + .option {
+                    border: 2px solid red;
+                    
+                    
+                    .option {
+                        border: 2px solid red;
+                    }
+                }
+            }
+            
+            
              
             
             

@@ -5,6 +5,8 @@
     </p>
 </div>
 <form action="" class="planner">
+
+    <!--odabir vremena-->
     <p class="form-question">When are you planning to travel?</p>
     <mat-form-field id="start-date-field">
         <mat-label>Select date</mat-label>
@@ -19,20 +21,21 @@
     <p class="form-question">Who do you plan on traveling with on your next adventure?</p>
     
     <section class="members-radios">
-        <input type="radio" name="member-radio1" id="member-radio1">
-        <label for="member-radio1">
+        
+        <label>
+            <input type="radio" name="member-radio" id="member-radio1">
             <div class="option"></div>
         </label>
-        <input type="radio" name="member-radio2" id="member-radio2">
-        <label for="member-radio2">
+        <label>
+            <input type="radio" name="member-radio" id="member-radio2">
             <div class="option"></div>
         </label>
-        <input type="radio" name="member-radio3" id="member-radio3">
-        <label for="member-radio3">
+        <label>
+            <input type="radio" name="member-radio" id="member-radio3">
             <div class="option"></div>
         </label>
-        <input type="radio" name="member-radio4" id="member-radio4">
-        <label for="member-radio4">
+        <label>
+            <input type="radio" name="member-radio" id="member-radio4">
             <div class="option"></div>
         </label>
     </section>
@@ -40,8 +43,57 @@
     <mat-divider></mat-divider>
 
     <p class="form-question">Interests?</p>
-    <section class="interests-radios">
-        <input type="radio" name="interests-radio" id="interests-radio1">
+    <div class="interests-select">
+        <label><input type="checkbox" name="interest" id="interest1">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest2">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest3">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest4">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest5">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest6">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest7">
+            <div class="option"></div> 
+        </label>
+        <label><input type="checkbox" name="interest" id="interest8">
+            <div class="option"></div> 
+        </label>
+        </div>
+        <mat-divider></mat-divider>
+
+    <p class="form-question">Travel type?</p>
+    
+    <div class="type-radios">
+        
+        <label>
+            <input type="radio" name="type-radio" id="type-radio1">
+            <div class="option"></div>
+        </label>
+        <label>
+            <input type="radio" name="type-radio" id="type-radio2">
+            <div class="option"></div>
+        </label>
+        <label>
+            <input type="radio" name="type-radio" id="type-radio3">
+            <div class="option"></div>
+        </label>
+        <label>
+            <input type="radio" name="type-radio" id="type-radio4">
+            <div class="option"></div>
+        </label>
+    </div>
+        
+        <!--<input type="radio" name="interests-radio" id="interests-radio1">
         <label for="interests-radio">
             <div class="option"></div>
         </label>
@@ -72,8 +124,8 @@
         <input type="radio" name="interests-radio" id="interests-radio8">
         <label for="interests-radio">
             <div class="option"></div>
-        </label>
-    </section>
+        </label>-->
+    
     
     <button class="plan-button">Build your trip</button>
 
