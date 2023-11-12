@@ -58,6 +58,7 @@ import { GiveFeedbackComponent } from './forms/give-feedback/give-feedback.compo
 import { ActivityShortcutComponent } from './components/activity-shortcut/activity-shortcut.component';
 import { PlannerResultsComponent } from './pages/planner-results/planner-results.component';
 import { HeaderSearchCardComponent } from './components/header-search-card/header-search-card.component';
+import { RoutespageComponent } from './pages/routespage/routespage.component';
 
 @NgModule({
   declarations: [
@@ -102,6 +103,7 @@ import { HeaderSearchCardComponent } from './components/header-search-card/heade
     ActivityShortcutComponent,
     PlannerResultsComponent,
     HeaderSearchCardComponent,
+    RoutespageComponent,
     
     //WeatherpageComponent,
     

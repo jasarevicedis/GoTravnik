@@ -15,6 +15,7 @@ import { BlogpageComponent } from './pages/blogpage/blogpage.component';
 import { ActivitiespageComponent } from './pages/activitiespage/activitiespage.component';
 import { ActivityItempageComponent } from './itempages/activity-itempage/activity-itempage.component';
 import { PlannerResultsComponent } from './pages/planner-results/planner-results.component';
+import { RoutespageComponent } from './pages/routespage/routespage.component';
 
 
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
         {path:'', component: ActivitiespageComponent},
         {path:'activityitem', component: ActivityItempageComponent}
       ]},
-      {path:'results', component: PlannerResultsComponent}
+      {path:'results', component: PlannerResultsComponent},
+      {path: 'routes', component: RoutespageComponent}
       
       
     ]
