@@ -10,17 +10,18 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: rgb(193, 249, 255);
+        background-color: rgb(159, 210, 246);
         
         .title {
-            font-size: 30px;
+            font-size: 40px;
+            font-weight: bold;
             margin-left: 5%;
-            margin-top: 150px;
+            margin-top: 350px;
         }
         .subtitle {
             margin-top: 20px;
             align-self: center;
-            font-size: 16px;
+            font-size: 15px;
             width: 90%;
         }
     }
@@ -157,9 +158,10 @@
         }
         .plan-button {
             align-self: center;
+            margin-top: 40px;
             width: 170px;
             height: 35px;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
         }
     }
 }

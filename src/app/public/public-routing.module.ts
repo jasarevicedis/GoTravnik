@@ -16,6 +16,7 @@ import { ActivitiespageComponent } from './pages/activitiespage/activitiespage.c
 import { ActivityItempageComponent } from './itempages/activity-itempage/activity-itempage.component';
 import { PlannerResultsComponent } from './pages/planner-results/planner-results.component';
 import { RoutespageComponent } from './pages/routespage/routespage.component';
+import { ReloadMapComponent } from './components/reload-map/reload-map.component';
 
 
 const routes: Routes = [
@@ -45,7 +46,8 @@ const routes: Routes = [
         {path:'activityitem', component: ActivityItempageComponent}
       ]},
       {path:'results', component: PlannerResultsComponent},
-      {path: 'routes', component: RoutespageComponent}
+      {path: 'routes', component: RoutespageComponent},
+      {path: 'reload-route', component: ReloadMapComponent}
       
       
     ]

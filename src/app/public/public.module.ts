@@ -59,6 +59,7 @@ import { ActivityShortcutComponent } from './components/activity-shortcut/activi
 import { PlannerResultsComponent } from './pages/planner-results/planner-results.component';
 import { HeaderSearchCardComponent } from './components/header-search-card/header-search-card.component';
 import { RoutespageComponent } from './pages/routespage/routespage.component';
+import { ReloadMapComponent } from './components/reload-map/reload-map.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +105,7 @@ import { RoutespageComponent } from './pages/routespage/routespage.component';
     PlannerResultsComponent,
     HeaderSearchCardComponent,
     RoutespageComponent,
+    ReloadMapComponent,
     
     //WeatherpageComponent,
     
