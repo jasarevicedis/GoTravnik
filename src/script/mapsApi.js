@@ -1,4 +1,5 @@
 
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
     function GetMap() {
         var map = new Microsoft.Maps.Map('#myMap', {
             credentials: 'AsR2Ylci3ob1wGimRArjHwzGb8PuuByKGfeuthw0pHYLkMMWw_Af2Md0zSpmhK32',
