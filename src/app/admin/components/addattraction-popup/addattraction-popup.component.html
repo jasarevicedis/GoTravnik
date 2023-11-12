@@ -1,3 +1,47 @@
 <div class="popup-header">
-    <p>Add new attraction</p>
+    <p>Add new Attraction</p>
 </div>
+<form action="">
+    <mat-form-field class="name">
+        <mat-label>Attraction name</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field class="image-url">
+        <mat-label>Image url</mat-label>
+        <input matInput>
+    </mat-form-field>
+    
+    
+
+    <p class="categories-title">Categories:</p>
+    <section class="categories">
+        <mat-checkbox class="example-margin">History</mat-checkbox>
+        <mat-checkbox class="example-margin">Religion</mat-checkbox>
+        
+
+    </section>
+    <mat-form-field >
+        <mat-label>Address</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field >
+        <mat-label>Phone number</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field >
+        <mat-label>x-coordinate</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field >
+        <mat-label>y-coordinate</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field >
+        <mat-label>Website link</mat-label>
+        <input type="url" matInput>
+    </mat-form-field>
+    <textarea matNativeControl>Description</textarea>
+    <button class="add">Add item</button>
+</form>
+
+

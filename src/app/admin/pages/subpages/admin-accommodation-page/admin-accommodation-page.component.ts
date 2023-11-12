@@ -7,8 +7,11 @@ import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.s
   styleUrls: ['./admin-accommodation-page.component.scss']
 })
 export class AdminAccommodationPageComponent {
-  constructor(private openAccommDetails: OpenAdminPopupService) {}
+  constructor(private adminService: OpenAdminPopupService) {}
+  openAddAccommodationPopup(): void {
+    this.adminService.openAddAccommodationPopup()
+  }
   openAccommDetailsPopup(): void {
-    this.openAccommDetails.openDetailedAccommodationPopup();
+    this.adminService.openDetailedAccommodationPopup();
   }
 }
