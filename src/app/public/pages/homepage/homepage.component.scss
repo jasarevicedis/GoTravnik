@@ -163,12 +163,13 @@
         }
         
         .more-blogs {
-            width: calc(100% - 40px);
+            width: 200px;
             align-self: center;
             height: 40px;
-            border-radius: 15px;
-            border: 1px solid grey;
+            //border-radius: 15px;
+            border: 2px solid rgb(144, 214, 246);
             background: transparent;
+            color: rgb(144, 214, 246);
         }
     }
     .info-section {
