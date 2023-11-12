@@ -63,8 +63,9 @@
                 color: rgb(255, 255, 255);
             }
             #city-short-desc {
-                font-size: 15px;
+                font-size: 13px;
                 color: white;
+                margin-bottom: 6px;
             }
             .location-and-tags-box {
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -83,19 +84,25 @@
                     margin-left: 20px;
                     display: flex;
                     flex-direction: column;
-                    
+                    p {
+                        font-size: 13px;
+                    }
                     .tags {
                         display: flex;
                         .tag {
                             margin-top: 10px;
-                            width: 80px;
-                            height: 20px;
-                            border-radius: 8px;
-                            background-color: rgb(215, 213, 208);
+                            //width: 80px;
+                            height: 23px;
+                            border-radius: 5px;
+                            background-color: #5ac8d9;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             margin-right: 10px;
+                            font-size: 11px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            color: #ffffff;
                         }
                     }
                 }

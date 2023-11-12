@@ -57,6 +57,11 @@ export class HeaderComponent {
   toggleList2(): void  {
     this.isList2Open = !this.isList2Open;
   }
+
+  isLanguageListOpen = false;
+  toggleLanguages(): void {
+    this.isLanguageListOpen = !this.isLanguageListOpen;
+  }
   
 }
 

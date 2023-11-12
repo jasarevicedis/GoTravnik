@@ -21,19 +21,24 @@
         height: 60px;
         display: flex;
         .logo-container {
-            width: 60px;
+            width: 120px;
             height: 40px;
             //background-color: rgb(212, 212, 255);
             margin-left: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            img {
+            background-color: red;
+            #img1 {
                 //fill: black;
                 //fill: white;
-                width: 120px;
-                height: 60px;
-                margin-left: 50px;
+                width: 40px;
+                height: 40px;
+                //margin-left: 50px;
+            }
+            #img2 {
+                width: 80px;
+                height: 40px;
             }
             .moving-svg {
                 fill: rgb(0, 0, 0);
@@ -227,18 +232,19 @@
             
         }
         .buttons-section {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin-top: 50px;
-            align-items: center;
-            button {
+            display: none;
+            margin-left: 40px;
             width: calc(100% - 80px);
+            margin-top: 20px;
+            align-items: center;
+            justify-content: space-between;
+            button {
+            width: 120px;
             
                 background-color: transparent;
                 border: 2px solid rgb(103, 154, 255);
                 color: rgb(103, 154, 255);
-                height: 35px;
+                height: 50px;
                 margin-bottom: 10px;
             }
             button:hover {
@@ -322,11 +328,16 @@
             }
             
             
+            
         }
         
     }
 }
     
+#languages {
+    margin-top: 50px;
+    border-bottom: none;
+}
     .search-menu {
         position: absolute;
     }
