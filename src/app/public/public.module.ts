@@ -57,6 +57,7 @@ import { SubmitPlaceComponent } from './forms/submit-place/submit-place.componen
 import { GiveFeedbackComponent } from './forms/give-feedback/give-feedback.component';
 import { ActivityShortcutComponent } from './components/activity-shortcut/activity-shortcut.component';
 import { PlannerResultsComponent } from './pages/planner-results/planner-results.component';
+import { HeaderSearchCardComponent } from './components/header-search-card/header-search-card.component';
 
 @NgModule({
   declarations: [
@@ -100,6 +101,7 @@ import { PlannerResultsComponent } from './pages/planner-results/planner-results
     GiveFeedbackComponent,
     ActivityShortcutComponent,
     PlannerResultsComponent,
+    HeaderSearchCardComponent,
     
     //WeatherpageComponent,
     

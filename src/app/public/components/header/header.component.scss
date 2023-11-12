@@ -111,8 +111,8 @@
             margin-top: 60px;
             display: flex;
             width: 100%;
-            height: calc(100vh - 60px);
-            background-color: lightblue;
+            min-height: calc(100vh - 60px);
+            background-color: rgb(255, 255, 255);
         }
         .search-container {
             margin-left: 7.5%;
@@ -129,23 +129,57 @@
                 height: 100%;
             }
         }
+
+        .results-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 50px;
+            .results-section {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .section-header {
+                    display: flex;
+                    width: calc(100% - 80px);
+                    margin-left: 40px;
+                    justify-content: space-between;
+                    background-color: red;
+                    padding: none;
+                    margin-bottom: 5px;
+                    .section-name {
+                        margin-left: 0px;
+                    }
+                }
+                .section-list {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+
         p {
             font-size: 30px;
             margin-left: 7.5%;
             margin-top: 10px;
         }
-        .keywords-container {
-            margin-left: 7.5%;
-            margin-top: 20px;
-            width: 85%;
-            height: 200px;
-            display: grid;
-            background-color: rgb(198, 244, 255);
-            .keyword {
-                width: 100px;
-                height: 30px;
-                border-radius: 8px;
-                background-color: darkcyan;
+        .keywords-section {
+            display: none;
+            .keywords-container {
+                margin-left: 7.5%;
+                margin-top: 20px;
+                width: 85%;
+                height: 100px;
+                //display: grid;
+                background-color: rgb(198, 244, 255);
+                display: none;
+                .keyword {
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 8px;
+                    background-color: darkcyan;
+                }
             }
         }
     }
