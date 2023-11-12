@@ -6,21 +6,56 @@
         <label for="event-category">Category:</label>
     <select name="" id="event-category"></select>
 
-    <label for="event-name">Title:</label>
-    <input type="text" name="" id="event-name">
+    <mat-form-field class="name">
+        <mat-label>Title</mat-label>
+        <input matInput>
+    </mat-form-field>
 
-    <label for="event-description">Description:</label>
-    <input type="text" name="" id="event-description">
+    <mat-form-field class="name">
+        <mat-label>Image URL</mat-label>
+        <input matInput>
+    </mat-form-field>
 
-    <label for="event-start-datetime">Event start</label>
-    <input type="datetime-local" name="" id="event-start-datetime">
+    <mat-form-field class="name">
+        <mat-label>Description</mat-label>
+        <input matInput>
+    </mat-form-field>
 
-    <label for="event-start-datetime">Event end</label>
-    <input type="datetime-local" name="" id="event-end-datetime">
+    <mat-form-field >
+        <mat-label>Address</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    
+
+   
     </div>
     <div class="right-section">
-        <label for="event-image">Event wallpaper:</label>
-        <input type="image" src="" alt="" id="event-image">
+        <mat-form-field >
+            <mat-label>x-coordinate</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label>y-coordinate</mat-label>
+            <input matInput>
+        </mat-form-field>
+    
+        <mat-form-field id="start-date-field">
+            <mat-label>Select date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    
+        <mat-form-field id="start-date-field">
+            <mat-label>Select date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
 
         <button class="addEventButton">Create event</button>
     </div>

@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UploaderModule } from "angular-uploader";
 import { AdminRoutingModule } from './admin-routing.module';
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 import { AdminComponent } from './admin.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 import { AdminSidebarComponent } from './components/admin-sidebar/admin-sidebar.component';
@@ -90,7 +93,8 @@ import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.c
     MatIconModule,
     MatBadgeModule,
     FormsModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
-    UploaderModule
+    UploaderModule,
+    MatDatepickerModule
   ],
   exports: [
     AdminComponent
