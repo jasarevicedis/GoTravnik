@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
 
 import { PublicRoutingModule } from './public-routing.module';
@@ -119,7 +120,8 @@ import { PlannerResultsComponent } from './pages/planner-results/planner-results
     MatPaginatorModule,
     MatExpansionModule,
     MatChipsModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
     
   ],
   exports: [

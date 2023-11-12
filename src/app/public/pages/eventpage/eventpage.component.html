@@ -18,18 +18,8 @@
     
 </div>
 <div class="events-container">
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
-    <app-event-card routerLink="eventitem"></app-event-card>
+    <app-event-card *ngFor="let event of events" routerLink="eventitem"></app-event-card>
+    
 
     
 </div>
