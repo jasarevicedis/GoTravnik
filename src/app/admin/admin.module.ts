@@ -36,6 +36,14 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { DeleteAccommComponent } from './pages/subpages/popups/delete-accomm/delete-accomm.component';
+import { DeleteActivityComponent } from './pages/subpages/popups/delete-activity/delete-activity.component';
+import { DeleteAttractionComponent } from './pages/subpages/popups/delete-attraction/delete-attraction.component';
+import { DeleteFoodComponent } from './pages/subpages/popups/delete-food/delete-food.component';
+import { EditAccommComponent } from './pages/subpages/popups/edit-accomm/edit-accomm.component';
+import { EditActivityComponent } from './pages/subpages/popups/edit-activity/edit-activity.component';
+import { EditAttractionComponent } from './pages/subpages/popups/edit-attraction/edit-attraction.component';
+import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.component';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -63,6 +71,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     DetailedActivityPopupComponent,
     DetailedAttractionPopupComponent,
     AddactivityPopupComponent,
+    DeleteAccommComponent,
+    DeleteActivityComponent,
+    DeleteAttractionComponent,
+    DeleteFoodComponent,
+    EditAccommComponent,
+    EditActivityComponent,
+    EditAttractionComponent,
+    EditFoodComponent,
     
   ],
   imports: [
