@@ -22,11 +22,11 @@
 
 
     <div class="days-picker">
-        <button role="button" id="step-decrement">
+        <button (click)="decrement()" type="button" class="step-decrement">
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
         </button>
-        <input disabled type="text" id="spinner"  value="1"  tabindex="-1" >
-        <button role="button" id="step-increment">
+        <input type="text" id="step-number"  value="1"  tabindex="-1" >
+        <button (click)="increment()" type="button"  class="step-increment">
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
         </button>
       </div>
@@ -39,19 +39,19 @@
         
         <label>
             <input type="radio" name="member-radio" id="member-radio1">
-            <div class="option"></div>
+            <div class="option">SOLO</div>
         </label>
         <label>
             <input type="radio" name="member-radio" id="member-radio2">
-            <div class="option"></div>
+            <div class="option">COUPLE</div>
         </label>
         <label>
             <input type="radio" name="member-radio" id="member-radio3">
-            <div class="option"></div>
+            <div class="option">FRIENDS</div>
         </label>
         <label>
             <input type="radio" name="member-radio" id="member-radio4">
-            <div class="option"></div>
+            <div class="option">FAMILY</div>
         </label>
     </section>
 
@@ -60,54 +60,58 @@
     <p class="form-question">Interests?</p>
     <div class="interests-select">
         <label><input type="checkbox" name="interest" id="interest1">
-            <div class="option"></div> 
+            <div class="option">City sightseeing</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest2">
-            <div class="option"></div> 
+            <div class="option">Outdoor activities</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest3">
-            <div class="option"></div> 
+            <div class="option">Festivals/Events</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest4">
-            <div class="option"></div> 
+            <div class="option">Food exploration</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest5">
-            <div class="option"></div> 
+            <div class="option">Nightlife</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest6">
-            <div class="option"></div> 
+            <div class="option">aaaa</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest7">
-            <div class="option"></div> 
+            <div class="option">aaa</div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest8">
-            <div class="option"></div> 
+            <div class="option">aaa</div> 
         </label>
         </div>
         <mat-divider></mat-divider>
-
+<!--
     <p class="form-question">Travel type?</p>
     
     <div class="type-radios">
         
         <label>
             <input type="radio" name="type-radio" id="type-radio1">
-            <div class="option"></div>
+            <div class="option">Relaxation</div>
         </label>
         <label>
             <input type="radio" name="type-radio" id="type-radio2">
-            <div class="option"></div>
+            <div class="option">Outdoor</div>
         </label>
         <label>
             <input type="radio" name="type-radio" id="type-radio3">
-            <div class="option"></div>
+            <div class="option">Tourism</div>
         </label>
         <label>
             <input type="radio" name="type-radio" id="type-radio4">
-            <div class="option"></div>
+            <div class="option">Festivals/Events</div>
+        </label>
+        <label>
+            <input type="radio" name="type-radio" id="type-radio5">
+            <div class="option">Work related</div>
         </label>
     </div>
-        
+-->  
         <!--<input type="radio" name="interests-radio" id="interests-radio1">
         <label for="interests-radio">
             <div class="option"></div>
