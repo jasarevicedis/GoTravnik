@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { UploaderModule } from "angular-uploader";
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
@@ -73,7 +73,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatTableModule,
     MatIconModule,
     MatBadgeModule,
-    FormsModule, MatFormFieldModule, MatInputModule, MatCheckboxModule
+    FormsModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
+    UploaderModule
   ],
   exports: [
     AdminComponent
