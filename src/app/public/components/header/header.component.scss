@@ -111,7 +111,10 @@
             margin-top: 60px;
             display: flex;
             width: 100%;
-            min-height: calc(100vh - 60px);
+            
+            max-height: calc(100vh - 60px) !important;
+
+            overflow-y: auto !important;
             background-color: rgb(255, 255, 255);
         }
         .search-container {
@@ -123,10 +126,12 @@
             background-color: cornsilk;
             input {
                 width: 90%;
+                height: 40px;
             }
             button {
                 width: 10%;
-                height: 100%;
+            height: 40px;
+                
             }
         }
 
@@ -144,7 +149,7 @@
                     width: calc(100% - 80px);
                     margin-left: 40px;
                     justify-content: space-between;
-                    background-color: red;
+                    //background-color: red;
                     padding: none;
                     margin-bottom: 5px;
                     .section-name {

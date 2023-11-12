@@ -4,5 +4,48 @@
     height: 50px;
     //background-color: red;
     margin-bottom: 5px;
-    border: 1px solid grey;
+    border: 1px solid rgb(191, 237, 255);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-section {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .item-name {
+            font-weight: bold;
+        }
+        .item-categories {
+            display: flex;
+            .category-tag {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                height: 16px;
+                font-size: 11px;
+                background-color: rgb(132, 196, 255);
+                color: white;
+                margin-right: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .right-section {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        gap: 5px;
+        svg {
+            fill: orange;
+            width: 25px;
+            height: 25px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
 }
