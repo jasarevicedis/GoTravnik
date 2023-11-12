@@ -434,12 +434,16 @@
         .slider {
             //width: 400px;
             //height: 420px;
+            //display: flex;
             display: flex;
             box-sizing: border-box;
             overflow-x: scroll;
+            //flex-wrap: wrap;
             white-space: nowrap;
             margin-top: 30px;
-            padding-left: 10%;
+            
+            margin-left: 35px;
+            //background-color: red;
         }
         .slider::-webkit-scrollbar {
             display: none;
@@ -494,7 +498,7 @@
             box-sizing: border-box;
             overflow-x: scroll;
             white-space: nowrap;
-            padding-left: 10%;
+            margin-left: 35px;
         }
         .slider::-webkit-scrollbar {
             display: none;
@@ -547,7 +551,7 @@
             box-sizing: border-box;
             overflow-x: scroll;
             white-space: nowrap;
-            padding-left: 10%;
+            margin-left: 35px;
         }
         .slider::-webkit-scrollbar {
             display: none;

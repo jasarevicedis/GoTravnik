@@ -1,28 +1,31 @@
 :host {
-    width: 390px;
+    width: 410px;
     height: 405px;
     display: flex;
     background-color: rgb(255, 224, 139);
     border-radius: 10px;
     margin-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 12px;
     //margin-left: 7%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     img {
+        border-radius: 10px 10px 0 0;
         height: 230px;
-        width: 100%;
+        width: 410px;
         
     }
     #restaurant-name {
         margin-left: 20px;
         font-size: 18px;
         margin-top: 20px;
+        font-weight: bold;
     }
     #restaurant-short-desc {
         margin-left: 20px;
         color: rgb(83, 83, 83);
         margin-top: 20px;
+        font-size: 14px;
     }
     .horizontal-line {
         margin-left: 20px;
@@ -40,6 +43,7 @@
         align-items: center;
         p {
             color: purple;
+            font-weight: bold;
         }
         svg {
         width: 10px;
