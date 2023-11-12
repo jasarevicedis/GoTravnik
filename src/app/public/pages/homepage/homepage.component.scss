@@ -697,5 +697,35 @@
 //----------------------------------------------------------------------------
 
 
-
+@media screen and (min-width: 700px) {
+    :host {
+        .info-section {
+            .shortcuts-container {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+        .blog-section {
+            .filter-blog {
+                width: 600px;
+                align-self: center;
+            }
+            .blog-container {
+                display: flex;
+                flex-direction: row;
+                #main-blog {
+                    width: 50%;
+                    height: 580px;
+                    background-color: lightblue;
+                }
+                .mini-blogs {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    
+}
 
