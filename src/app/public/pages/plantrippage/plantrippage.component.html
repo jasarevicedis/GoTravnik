@@ -86,7 +86,7 @@
         <label><input type="checkbox" name="interest" id="interest3">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/event.svg" alt="">
-                <p>Festivals/Events</p>
+                <p>Events</p>
             </div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest4">
@@ -96,18 +96,56 @@
             </div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest5">
-            <div class="option">Nightlife</div> 
+            <div class="option">
+                <img src="../../../../assets/images/planner_icons/mosque.svg" alt="">
+                <p>History</p>
+            </div> 
         </label>
         <label><input type="checkbox" name="interest" id="interest6">
-            <div class="option">aaaa</div> 
+            <div class="option">
+                <img src="../../../../assets/images/planner_icons/nature.svg" alt="">
+                <p>Nature</p>
+            </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest7">
-            <div class="option">aaa</div> 
+        <label><input type="checkbox" name="interest" id="interest6">
+            <div class="option">
+                <img src="../../../../assets/images/planner_icons/relax.svg" alt="">
+                <p>Relaxation</p>
+            </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest8">
-            <div class="option">aaa</div> 
-        </label>
+        
         </div>
+
+        <mat-divider></mat-divider>
+    <p class="form-question">How intense your days should be?</p>
+
+        <section class="intensity-radios">
+        
+            <label>
+                <input type="radio" name="intensity-radio" id="intensity-radio1">
+                <div class="option">
+                    <img src="../../../../assets/images/planner_icons/man.svg" alt="">
+                    <p>Low</p>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="intensity-radio" id="intensity-radio1">
+                <div class="option">
+                    <img src="../../../../assets/images/planner_icons/man.svg" alt="">
+                    <p>Medium</p>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="intensity-radio" id="intensity-radio1">
+                <div class="option">
+                    <img src="../../../../assets/images/planner_icons/man.svg" alt="">
+                    <p>High</p>
+                </div>
+            </label>
+            
+            
+        </section>
+
         <mat-divider></mat-divider>
 <!--
     <p class="form-question">Travel type?</p>
@@ -169,7 +207,25 @@
             <div class="option"></div>
         </label>-->
     
-    
+    <mat-divider></mat-divider>
+
+    <section class="additional-radios">
+        
+        <label>
+            <input type="checkbox" name="additional-radio" id="additional-radio1">
+            <p>I will have a car</p>
+        </label>
+        <label>
+            <input type="checkbox" name="additional-radio" id="additional-radio1">
+            <p>Halal food</p>
+        </label>
+        <label>
+            <input type="checkbox" name="additional-radio" id="additional-radio1">
+            <p>Vegetarian food</p>
+        </label>
+        
+    </section>
+
     <button routerLink="/results" class="plan-button">Build your trip</button>
 
 </form>

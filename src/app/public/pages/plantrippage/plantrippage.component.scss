@@ -156,12 +156,52 @@
             
             
         }
+        .intensity-radios {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 70px;
+            margin-top: 20px;
+            label {
+                input {
+                    display: none;
+                }
+                input[type="radio"]:checked + .option {
+                    border: 2px solid rgb(0, 200, 255);
+                    
+                    
+                    
+                }
+            }
+            
+        }
         .plan-button {
+            background-color: lightseagreen;
+            border: none;
+            border-radius: 8px;
+            color: white;
             align-self: center;
             margin-top: 40px;
             width: 170px;
             height: 35px;
             margin-bottom: 100px;
+        }
+        .additional-radios {
+            margin-top: 20px;
+            label {
+                margin-bottom: 10px;
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                input {
+                    width: 20px;
+                    height: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
