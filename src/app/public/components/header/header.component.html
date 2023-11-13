@@ -17,7 +17,7 @@
             <li><a href="#" class="menu-item">Blog</a></li>
             <li><a href="#" class="menu-item">Plan the trip</a></li>
             <li><a href="#" class="menu-item">Events</a></li>
-            <li><a href="#" class="menu-item">Area guide</a></li>
+            <li><a target="_blank" href="#" class="menu-item">Area guide</a></li>
         </ul>
         <div class="nav">
             <div (click)="toggleSearch()" class="nav-search-button">
@@ -62,8 +62,8 @@
             <p>Blog</p>
         </button>
     </div>
-    <div [routerLink]="['areaguide']" class="main-nav-item">
-        <button (click)="toggleMenu()" class="main-nav-button">
+    <div  [routerLink]="['areaguide']" class="main-nav-item">
+        <button target="_blank" (click)="toggleMenu()" class="main-nav-button">
             <p>Area Guide</p>
         </button>
     </div>

@@ -8,40 +8,59 @@
 */
 :host {
     margin-left: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     margin-bottom: 15px;
-    background-color: rgb(241, 252, 255);
+    //background-color: rgb(241, 252, 255);
     height: 130px;
     border-radius: 8px;
-    border: 1px solid #5ac8d9;
+    //border: 1px solid #5ac8d9;
     display: flex;
     align-items: center;
+    background-color: white;
     .blog-image-container {
-        width: 80px;
-        height: 80px;
+        width: 130px;
+        height:130px;
+        border-radius: 8px;
         display: flex;
         background-color: pink;
         background: url("https://bosniatravel.info/wp-content/uploads/2018/08/Travnik_Panorama_2-Copy.jpg");
         background-size: 300%;
-        margin-left: 15px;
-        margin-right: 15px;
+        //margin-left: 15px;
+        //margin-right: 15px;
     }
     .blog-data {
+        margin-left: 20px;
         display: flex;
         flex-direction: column;
         height: 100%;
-        .blog-category {
-            margin-top: 20px;
-            font-size: 15px;
-        }
+        width: calc(100% - 160px);
+        //background-color: red;
+        
         .blog-title {
             
-            margin-top: 10px;
-            
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            height: 60px;
+            //background-color: red;
         }
-        .blog-date {
-            margin-top: 20px;
-            font-size: 13px;
+        .blog-category {
+            color: rgb(111, 111, 255);
+        }
+        .bottom {
+            display: flex;
+            margin-top: 22px;
+            width: 100%;
+            //background-color: red;
+            justify-content: space-between;
+            .blog-author {
+                //margin-top: 20px;
+                font-size: 14px;
+            }
+            .blog-date {
+                //margin-top: 20px;
+                font-size: 14px;
+            }
         }
     }
 

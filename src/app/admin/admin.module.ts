@@ -47,6 +47,8 @@ import { EditAccommComponent } from './pages/subpages/popups/edit-accomm/edit-ac
 import { EditActivityComponent } from './pages/subpages/popups/edit-activity/edit-activity.component';
 import { EditAttractionComponent } from './pages/subpages/popups/edit-attraction/edit-attraction.component';
 import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailedReviewPopupComponent } from './components/detailed-review-popup/detailed-review-popup.component';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -82,6 +84,7 @@ import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.c
     EditActivityComponent,
     EditAttractionComponent,
     EditFoodComponent,
+    DetailedReviewPopupComponent,
     
   ],
   imports: [
@@ -94,7 +97,8 @@ import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.c
     MatBadgeModule,
     FormsModule, MatFormFieldModule, MatInputModule, MatCheckboxModule,
     UploaderModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    HttpClientModule
   ],
   exports: [
     AdminComponent

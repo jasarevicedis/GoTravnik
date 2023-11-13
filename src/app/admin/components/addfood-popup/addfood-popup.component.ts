@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Uploader, UploadWidgetConfig, UploadWidgetResult } from 'uploader'
+import { FoodMethodsService } from '../../services/api-methods/food-methods.service';
 
 @Component({
   selector: 'app-addfood-popup',
@@ -7,22 +8,22 @@ import { Uploader, UploadWidgetConfig, UploadWidgetResult } from 'uploader'
   styleUrls: ['./addfood-popup.component.scss']
 })
 export class AddfoodPopupComponent {
-  uploader = Uploader({ 
-    apiKey: "free" 
-  });
-  options: UploadWidgetConfig = {
-    multi: false
-  };
-  // 'onUpdate' vs 'onComplete' attrs on 'upload-dropzone':
-  // - Dropzones are non-terminal by default (they don't have an end
-  //   state), so by default we use 'onUpdate' instead of 'onComplete'.
-  // - To create a terminal dropzone, use the 'onComplete' attribute
-  //   instead and add the 'showFinishButton: true' option.
-  onUpdate = (files: UploadWidgetResult[]) => {
-    alert(files.map(x => x.fileUrl).join("\n"));
-  };
-  width = "600px";
-  height = "375px";
+  formData: any = {}; // This should be bound to your form using ngModel or form controls
+
+  constructor(private apiService: FoodMethodsService) {}
+
+  onSubmit() {
+    this.apiService.postData(this.formData).subscribe(
+      (response) => {
+        console.log('Post successful', response);
+        // Handle success
+      },
+      (error) => {
+        console.error('Error posting data', error);
+        // Handle error
+      }
+    );
+  }
 }
   
 

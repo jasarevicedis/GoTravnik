@@ -1,14 +1,14 @@
 <div class="popup-header">
     <p>Add new Food&Drink</p>
 </div>
-<form action="">
+<form (ngSubmit)="onSubmit()">
     <mat-form-field class="name">
         <mat-label>Restaurant name</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="formData.name" name="name">
     </mat-form-field>
     <mat-form-field class="image-url">
         <mat-label>Image url</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="formData.imageurl" name="imageurl">
     </mat-form-field>
     
     
