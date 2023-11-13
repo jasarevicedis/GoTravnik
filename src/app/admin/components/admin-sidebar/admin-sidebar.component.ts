@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-sidebar.component.scss']
 })
 export class AdminSidebarComponent {
-
+  activeButton: number | null = null;
+  setActiveButton(buttonNumber: number) {
+    this.activeButton = (this.activeButton === buttonNumber) ? null : buttonNumber;
+  }
 }
