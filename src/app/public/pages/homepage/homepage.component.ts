@@ -4,7 +4,7 @@ import { EventCardComponent } from '../../components/event-card/event-card.compo
 import { OpenNewsletterPopupService } from '../../services/open-newsletter-popup.service';
 import { OpenShortcutService } from '../../services/open-shortcut.service';
 import { OpenFormsService } from '../../services/open-forms.service';
-
+import { WeatherApiService } from '../../services/weather-api.service';
 
 @Component({
   selector: 'app-homepage',
@@ -18,8 +18,11 @@ export class HomepageComponent {
   constructor(private openWeatherService: OpenWeatherPopupService, 
     private openNewsletterService: OpenNewsletterPopupService,
     private openShortcutService: OpenShortcutService,
+    private weatherService: WeatherApiService
     
-    ) {}
+    ) {
+      
+    }
   openWeatherPopup(): void {
     this.openWeatherService.openWeatherPopup();
     document.body.className = "disapear-scroll";
