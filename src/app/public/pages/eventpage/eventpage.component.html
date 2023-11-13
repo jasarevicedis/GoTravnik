@@ -5,17 +5,55 @@
     </div>
 </div>
 <div class="event-nav">
-    <p class="event-number">26 Events</p>
-    <div class="tags-container">
-        <div class="event-tag">This Month</div>
-        <div class="event-tag">This Month</div>
-        <div class="event-tag">This Month</div>
+    <div class="nav-tags">
+        <label>
+            <input type="radio" name="nav-radio" id="nav-radio1" checked>
+            <div class="nav-option">            
+                <p>All</p>
+            </div>
+        </label>     
+        <label>
+            <input type="radio" name="nav-radio" id="nav-radio1">
+            <div class="nav-option">            
+                <p>Music</p>
+            </div>
+        </label>  
+        <label>
+            <input type="radio" name="nav-radio" id="nav-radio1">
+            <div class="nav-option">            
+                <p>Sport</p>
+            </div>
+        </label>  
+        <label>
+            <input type="radio" name="nav-radio" id="nav-radio1" >
+            <div class="nav-option">            
+                <p>Culture</p>
+            </div>
+        </label>  
+        <label>
+            <input type="radio" name="nav-radio" id="nav-radio1" >
+            <div class="nav-option">            
+                <p>Hiking</p>
+            </div>
+        </label>  
     </div>
-    <div class="search-and-filter">
-        <div class="events-search-bar"></div>
-        <button class="filter-events"></button>
+    <div class="dates-section">
+        <mat-form-field id="start-date-field">
+            <mat-label>Period begin</mat-label>
+            <input matInput [matDatepicker]="picker">
+            
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field id="end-date-field">
+            <mat-label>Period end</mat-label>
+            <input matInput [matDatepicker]="picker">
+            
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <button class="apply">Apply</button>
     </div>
-    
 </div>
 <div class="events-container">
     <!--<app-event-card *ngFor="let event of events" routerLink="eventitem"></app-event-card>-->
