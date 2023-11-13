@@ -3,25 +3,47 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: lightcyan;
+    background-color: lightskyblue;
+
+    //background-color: lightcyan;
     display: flex;
     flex-direction: column;
-    .itinerary {
+    .page-header {
         width: 100%;
-        margin-top: 100px;
+        height: 300px;
+        display: flex;
+        background-color: lightskyblue;
+    }
+    .itinerary {
+        background-color: lightcyan;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
-        background-color: lightcoral;
+        //background-color: lightcoral;
         .itinerary-day {
             display: flex;
             flex-direction: column;
             width: 100%;
+            
             align-items: center;
             .itinerary-day-num {
                 font-size: 40px;
             }
             .itinerary-date {
                 font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+        .itinerary-activity {
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            p {
+                width: calc(100% - 180px);
+                font-size: 13px;
             }
         }
     }

@@ -60,6 +60,7 @@ import { PlannerResultsComponent } from './pages/planner-results/planner-results
 import { HeaderSearchCardComponent } from './components/header-search-card/header-search-card.component';
 import { RoutespageComponent } from './pages/routespage/routespage.component';
 import { ReloadMapComponent } from './components/reload-map/reload-map.component';
+import { ResultCardComponent } from './components/result-card/result-card.component';
 
 @NgModule({
   declarations: [
@@ -106,6 +107,7 @@ import { ReloadMapComponent } from './components/reload-map/reload-map.component
     HeaderSearchCardComponent,
     RoutespageComponent,
     ReloadMapComponent,
+    ResultCardComponent,
     
     //WeatherpageComponent,
     
