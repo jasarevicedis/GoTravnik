@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AttractionData } from 'src/app/interfaces/AttractionData';
 
 @Component({
   selector: 'app-attraction-card',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./attraction-card.component.scss']
 })
 export class AttractionCardComponent {
+  @Input() item: AttractionData | undefined;
 
 }

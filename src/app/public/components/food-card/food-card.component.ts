@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FoodAndDrinkData } from 'src/app/interfaces/FoodAndDrinkData';
 
 @Component({
   selector: 'app-food-card',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./food-card.component.scss']
 })
 export class FoodCardComponent {
+  @Input() item: FoodAndDrinkData | undefined;
 
 }
