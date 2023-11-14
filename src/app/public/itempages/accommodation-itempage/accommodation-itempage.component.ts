@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../services/api.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-accommodation-itempage',
@@ -14,17 +15,13 @@ export class AccommodationItempageComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private http: HttpClient,
     private apiService: ApiService) {}
-
-  ngOnInit() {
-   
-  }
-
-  fetchItemDetails() {
-    // Replace the API endpoint with your actual API endpoint
-    const apiUrl = `https://your-api.com/items/${this.itemId}`;
-
-    this.http.get(apiUrl).subscribe((data) => {
+  ngOnInit(): void {
+    this.apiService.getAccommodationItemData(this.itemId).subscribe((data) => {
       this.item = data;
-    });
+    })
   }
+
+  
+
+   
 }

@@ -15,6 +15,10 @@ export class ApiService {
     return this.http.get(`${this.apiUrl}/Accommodation`);
   }
   
+  getAccommodationItemData(id: number | undefined): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Accommodation/{${id}}`);
+    
+  }
   getActivitiesData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Activities`);
   }

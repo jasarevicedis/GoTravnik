@@ -1,20 +1,24 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AccommodationData } from 'src/app/interfaces/AccommodationData';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-accommodation-card',
   templateUrl: './accommodation-card.component.html',
   styleUrls: ['./accommodation-card.component.scss']
 })
-export class AccommodationCardComponent {
-  @Input() item: AccommodationData | undefined;
+export class AccommodationCardComponent implements OnInit {
+  @Input() item:any | undefined;
 
   
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private apiService: ApiService) {}
 
-  onCardClick() {
-    this.router.navigate(['/accommodationitem', this.item?.id]);
+  ngOnInit(): void {
+    this.apiService.getAccommodationItemData(1).subscribe((data) => {
+      this.item = data;
+    })
   }
+  
 }
