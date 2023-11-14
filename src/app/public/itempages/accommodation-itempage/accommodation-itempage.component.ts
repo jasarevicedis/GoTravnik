@@ -11,14 +11,15 @@ import { Observable } from 'rxjs';
 })
 export class AccommodationItempageComponent implements OnInit {
   itemId: number | undefined;
-  item: any; // Change the type based on your API response
+  @Input() item: any; // Change the type based on your API response
 
   constructor(private route: ActivatedRoute, private http: HttpClient,
     private apiService: ApiService) {}
   ngOnInit(): void {
-    this.apiService.getAccommodationItemData(this.itemId).subscribe((data) => {
+    this.apiService.getAccommodationItemData(2).subscribe((data) => {
       this.item = data;
     })
+    console.log('Your Object:', this.item);
   }
 
   
