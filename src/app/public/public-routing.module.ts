@@ -17,6 +17,7 @@ import { ActivityItempageComponent } from './itempages/activity-itempage/activit
 import { PlannerResultsComponent } from './pages/planner-results/planner-results.component';
 import { RoutespageComponent } from './pages/routespage/routespage.component';
 import { ReloadMapComponent } from './components/reload-map/reload-map.component';
+import { AccommodationItempageComponent } from './itempages/accommodation-itempage/accommodation-itempage.component';
 
 
 const routes: Routes = [
@@ -28,7 +29,10 @@ const routes: Routes = [
         {path: 'fooditem', component: FoodItempageComponent}
       ]},
       {path:'planthetrip', component: PlantrippageComponent},
-      {path:'accomodation', component: AccomodationpageComponent},
+      {path:'accomodation', children: [
+        {path: '', component: AccomodationpageComponent},
+        {path:'accommodationitem/:id', component: AccommodationItempageComponent}
+      ]},
       {path:'attractions', 
         children: [
           {path: '', component: AttractionspageComponent},

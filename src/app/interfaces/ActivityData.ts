@@ -1,13 +1,15 @@
+import { LocationData } from "./LocationData";
+import { Rating } from "./RatingData";
+import { SubcategoryData } from "./SubcategoryData";
+
 export interface ActivityData {
-    
     name: string;
     description: string;
     image:string;
-    address: string;
-    telephoneNumber: string;
-    xCoordinate: number,
-    yCoordinate: number,
-    
-    subcategories: string[];
+    location: LocationData;
+    telephoneNumber: string;   
+    website: string;
+    subcategories: SubcategoryData[]
+    ratings: Rating[]
 
 }

@@ -1,13 +1,15 @@
+import { SubcategoryData } from "./SubcategoryData";
+import { LocationData } from "./LocationData";
+import { Rating } from "./RatingData";
+
 export interface AccommodationData {
-    
+    id: number,
     name: string;
     description: string;
     image:string;
-    address: string;
-    telephoneNumber: string;
-    xCoordinate: number,
-    yCoordinate: number,
+    location: LocationData;
+    telephoneNumber: string;   
     website: string;
-    subcategories: string[];
-
+    subcategories: SubcategoryData[]
+    ratings: Rating[]
 }

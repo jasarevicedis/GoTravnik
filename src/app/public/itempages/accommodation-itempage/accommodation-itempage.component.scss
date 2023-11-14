@@ -1,0 +1,81 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .item-wallpaper {
+        height: 430px;
+        width: 100%;
+        background-color: pink;
+    }
+    .item-data {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        .object-category {
+            margin-top: 60px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .object-title {
+            margin-top: 15px;
+            font-size: 35px;
+            font-weight: bolder;
+        }
+        .rating-container {
+            margin-top: 20px;
+            width: 200px;
+            height: 20px;
+            background-color: aqua;
+        }
+        .website {
+            margin-top: 30px;
+            width: 150px;
+            height: 35px;
+            background-color: purple;
+            border: none;
+            color: white;
+            margin-bottom: 30px;
+        }
+    }
+    .item-contact {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        div {
+            display: flex;
+            margin-top: 30px;
+            svg {
+                margin-right: 20px;
+            }
+        }
+        padding-bottom: 50px;
+        border-bottom: 1px solid grey;
+    }
+    .item-map {
+        margin-top: 70px;
+        width: 90%;
+        align-self: center;
+        height: 200px;
+        display: flex;
+        background-color: lightgrey;
+    }
+    .item-about {
+        display: flex;
+        flex-direction: column;
+        .about {
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-top: 30px;
+
+        }
+        .about-txt {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: calc(100% - 40px);
+            line-height: 25px;
+            margin-bottom: 100px;
+        }
+    }
+}

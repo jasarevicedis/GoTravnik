@@ -61,6 +61,7 @@ import { HeaderSearchCardComponent } from './components/header-search-card/heade
 import { RoutespageComponent } from './pages/routespage/routespage.component';
 import { ReloadMapComponent } from './components/reload-map/reload-map.component';
 import { ResultCardComponent } from './components/result-card/result-card.component';
+import { AccommodationItempageComponent } from './itempages/accommodation-itempage/accommodation-itempage.component';
 
 @NgModule({
   declarations: [
@@ -108,6 +109,7 @@ import { ResultCardComponent } from './components/result-card/result-card.compon
     RoutespageComponent,
     ReloadMapComponent,
     ResultCardComponent,
+    AccommodationItempageComponent,
     
     //WeatherpageComponent,
     

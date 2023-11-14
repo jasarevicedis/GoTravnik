@@ -14,6 +14,7 @@ export class ApiService {
   getAccommodationData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Accommodation`);
   }
+  
   getActivitiesData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Activities`);
   }

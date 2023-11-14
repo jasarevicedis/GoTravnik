@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { AccommodationData } from 'src/app/interfaces/AccommodationData';
 
 @Component({
@@ -8,4 +9,12 @@ import { AccommodationData } from 'src/app/interfaces/AccommodationData';
 })
 export class AccommodationCardComponent {
   @Input() item: AccommodationData | undefined;
+
+  
+
+  constructor(private router: Router) {}
+
+  onCardClick() {
+    this.router.navigate(['/accommodationitem', this.item?.id]);
+  }
 }

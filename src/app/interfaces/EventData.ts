@@ -1,14 +1,18 @@
+import { LocationData } from "./LocationData";
+import { Rating } from "./RatingData";
+import { SubcategoryData } from "./SubcategoryData";
+
 export interface EventData {
     
     name: string;
     description: string;
     image:string;
-    address: string;
+    location: LocationData;
+    telephoneNumber: string;   
+    website: string;
+    subcategories: SubcategoryData[]
+    ratings: Rating[]
     
-    xCoordinate: number,
-    yCoordinate: number,
-    
-    subcategories: string[];
     startDate: Date;
     endDate: Date;
 }

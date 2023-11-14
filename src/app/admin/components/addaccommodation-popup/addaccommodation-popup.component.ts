@@ -11,13 +11,17 @@ export class AddaccommodationPopupComponent {
     name: 'aaaa',
     description: 'aaaaa',
     image: 'aaaaaaa',
-    address: 'aaaaaaaaa',
-    telephoneNumber: '988',
 
+    telephoneNumber: '988',
+    location: {
+      address: 'hahahah',
+      xCoordinate: 2,
+      yCoordinate: 3
+    },
     website: '',
-    xCoordinate: 15,
-    yCoordinate: 17,
-    subcategories: ["Hotel", "Cottage"]
+    subcategories: [],
+    ratings: [],
+    id: 0
   };
 
   constructor(private apiService: AccommodationMethodsService) {}
