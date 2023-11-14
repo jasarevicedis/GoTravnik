@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { Router } from '@angular/router';
 
 @Component({
   templateUrl: './accomodationpage.component.html',
@@ -7,7 +8,7 @@ import { ApiService } from '../../services/api.service';
 })
 export class AccomodationpageComponent implements OnInit {
   accommList: any;
-  constructor(private apiService: ApiService) {
+  constructor(private apiService: ApiService, private router: Router) {
     
   }
   ngOnInit(): void {
@@ -15,4 +16,6 @@ export class AccomodationpageComponent implements OnInit {
       this.accommList = data;
     })
   }
+  
+  
 }

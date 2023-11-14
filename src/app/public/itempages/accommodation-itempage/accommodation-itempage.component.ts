@@ -16,7 +16,7 @@ export class AccommodationItempageComponent implements OnInit {
   constructor(private route: ActivatedRoute, private http: HttpClient,
     private apiService: ApiService) {}
   ngOnInit(): void {
-    this.apiService.getAccommodationItemData(2).subscribe((data) => {
+    this.apiService.getAccommodationItemData(this.item.id).subscribe((data) => {
       this.item = data;
     })
     console.log('Your Object:', this.item);
