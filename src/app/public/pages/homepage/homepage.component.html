@@ -130,12 +130,9 @@
         <p>Restaurants</p>
     </div>
     
-    <div class="slider">
-       <app-restaurant-shortcut></app-restaurant-shortcut>
-       <app-restaurant-shortcut></app-restaurant-shortcut>
-       <app-restaurant-shortcut></app-restaurant-shortcut>
-       <app-restaurant-shortcut></app-restaurant-shortcut>
-       <app-restaurant-shortcut></app-restaurant-shortcut>
+    <div *ngFor="let item of foodList" class="slider">
+       <app-restaurant-shortcut [item]="item"></app-restaurant-shortcut>
+       
 
 
     </div>

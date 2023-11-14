@@ -1,13 +1,14 @@
-export interface AccommodationData {
+export interface EventData {
     
     name: string;
     description: string;
     image:string;
     address: string;
-    telephoneNumber: string;
+    
     xCoordinate: number,
     yCoordinate: number,
-    website: string;
+    
     subcategories: string[];
-
+    startDate: Date;
+    endDate: Date;
 }

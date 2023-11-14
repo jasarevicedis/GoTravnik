@@ -1,4 +1,4 @@
-export interface AccommodationData {
+export interface ActivityData {
     
     name: string;
     description: string;
@@ -7,7 +7,7 @@ export interface AccommodationData {
     telephoneNumber: string;
     xCoordinate: number,
     yCoordinate: number,
-    website: string;
+    
     subcategories: string[];
 
 }

@@ -1,4 +1,4 @@
-export interface AccommodationData {
+export interface FoodAndDrinkData {
     
     name: string;
     description: string;

@@ -16,7 +16,8 @@ export class AddaccommodationPopupComponent {
 
     website: '',
     xCoordinate: 15,
-    yCoordinate: 17
+    yCoordinate: 17,
+    subcategories: ["Hotel", "Cottage"]
   };
 
   constructor(private apiService: AccommodationMethodsService) {}

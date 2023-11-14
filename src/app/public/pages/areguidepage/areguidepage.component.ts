@@ -1,4 +1,5 @@
 import { Component, Renderer2, Inject, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 
 
@@ -6,6 +7,6 @@ import { Component, Renderer2, Inject, OnInit } from '@angular/core';
   templateUrl: './areguidepage.component.html',
   styleUrls: ['./areguidepage.component.scss']
 })
-export class AreguidepageComponent {
+export class AreguidepageComponent   {
   
 }

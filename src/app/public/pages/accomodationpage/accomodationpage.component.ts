@@ -11,7 +11,7 @@ export class AccomodationpageComponent implements OnInit {
     
   }
   ngOnInit(): void {
-    this.apiService.getData().subscribe((data) => {
+    this.apiService.getAccommodationData().subscribe((data) => {
       this.accommList = data;
     })
   }

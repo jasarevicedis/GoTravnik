@@ -11,7 +11,19 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  getData(): Observable<any> {
+  getAccommodationData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Accommodation`);
+  }
+  getActivitiesData(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Activities`);
+  }
+  getFoodAndDrinkData(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/FoodAndDrink`);
+  }
+  getAttractionsData(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Attraction`);
+  }
+  getEventData(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Event`);
   }
 }

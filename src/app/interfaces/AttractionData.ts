@@ -1,4 +1,4 @@
-export interface AccommodationData {
+export interface AttractionData {
     
     name: string;
     description: string;

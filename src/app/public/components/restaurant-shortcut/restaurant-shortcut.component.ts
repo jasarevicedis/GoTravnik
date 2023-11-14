@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-restaurant-shortcut',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./restaurant-shortcut.component.scss']
 })
 export class RestaurantShortcutComponent {
+  @Input() item: any| undefined;
 
 }

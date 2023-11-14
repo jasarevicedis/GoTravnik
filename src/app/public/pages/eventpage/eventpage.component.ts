@@ -6,12 +6,13 @@ import { ApiService } from '../../services/api.service';
   styleUrls: ['./eventpage.component.scss']
 })
 export class EventpageComponent implements OnInit {
-  events: any[] | undefined;
-  constructor(private apiService: ApiService) {}
-
+  eventList: any;
+  constructor(private apiService: ApiService) {
+    
+  }
   ngOnInit(): void {
-    this.apiService.getData().subscribe(data => {
-      this.events = data;
-    });
+    this.apiService.getEventData().subscribe((data) => {
+      this.eventList = data;
+    })
   }
 }
