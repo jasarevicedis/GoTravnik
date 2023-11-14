@@ -15,17 +15,8 @@
     </button>
     
 </div>
-<div class="accommodation-container">
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
-    <app-accommodation-card></app-accommodation-card>
+<div *ngFor="let item of accommList" class="accommodation-container">
+    <app-accommodation-card [item]="item" ></app-accommodation-card>
     
 </div>
 <mat-paginator class="paginator" [length]="100"

@@ -1,7 +1,9 @@
-<div class="accommodation-image-container"></div>
+<div class="accommodation-image-container">
+    <img src="{{item?.image}}" alt="">
+</div>
 <div class="accommodation-data">
-    <p class="accommodation-name">Hotel Lipa</p>
-    <p class="accommodation-address">2000 Travnik Blvd S</p>
+    <p class="accommodation-name">{{item?.name}}</p>
+    <p class="accommodation-address">{{item?.address}}</p>
     <div class="rating-section"></div>
     <button class="website">VISIT WEBSITE</button>
 </div>
