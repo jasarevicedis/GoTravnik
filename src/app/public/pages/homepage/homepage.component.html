@@ -97,8 +97,8 @@
     </div>
     
       
-    <div class="event-slider">
-        <app-event-card></app-event-card>
+    <div *ngFor="let item of eventList" class="event-slider">
+        <app-event-card [item]="item"></app-event-card>
     </div>
     <button class="upcoming">View all upcoming events</button>
 </div>
@@ -112,10 +112,9 @@
         <p>Attractions</p>
     </div>
     
-    <div class="slider">
-        <app-attraction-shortcut></app-attraction-shortcut>
-        <app-attraction-shortcut></app-attraction-shortcut>
-        <app-attraction-shortcut></app-attraction-shortcut>
+    <div *ngFor="let item of attractionList" class="slider">
+        <app-attraction-shortcut [item]="item"></app-attraction-shortcut>
+        
         
     </div>
     <button class="view-all">View All</button>
@@ -148,11 +147,9 @@
         <p>Experiences</p>
     </div>
     
-    <div class="slider">
-       <app-activity-shortcut></app-activity-shortcut>
-       <app-activity-shortcut></app-activity-shortcut>
-       <app-activity-shortcut></app-activity-shortcut>
-       <app-activity-shortcut></app-activity-shortcut>
+    <div *ngFor="let item of activityList" class="slider">
+       <app-activity-shortcut [item]="item"></app-activity-shortcut>
+       
 
     </div>
     <button class="view-all">View All</button>

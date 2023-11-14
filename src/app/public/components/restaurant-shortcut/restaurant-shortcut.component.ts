@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FoodAndDrinkData } from 'src/app/interfaces/FoodAndDrinkData';
 
 @Component({
   selector: 'app-restaurant-shortcut',
@@ -6,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./restaurant-shortcut.component.scss']
 })
 export class RestaurantShortcutComponent {
-  @Input() item: any| undefined;
+  @Input() item: FoodAndDrinkData| undefined;
 
 }
