@@ -3,6 +3,19 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    .pattern {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        
+        object {
+            width: 100%;
+            height: 100px;
+            fill: red;
+        }
+    }
+
     .landing-screen {
         display: flex;
         flex-direction: column;
