@@ -9,15 +9,20 @@ import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.s
 })
 export class AdminAccommodationPageComponent implements OnInit {
   items: any;
+  cats:any[] | undefined;
   constructor(private adminService: OpenAdminPopupService
     ,private apiService: AccommodationMethodsService) {
     
 
     }
     ngOnInit(): void {
+
       this.apiService.getData().subscribe((data) => {
+        this.cats = data.subcategories;
         this.items = data;
+        
       })
+      
     }
   
     

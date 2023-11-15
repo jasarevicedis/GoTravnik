@@ -28,12 +28,12 @@
 </div>
 <table class="reviews-table">
     <thead></thead>
-    <tbody *ngFor="let _ of [].constructor(20)">
+    <tbody *ngFor="let item of items">
         <tr>
-            <td class="review-id">1</td>
+            <td class="review-id">{{item.id}}</td>
             <td class="review-item">
                 <div class="reviewed-item">
-                    <div class="item-tag">RESTORAN</div>
+                    <div class="item-tag"></div>
                     <p>Cevabdzinica Hari</p>
                 </div>
             </td>
@@ -47,7 +47,7 @@
                 </div>
             </td>
             <td class="review-comment">
-                <p>Jako ukusna hrana</p>
+                <p>{{item.textComment}}</p>
             </td>
             <td class="review-date">
                 <p>22/12/2023</p>

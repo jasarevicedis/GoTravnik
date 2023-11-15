@@ -19,21 +19,119 @@
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
 
 <script type='text/javascript'>
-    function GetMap() {
-        var map = new Microsoft.Maps.Map('#myMap', {
-            credentials: 'AsR2Ylci3ob1wGimRArjHwzGb8PuuByKGfeuthw0pHYLkMMWw_Af2Md0zSpmhK32',
-            center: new Microsoft.Maps.Location(43.856430, 18.413029),
-            mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-            zoom: 7
-        });
+  
+  var map;
 
-        infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
+function GetMap() {
+  map = new Microsoft.Maps.Map('#myMap', {
+    credentials: 'AouRje7qzQdE3XLvMgLBdXl4u5H5z1y0h5rr7AmhfDbzCVkV60x2AFzHxvKi4zSp',
+    center: new Microsoft.Maps.Location(44.2294, 17.643),
+    zoom: 14
+  });
+
+  infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
             visible: false
         });
 
         infobox.setMap(map);
+  // Define locations for different categories
+  var attractionsLocations = [
+    { location: new Microsoft.Maps.Location(44.2294, 17.643), title: 'Attraction 1', description: 'Description 1' },
+    
+  ];
 
-      }
-   
+  var foodanddrinkLocations = [
+    { location: new Microsoft.Maps.Location(44.25, 17.65), title: 'Restaurant 1', description: 'Description 1' },
+    
+  ];
+
+  var accommodationLocations = [
+    { location: new Microsoft.Maps.Location(44.22, 17.63), title: 'Hotel 1', description: 'Description 1' },
+    
+  ];
+  var activityLocations = [
+    { location: new Microsoft.Maps.Location(44.32, 17.61), title: 'Hotel 1', description: 'Description 1' },
+    
+  ];
+
+  // Add pins for each category
+  addPins(attractionsLocations, 'attraction');
+  addPins(foodanddrinkLocations, 'foodanddrink');
+  addPins(accommodationLocations, 'accommodation');
+  addPins(activityLocations, 'activity');
+}
+
+function addPins(locations, category) {
+  for (var i = 0; i < locations.length; i++) {
+    var pin = new Microsoft.Maps.Pushpin(locations[i].location, {
+      title: locations[i].title,
+      description: locations[i].description,
+      color: getCategoryColor(category)
+    });
+
+    Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+
+    map.entities.push(pin);
+  }
+}
+
+function getCategoryColor(category) {
+  switch (category) {
+    case 'attraction':
+      return 'blue';
+    case 'foodanddrink':
+      return 'green';
+    case 'accommodation':
+      return 'red';
+    case 'activity':
+      return 'yellow';
+    default:
+      return 'gray';
+  }
+}
+
+function pushpinClicked(e) {
+        if (e.target.metadata) {
+            infobox.setOptions({
+                location: e.target.getLocation(),
+                title: e.target.metadata.title,
+                description: e.target.metadata.description,
+                visible: true
+            });
+        }
+    }
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(convertCoordinates);
+        }
+    }
+
+    function convertCoordinates(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude; 
+
+        var apiKey = 'AsUxyaV0r7t7AUCbg7Np-o9B0rCI9YF6t9__7BI0Twj1cduK3ptOL_ZghnV3MmNf';
+
+        var apiUrl = `https://dev.virtualearth.net/REST/v1/Locations/${latitude},${longitude}?key=${apiKey}`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                var address = data.resourceSets[0].resources[0].address.formattedAddress;
+                document.getElementById('startLocation').value = address;
+            })
+            .catch(error => console.log(error));
+    }
+
+/*
+function pushpinClicked(e) {
+  // Handle pin click event
+  var title = e.target.getTitle();
+  var description = e.target.getDescription();
+
+  // Your custom logic for handling pin click
+  alert('Pin clicked!\nTitle: ' + title + '\nDescription: ' + description);
+}*/
 </script>
 </html>
