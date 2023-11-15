@@ -55,18 +55,10 @@
         <button class="apply">Apply</button>
     </div>
 </div>
-<div class="events-container">
+<div *ngFor="let item of eventList" class="events-container">
     <!--<app-event-card *ngFor="let event of events" routerLink="eventitem"></app-event-card>-->
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
-    <app-event-card></app-event-card>
+    <app-event-card  [routerLink]="['eventitem/', item.id]" [item]="item"></app-event-card>
+    
 
     
 

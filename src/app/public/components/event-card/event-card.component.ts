@@ -7,6 +7,6 @@ import { EventData } from 'src/app/interfaces/EventData';
   styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent {
-  @Input() item: EventData | undefined;
+  @Input() item: any | undefined;
 
 }

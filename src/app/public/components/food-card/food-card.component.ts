@@ -7,6 +7,6 @@ import { FoodAndDrinkData } from 'src/app/interfaces/FoodAndDrinkData';
   styleUrls: ['./food-card.component.scss']
 })
 export class FoodCardComponent {
-  @Input() item: FoodAndDrinkData | undefined;
+  @Input() item: any | undefined;
 
 }

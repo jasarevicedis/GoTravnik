@@ -38,11 +38,9 @@
         </label>  
     </div>
 </div>
-<div class="attraction-container">
-    <app-attraction-card></app-attraction-card>
-    <app-attraction-card></app-attraction-card>
-    <app-attraction-card></app-attraction-card>
-    <app-attraction-card></app-attraction-card>
+<div *ngFor="let item of attractionsList" class="attraction-container">
+    <app-attraction-card [routerLink]="['attractionitem/', item.id]" [item]="item"></app-attraction-card>
+    
 
 </div>
 

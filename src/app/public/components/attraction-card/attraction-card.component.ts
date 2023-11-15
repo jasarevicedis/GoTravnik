@@ -7,6 +7,6 @@ import { AttractionData } from 'src/app/interfaces/AttractionData';
   styleUrls: ['./attraction-card.component.scss']
 })
 export class AttractionCardComponent {
-  @Input() item: AttractionData | undefined;
+  @Input() item: any | undefined;
 
 }

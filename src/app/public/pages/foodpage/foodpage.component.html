@@ -31,17 +31,9 @@
     </div>
     -->
 </div>
-<div class="food-container">
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
-    <app-food-card routerLink="fooditem"></app-food-card>
+<div *ngFor="let item of foodList" class="food-container">
+    <app-food-card [routerLink]="['fooditem/', item.id]" [item]="item"></app-food-card>
+    
 
     
 </div>

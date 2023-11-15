@@ -15,16 +15,9 @@
     </button>
     
 </div>
-<div class="activities-container">
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
-    <app-activity-card routerLink="activityitem"></app-activity-card>
+<div *ngFor="let item of activityList" class="activities-container">
+    <app-activity-card [routerLink]="['activityitem/', item.id]" [item]="item"></app-activity-card>
+    
 
 
     

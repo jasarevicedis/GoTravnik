@@ -7,6 +7,6 @@ import { ActivityData } from 'src/app/interfaces/ActivityData';
   styleUrls: ['./activity-card.component.scss']
 })
 export class ActivityCardComponent {
-  @Input() item: ActivityData | undefined;
+  @Input() item: any | undefined;
 
 }

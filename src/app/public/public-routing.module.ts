@@ -18,6 +18,7 @@ import { PlannerResultsComponent } from './pages/planner-results/planner-results
 import { RoutespageComponent } from './pages/routespage/routespage.component';
 import { ReloadMapComponent } from './components/reload-map/reload-map.component';
 import { AccommodationItempageComponent } from './itempages/accommodation-itempage/accommodation-itempage.component';
+import { AttractionItempageComponent } from './itempages/attraction-itempage/attraction-itempage.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,7 @@ const routes: Routes = [
       {path: '', component: HomepageComponent},
       {path: 'food', children: [
         {path: '', component: FoodpageComponent},
-        {path: 'fooditem', component: FoodItempageComponent}
+        {path: 'fooditem/:id', component: FoodItempageComponent}
       ]},
       {path:'planthetrip', component: PlantrippageComponent},
       {path:'accomodation', children: [
@@ -36,18 +37,19 @@ const routes: Routes = [
       {path:'attractions', 
         children: [
           {path: '', component: AttractionspageComponent},
-          {path:'starigrad', component: AttractionDetailsComponent}
+          {path:'attractionitem/:id', component: AttractionItempageComponent}
         ]
       },
       {path:'events', children: [
         {path: '', component: EventpageComponent},
-        {path:'eventitem', component: EventItempageComponent}
+        {path:'eventitem/:id', component: EventItempageComponent}
       ]},
       {path:'areaguide', component:AreguidepageComponent},
       {path:'blog', component: BlogpageComponent},
+
       {path: 'activities', children: [
         {path:'', component: ActivitiespageComponent},
-        {path:'activityitem', component: ActivityItempageComponent}
+        {path:'activityitem/:id', component: ActivityItempageComponent}
       ]},
       {path:'results', component: PlannerResultsComponent},
       {path: 'routes', component: RoutespageComponent},

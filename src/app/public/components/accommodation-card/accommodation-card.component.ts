@@ -13,10 +13,6 @@ export class AccommodationCardComponent  {
 
   
 
-  constructor(private router: Router) {}
-
-  openItempage() {
-    this.router.navigate(['/accommodationitem/', this.item.id]);
-  }
+  
   
 }
