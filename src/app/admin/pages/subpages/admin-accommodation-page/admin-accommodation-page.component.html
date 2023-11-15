@@ -10,13 +10,16 @@
     
 </div>
 <table   class="accommodation-table">
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Rating</th>
-    </tr>
-    <tr *ngFor="let item od items" (click)="openAccommDetailsPopup()">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of items"  (click)="openAccommDetailsPopup()">
         <td>1</td>
         <td>{{item.name}}</td>
         <td>Italian</td>
@@ -32,7 +35,7 @@
             </button>
         </td>
     </tr>
-    
+</tbody>
     
     
     

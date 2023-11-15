@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AccommodationMethodsService } from 'src/app/admin/services/api-methods/accommodation-methods.service';
 import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.service';
 
@@ -7,13 +7,19 @@ import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.s
   templateUrl: './admin-accommodation-page.component.html',
   styleUrls: ['./admin-accommodation-page.component.scss']
 })
-export class AdminAccommodationPageComponent  {
+export class AdminAccommodationPageComponent implements OnInit {
+  items: any;
   constructor(private adminService: OpenAdminPopupService
     ,private apiService: AccommodationMethodsService) {
     
 
     }
-
+    ngOnInit(): void {
+      this.apiService.getData().subscribe((data) => {
+        this.items = data;
+      })
+    }
+  
     
   openAddAccommodationPopup(): void {
     this.adminService.openAddAccommodationPopup()

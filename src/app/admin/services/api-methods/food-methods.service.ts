@@ -11,13 +11,13 @@ export class FoodMethodsService {
   constructor(private http: HttpClient) {}
 
   postData(payload: any): Observable<any> {
-    const url = `${this.apiUrl}/Accommodation`; 
+    const url = `${this.apiUrl}/FoodAndDrink`; 
     return this.http.post<any>(url, payload);
   }
 
   
 
   getData(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/Accommodation`);
+    return this.http.get(`${this.apiUrl}/FoodAndDrink`);
   }
 }

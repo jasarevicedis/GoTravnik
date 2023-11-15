@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FoodMethodsService } from 'src/app/admin/services/api-methods/food-methods.service';
 import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.service';
 
 
@@ -11,7 +12,7 @@ import { OpenAdminPopupService } from 'src/app/admin/services/open-admin-popup.s
 })
 export class AdminFoodPageComponent {
   
-  constructor(private adminService: OpenAdminPopupService) {}
+ 
   openAddFoodPopup(): void {
     this.adminService.openAddFoodPopup();
   }
@@ -20,4 +21,16 @@ export class AdminFoodPageComponent {
   openFoodDetailsPopup(): void {
     this.adminService.openDetailedFoodPopup();
   }
+
+
+  items: any;
+  constructor(private adminService: OpenAdminPopupService,
+    private apiService: FoodMethodsService) {}
+  ngOnInit(): void {
+    this.apiService.getData().subscribe((data) => {
+      this.items = data;
+    })
+  }
+
+ 
 }
