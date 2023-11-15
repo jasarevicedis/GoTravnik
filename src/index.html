@@ -9,22 +9,25 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AsR2Ylci3ob1wGimRArjHwzGb8PuuByKGfeuthw0pHYLkMMWw_Af2Md0zSpmhK32'></script>
+  
 </head>
 <body >
   <app-root></app-root>
-  <script type='text/javascript'
-    src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+  
+
+  <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
 </body>
+
+
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
 
 <script type='text/javascript'>
-  
+ 
   var map;
 
 function GetMap() {
   map = new Microsoft.Maps.Map('#myMap', {
-    credentials: 'AouRje7qzQdE3XLvMgLBdXl4u5H5z1y0h5rr7AmhfDbzCVkV60x2AFzHxvKi4zSp',
+    credentials: 'AsR2Ylci3ob1wGimRArjHwzGb8PuuByKGfeuthw0pHYLkMMWw_Af2Md0zSpmhK32',
     center: new Microsoft.Maps.Location(44.2294, 17.643),
     zoom: 14
   });
@@ -66,7 +69,8 @@ function addPins(locations, category) {
     var pin = new Microsoft.Maps.Pushpin(locations[i].location, {
       title: locations[i].title,
       description: locations[i].description,
-      color: getCategoryColor(category)
+      color: getCategoryColor(category),
+      metadata: { title: locations[i].title, description: locations[i].description }
     });
 
     Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
@@ -111,7 +115,7 @@ function pushpinClicked(e) {
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude; 
 
-        var apiKey = 'AsUxyaV0r7t7AUCbg7Np-o9B0rCI9YF6t9__7BI0Twj1cduK3ptOL_ZghnV3MmNf';
+        var apiKey = 'AsR2Ylci3ob1wGimRArjHwzGb8PuuByKGfeuthw0pHYLkMMWw_Af2Md0zSpmhK32';
 
         var apiUrl = `https://dev.virtualearth.net/REST/v1/Locations/${latitude},${longitude}?key=${apiKey}`;
 

@@ -1,6 +1,7 @@
 import { HostListener, Component, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from '../../services/api.service';
+import { OpenFormsService } from '../../services/open-forms.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,12 @@ import { ApiService } from '../../services/api.service';
   
 })
 export class HeaderComponent {
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService,
+    private openForm: OpenFormsService) {}
+
+  openFeedback(): void {
+    this.openForm.openFeedbackPopup();
+  }
 
   isScrolled = false;
   @HostListener('window:scroll', [])
