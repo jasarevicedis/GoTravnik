@@ -62,11 +62,12 @@
             <p>Blog</p>
         </button>
     </div>
-    <div  [routerLink]="['areaguide']" class="main-nav-item">
-        <button target="_blank" (click)="toggleMenu()" class="main-nav-button">
+    <a target="_blank" href="areaguide" style="text-decoration: none;">
+    <div  [routerLink]="['areaguide']" target="_blank" class="main-nav-item">
+        <button  (click)="toggleMenu()" class="main-nav-button">
             <p>Area Guide</p>
         </button>
-    </div>
+    </div></a>
     <div [routerLink]="['events']" class="main-nav-item">
         <button (click)="toggleMenu()" class="main-nav-button">
             <p>Events</p>
