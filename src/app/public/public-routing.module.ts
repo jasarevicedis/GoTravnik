@@ -32,7 +32,7 @@ const routes: Routes = [
       {path:'planthetrip', component: PlantrippageComponent},
       {path:'accomodation', children: [
         {path: '', component: AccomodationpageComponent},
-        {path:'accommodationitem/:id', component: AccommodationItempageComponent}
+        {path:'accommodationitem/:number', component: AccommodationItempageComponent, }
       ]},
       {path:'attractions', 
         children: [

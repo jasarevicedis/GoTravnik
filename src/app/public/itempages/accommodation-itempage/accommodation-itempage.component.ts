@@ -10,16 +10,28 @@ import { Observable } from 'rxjs';
   styleUrls: ['./accommodation-itempage.component.scss']
 })
 export class AccommodationItempageComponent implements OnInit {
+  routeNumber: number =1;
   itemId: number | undefined;
-  @Input() item: any; // Change the type based on your API response
+  item: any; // Change the type based on your API response
 
   constructor(private route: ActivatedRoute, private http: HttpClient,
     private apiService: ApiService) {}
   ngOnInit(): void {
-    this.apiService.getAccommodationItemData(this.item.id).subscribe((data) => {
+    this.setupRoute();
+    this.getData();
+    
+    //console.log(this.routeNumber);
+  }
+  setupRoute() {
+    this.route.params.subscribe((params) => {
+      console.log("Your params:", params);
+      this.routeNumber = +params['number'];
+    })
+  }
+  getData() {
+    this.apiService.getAccommodationItemData(this.routeNumber).subscribe((data) => {
       this.item = data;
     })
-    console.log('Your Object:', this.item);
   }
 
   
