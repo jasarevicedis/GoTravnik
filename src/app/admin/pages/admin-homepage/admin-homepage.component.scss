@@ -14,13 +14,13 @@
     .stats-section {
         margin-top: 30px;
         width: 100%;
-        height: 120px;
+        height: 100px;
         //background-color: red;
         display: flex;
         justify-content: space-evenly;
         .stats-box {
             width: 190px;
-            height: 120px;
+            height: 100px;
             display: flex;
             border-radius: 12px;
             background-color: rgb(221, 180, 241);
@@ -70,13 +70,93 @@
                 }
             }
         }
-        .visitors-graph-container {
+        .submit-event-section {
             width: 450px;
             height: 250px;
             display: flex;
             background-color: white;
             border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            .submit-event-table-header {
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    margin-left: 15px;
+                }
+                a {
+                    margin-right: 15px;
+                    text-decoration: none;
+                }
+            }
+            .submit-event-table {
+                width: 95%;
+                height: 200px;
+                margin-top: 10px;
+                background-color: rgb(246, 235, 255);
+                border-radius: 8px;
+                thead {
+                    width: 100%;
+                    height: 30px;
+                    background-color: rgb(238, 212, 255);
+                    tr {
+                        font-size: 13px;
+                        
+                    }
+                }
+            }
+        }
 
+        
+        
+    }
+}
+.lower-section {
+    margin-top: 20px;
+    width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+    .message-section {
+        width: 950px;
+        height: 420px;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        .message-table-header {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                margin-left: 15px;
+            }
+            a {
+                margin-right: 15px;
+                text-decoration: none;
+            }
+        }
+        .message-table {
+            width: 98%;
+            height: 370px;
+            margin-top: 10px;
+            background-color: rgb(246, 235, 255);
+            border-radius: 8px;
+            thead {
+                width: 100%;
+                height: 30px;
+                background-color: rgb(238, 212, 255);
+                tr {
+                    font-size: 13px;
+                    
+                }
+            }
         }
     }
 }
