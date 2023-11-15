@@ -1,4 +1,4 @@
-export interface Rating {
+export interface RatingData {
     value: number,
-    review: string
+    textComment: string
 }

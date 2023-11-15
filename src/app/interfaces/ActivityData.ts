@@ -1,5 +1,5 @@
 import { LocationData } from "./LocationData";
-import { Rating } from "./RatingData";
+import { RatingData } from "./RatingData";
 import { SubcategoryData } from "./SubcategoryData";
 
 export interface ActivityData {
@@ -10,6 +10,6 @@ export interface ActivityData {
     telephoneNumber: string;   
     website: string;
     subcategories: SubcategoryData[]
-    ratings: Rating[]
+    ratings: RatingData[]
 
 }

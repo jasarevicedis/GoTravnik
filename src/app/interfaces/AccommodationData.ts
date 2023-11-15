@@ -1,6 +1,6 @@
 import { SubcategoryData } from "./SubcategoryData";
 import { LocationData } from "./LocationData";
-import { Rating } from "./RatingData";
+import { RatingData } from "./RatingData";
 
 export interface AccommodationData {
     id: number,
@@ -11,5 +11,5 @@ export interface AccommodationData {
     telephoneNumber: string;   
     website: string;
     subcategories: SubcategoryData[]
-    ratings: Rating[]
+    ratings: RatingData[]
 }

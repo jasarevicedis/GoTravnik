@@ -8,7 +8,7 @@ import { AccommodationData } from 'src/app/interfaces/AccommodationData';
 })
 export class AddaccommodationPopupComponent {
   data: AccommodationData = {
-    name: 'aaaa',
+    name: 'aaaabbbbccccccccc',
     description: 'aaaaa',
     image: 'aaaaaaa',
 
@@ -19,8 +19,24 @@ export class AddaccommodationPopupComponent {
       yCoordinate: 3
     },
     website: '',
-    subcategories: [],
-    ratings: [],
+    subcategories: [
+      {
+        name: "MOTEL",
+      },
+      {
+        name: "URBAN",
+      },
+    ],
+    ratings: [
+      {
+        value: 4,
+        textComment: "dadwadadwadwa"
+      },
+      {
+        value: 2,
+        textComment: "jdhwadhgwa gj wghah wahjg agh ghjw aghg agh wagh wghj waghjw aghj"
+      }
+    ],
     id: 0
   };
 
