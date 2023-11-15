@@ -133,7 +133,7 @@
         <div class="keyword">Guide Service</div>
     </div>
     </div>
-    <div *ngIf="accommResults" class="results-container">
+    <div *ngIf="hasData; else recommendedSection" class="results-container">
         <div class="results-section">
             <div class="section-header">
                 <p class="section-name">Accommodation</p>
@@ -143,19 +143,18 @@
                 <app-accommodation-card [item]="item"></app-accommodation-card>
             </div>
         </div>
-        <div class="results-section">
-            <div class="section-header">
-                <p class="section-name">Activities</p>
-                <p class="results-number">23</p>
-            </div>
-            <div class="section-list">
-                <app-header-search-card></app-header-search-card>
-                <app-header-search-card></app-header-search-card>
-                <app-header-search-card></app-header-search-card>
-                <app-header-search-card></app-header-search-card>
-            </div>
-        </div>
+        
     </div>
+    <ng-template #recommendedSection>
+        
+        <div class="recommended-section">
+            <p>Popular places:</p>
+            
+            <div class="recommended-list"></div>
+        </div>    
+            
+                
+    </ng-template>
 </div>
 
 

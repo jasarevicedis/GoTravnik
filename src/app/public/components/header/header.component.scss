@@ -111,7 +111,7 @@
             margin-top: 60px;
             display: flex;
             width: 100%;
-            
+            min-height: calc(100vh - 60px) !important;
             max-height: calc(100vh - 60px) !important;
 
             overflow-y: auto !important;
@@ -402,7 +402,21 @@
         position: absolute;
     }
     
+    
 
+    .recommended-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        max-height: 100vh;
+        .recommended-list {
+            display: flex;
+            width: 300px;
+            height: 800px;
+            background-color: lightblue;
+        }
+    }
 
 
 

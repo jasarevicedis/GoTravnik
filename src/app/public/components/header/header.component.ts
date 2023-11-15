@@ -66,12 +66,17 @@ export class HeaderComponent {
 
   searchTerm: string | undefined;
   accommResults: any;
+  hasData = false;
 
   search() {
     if(this.searchTerm) {
       this.apiService.getAccommodationByName(this.searchTerm).subscribe((result) => {
         this.accommResults = result;
+        this.hasData = true;
       })
+    }
+    else {
+      this.hasData=false;
     }
   }
   
