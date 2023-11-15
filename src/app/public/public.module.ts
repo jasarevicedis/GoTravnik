@@ -133,7 +133,8 @@ import { AttractionItempageComponent } from './itempages/attraction-itempage/att
     MatExpansionModule,
     MatChipsModule,
     MatDividerModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   exports: [

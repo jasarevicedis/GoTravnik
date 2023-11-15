@@ -31,4 +31,9 @@ export class ApiService {
   getEventData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Event`);
   }
+  getAccommodationByName(name: string ): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Accommodation/${name}`);
+    
+  }
+  
 }

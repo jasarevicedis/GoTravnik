@@ -1,5 +1,6 @@
 import { HostListener, Component, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
   
 })
 export class HeaderComponent {
-  
+  constructor(private apiService: ApiService) {}
 
   isScrolled = false;
   @HostListener('window:scroll', [])
@@ -61,6 +62,17 @@ export class HeaderComponent {
   isLanguageListOpen = false;
   toggleLanguages(): void {
     this.isLanguageListOpen = !this.isLanguageListOpen;
+  }
+
+  searchTerm: string | undefined;
+  accommResults: any;
+
+  search() {
+    if(this.searchTerm) {
+      this.apiService.getAccommodationByName(this.searchTerm).subscribe((result) => {
+        this.accommResults = result;
+      })
+    }
   }
   
 }

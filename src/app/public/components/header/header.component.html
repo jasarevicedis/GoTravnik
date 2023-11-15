@@ -124,8 +124,8 @@
 </div>
 <div class="search-menu" [class.is-open-search]="isSearchOpen">
     <div class="search-container">
-        <input type="text" name="" id="">
-        <button class="search-button"></button>
+        <input [(ngModel)]="searchTerm" type="text" name="searchbar" id="searchbar">
+        <button (click)="search()" class="search-button"></button>
     </div>
     <div class="keywords-section">
         <p>Popular keywords</p>
@@ -133,17 +133,14 @@
         <div class="keyword">Guide Service</div>
     </div>
     </div>
-    <div class="results-container">
+    <div *ngIf="accommResults" class="results-container">
         <div class="results-section">
             <div class="section-header">
-                <p class="section-name">Activities</p>
+                <p class="section-name">Accommodation</p>
                 <p class="results-number">23</p>
             </div>
-            <div class="section-list">
-                <app-header-search-card></app-header-search-card>
-                <app-header-search-card></app-header-search-card>
-                <app-header-search-card></app-header-search-card>
-                <app-header-search-card></app-header-search-card>
+            <div *ngFor="let item of accommResults" class="section-list">
+                <app-accommodation-card [item]="item"></app-accommodation-card>
             </div>
         </div>
         <div class="results-section">
