@@ -11,8 +11,9 @@ export class WeatherPopupComponent implements OnInit {
   constructor(private dialogRef: MatDialogRef<WeatherPopupComponent>,
     private weatherService: WeatherApiService
     ) {
-    this.getWeather('Travnik');
-      this.getTemperature('Travnik');
+    this.getCurrentWeather('Travnik');
+    this.getDaysForecast('Travnik');
+     
   }
   ngOnInit(): void {
     throw new Error('Method not implemented.');
@@ -25,25 +26,25 @@ export class WeatherPopupComponent implements OnInit {
   }
   
   weatherData: any;
+  forecastData:any;
   temperature: number | undefined;
 
-  getWeather(city: string): void {
-    this.weatherService.getWeather(city)
+  getCurrentWeather(city: string): void {
+    this.weatherService.getCurrentWeather(city)
       .subscribe(data => {
         this.weatherData = data;
       }, error => {
         console.error('Error fetching weather data', error);
       });
   }
-
-  getTemperature(city: string): void {
-    this.weatherService.getWeather(city)
-      .subscribe({
-        // Extract temperature from the API response
-        next: (data: any) => {
-        this.temperature = data.main.temp;
-      }, error: (error: any) => {
-        console.error('Error fetching temperature data', error);
-      }});
+  getDaysForecast(city: string): void {
+    this.weatherService.getDaysForecast()
+    .subscribe(data => {
+      this.forecastData = data;
+    }, error => {
+      console.error('Error fetching weather data', error);
+    });
   }
+
+  
 }

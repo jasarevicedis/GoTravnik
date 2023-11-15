@@ -6,12 +6,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class WeatherApiService {
-  private apiKey = '4d85a96626aa440ffff2c7bddc3b15e6';
-  private apiUrl = 'https://api.openweathermap.org/data/3.0/weather';
+  private apiKey = '481ca0f67dda4b26aa8172632232003';
+  private apiUrl = 'https://api.openweathermap.org/data/3.0/onecall';
+  private lat = 44.2294;
+  private lon = 17.6430;
+  private part = "current";
   constructor(private http: HttpClient) { }
 
-    getWeather(city: string): Observable<any> {
-      const url = `${this.apiUrl}?q=${city}&appid=${this.apiKey}`;
+    getCurrentWeather(city: string): Observable<any> {
+      //const url = `${this.apiUrl}?q=${city}&appid=${this.apiKey}`;
+      const url = `http://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=Travnik&aqi=yes`;
+
+      return this.http.get(url);
+    }
+    getDaysForecast(): Observable<any> {
+      const url = `https://api.weatherapi.com/v1/forecast.json?q=Travnik&days=5&hour=12&aqi=no&tp=24&key=${this.apiKey}`;
       return this.http.get(url);
     }
   
