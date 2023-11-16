@@ -46,7 +46,20 @@ export class HomepageComponent implements OnInit {
     this.openShortcutService.openShortcut4Popup();
   }
 
-  
+  getTemp(): void {
+    this.temp = this.weatherService.getCurrentWeather("Travnik");
+  }
+  weatherData: any;
+  getCurrentWeather(city: string): void {
+    this.weatherService.getCurrentWeather(city)
+      .subscribe(data => {
+        this.weatherData = data;
+      }, error => {
+        console.error('Error fetching weather data', error);
+      });
+  }
+
+  temp: any;
   foodList: any;
   eventList: any;
   attractionList: any;
@@ -54,6 +67,7 @@ export class HomepageComponent implements OnInit {
   activityList: any;
 
   ngOnInit(): void {
+    this.getCurrentWeather('Travnik');
     this.apiService.getFoodAndDrinkData().subscribe((data) => {
       this.foodList = data;
     });
