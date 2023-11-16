@@ -3,34 +3,43 @@
 </div>
 <form action="">
     <div class="left-section">
-        <label for="event-category">Category:</label>
-    <select name="" id="event-category"></select>
+        
+        <mat-form-field>
+            <mat-label>Event category</mat-label>
+            <select matNativeControl required>
+              <option value="">Sport</option>
+              <option value="">Culture</option>
+              <option value="">Art</option>
+              <option value="">Educational</option>
+            </select>
+          </mat-form-field>
 
     <mat-form-field class="name">
         <mat-label>Title</mat-label>
         <input matInput>
     </mat-form-field>
 
-    <mat-form-field class="name">
+    <mat-form-field class="image">
         <mat-label>Image URL</mat-label>
         <input matInput>
     </mat-form-field>
 
-    <mat-form-field class="name">
-        <mat-label>Description</mat-label>
-        <input matInput>
-    </mat-form-field>
+    <mat-form-field class="text">
+        <mat-label>Message</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
 
-    <mat-form-field >
-        <mat-label>Address</mat-label>
-        <input matInput>
-    </mat-form-field>
-
+   
     
 
    
     </div>
     <div class="right-section">
+        <mat-form-field >
+            <mat-label>Address</mat-label>
+            <input matInput>
+        </mat-form-field>
+    
         <mat-form-field >
             <mat-label>x-coordinate</mat-label>
             <input matInput>
