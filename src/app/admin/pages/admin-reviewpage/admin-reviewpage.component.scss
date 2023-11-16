@@ -19,7 +19,21 @@
         }
     }
     .table-nav {
-        
+        button {
+            width: 130px;
+            height:35px;
+            margin-left: 5px;
+            border-radius: 8px;
+        }
+        .filter {
+            background-color: rgb(203, 177, 255);
+            border: none;
+            color: white;
+        }
+        .reset {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid lightgrey;
+        }
         margin-top: 20px;
         width: 90%;
         height: 80px;
@@ -27,6 +41,9 @@
         background-color: rgb(255, 255, 255);
         align-items: center;
         justify-content: space-evenly;
+        mat-form-field {
+            margin-top: 20px;
+        }
         .nav-item {
             display: flex;
             gap: 10px;
@@ -48,7 +65,7 @@
     }
     .reviews-table {
         margin-bottom: 50px;
-        margin-top: 5px;
+        margin-top: 15px;
         width: 90%;
         //min-height: 400px;
         display: flex;
@@ -66,7 +83,7 @@
                 display: flex;
                 background-color: rgb(255, 255, 255);
                 align-items: center;
-                margin-bottom: 1px;
+                margin-bottom: 3px;
                 td {
                     display: flex;
                     //border: 1px solid green;

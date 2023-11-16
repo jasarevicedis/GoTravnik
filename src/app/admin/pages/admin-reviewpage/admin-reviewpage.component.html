@@ -5,26 +5,35 @@
 </div>
 <div class="table-nav">
     
-    <div class="nav-item">
-        <p>Status</p>
-        <select name="" id="">
-            <option value="Alphabetically"></option>
+    <mat-form-field>
+        <mat-label>Status</mat-label>
+        <select matNativeControl >
+          <option selected value="">All</option>
+          <option value="">Approved</option>
+          <option value="">Non approved</option>
+          
         </select>
-    </div>
-    <div class="nav-item">
-        <p>Time added</p>
-        <select name="" id="">
-            <option value="Alphabetically"></option>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Time added</mat-label>
+        <select matNativeControl >
+          <option selected value="">All</option>
+          <option value="">Today</option>
+          <option value="">This week</option>
+          <option value="">This month</option>
         </select>
-    </div>
-    <div class="nav-item">
-        <p>Sort by</p>
-        <select name="" id="">
-            <option value="Alphabetically"></option>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Sort by</mat-label>
+        <select matNativeControl >
+          <option selected value="">Time added</option>
+          <option value="">Alphabetical</option>
+          <option value="">Best to worst</option>
+          <option value="">Worst to best</option>
         </select>
-    </div>
-    
-    <div class="search-bar"></div>
+      </mat-form-field>
+      <button class="filter">Filter</button>
+    <button class="reset">Reset</button>
 </div>
 <table class="reviews-table">
     <thead></thead>
