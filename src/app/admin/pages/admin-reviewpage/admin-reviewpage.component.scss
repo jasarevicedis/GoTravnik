@@ -85,8 +85,12 @@
                         height: 40px;
                         display: flex;
                         flex-direction: column;
+                        font-size: 13px;
+                        //align-items: center;
+                        padding-left: 10px;
                         justify-content: center;
-                        background-color: rgb(232, 183, 253);
+                        background-color: rgb(218, 148, 248);
+                        color: white;
                     }
                     .item-tag {
                         font-size: 14px;
@@ -95,12 +99,22 @@
                 }
                 .review-rating {
                     width: 120px;
+                    
                     svg {
+                        display: none;
+                        
+                    }
+                    .filled {
+                        display: flex;
                         fill: orange;
                     }
                 }
                 .review-comment {
                     width: 360px;
+                    p {
+                        font-size: 15px;
+                        max-width: 300px;
+                    }
                 }
                 .review-date {
                     width: 100px;
@@ -108,15 +122,23 @@
                 .review-status {
                     width: 130px;
                     .status {
-                        background-color: lightgreen;
-                        width: 100px;
-                        height: 20px;
+                        //background-color: lightgreen;
+                        width: 120px;
+                        height: 25px;
                         border-radius: 5px;
-                        font-size: 13px;
+                        font-size: 11px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        color: white;
                     }
+                    .approved {
+                        background-color: lightseagreen;
+                    }
+                    .nonapproved {
+                        background-color: rgb(146, 146, 146);
+                    }
+                    
                 }
             }
         }
