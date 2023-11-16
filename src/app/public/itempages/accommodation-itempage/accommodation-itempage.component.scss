@@ -127,6 +127,18 @@
 
                 }
                 .rate {
+                    display: flex;
+                    svg {
+                        display: none;
+                        .filled {
+                            display: flex;
+                            fill: orange;
+                        }
+                    }
+                    .filled {
+                        display: flex;
+                        fill: orange;
+                    }
                     margin-right: 20px;
                 }
             }

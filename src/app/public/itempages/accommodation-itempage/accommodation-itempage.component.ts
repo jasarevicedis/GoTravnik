@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 export class AccommodationItempageComponent implements OnInit {
   routeNumber: number =1;
   itemId: number | undefined;
+  rates: any;
   item: any; // Change the type based on your API response
 
   constructor(private route: ActivatedRoute, private http: HttpClient,
@@ -31,6 +32,7 @@ export class AccommodationItempageComponent implements OnInit {
   getData() {
     this.apiService.getAccommodationItemData(this.routeNumber).subscribe((data) => {
       this.item = data;
+      this.rates = data.ratings;
     })
   }
 
