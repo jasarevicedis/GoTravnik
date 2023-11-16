@@ -49,6 +49,7 @@ import { EditAttractionComponent } from './pages/subpages/popups/edit-attraction
 import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailedReviewPopupComponent } from './components/detailed-review-popup/detailed-review-popup.component';
+import { DeleteItemComponent } from './components/delete-item/delete-item.component';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -85,6 +86,7 @@ import { DetailedReviewPopupComponent } from './components/detailed-review-popup
     EditAttractionComponent,
     EditFoodComponent,
     DetailedReviewPopupComponent,
+    DeleteItemComponent,
     
   ],
   imports: [

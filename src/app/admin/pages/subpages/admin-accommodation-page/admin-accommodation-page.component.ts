@@ -32,4 +32,8 @@ export class AdminAccommodationPageComponent implements OnInit {
   openAccommDetailsPopup(): void {
     this.adminService.openDetailedAccommodationPopup();
   }
+  openDeleteItem(event: Event): void {
+    event.stopPropagation();
+    this.adminService.openDeleteItem();
+  }
 }
