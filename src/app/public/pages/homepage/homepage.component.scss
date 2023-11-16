@@ -722,6 +722,90 @@
 
 @media screen and (min-width: 700px) {
     :host {
+        .landing-screen {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        .weather-box {
+            
+           position: relative;
+           height: 100px;
+           width: 320px;
+           margin: 0;
+           padding: 0;
+           top: 0;
+           left: 0;
+           margin-top: 315px;
+           margin-right: 50px;
+            .icon-box {
+                
+                svg {
+                    
+                }
+            }
+            .temp-box {
+                
+                p {
+                    
+                }
+                svg {
+                    
+                    
+                
+                }
+                
+            }
+        }
+        .main-info-box {
+           
+            position: relative;
+           margin: 0;
+           padding: 0;
+           width: 350px;
+           margin-left: 50px;
+           margin-top: 130px;
+           
+            
+            
+            #city-name {
+                
+            }
+            #city-short-desc {
+                
+            }
+            .location-and-tags-box {
+                
+                img {
+                    
+                }
+                .tag-data {
+                    
+                    p {
+                        
+                    }
+                    .tags {
+                       
+                        .tag {
+                           
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        width: 100%;
+        height: 75vh;
+        background: none;
+        background-color: rgb(120, 201, 230);
+       
+        //align-items: center;
+       
+       //background: url("https://furaj.ba/wp-content/uploads/2017/09/adnan-bubalo-Copy.jpg");
+        
+        
+        }
         .info-section {
             .shortcuts-container {
                 display: flex;
