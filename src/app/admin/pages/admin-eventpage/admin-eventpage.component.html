@@ -3,12 +3,32 @@
     <button (click)="openAddEventPopup()" class="add-event-button">Add event</button>
 </div>
 <div class="eventpage-nav">
-    <select name="" id="" class="time-dropdown"></select>
-    <select name="" id="" class="category-dropdown"></select>
-    <input type="date" name="" id="" class="start-period">
-    <input type="date" name="" id="" class="end-period">
+    <mat-form-field>
+        <mat-label>Event category</mat-label>
+        <select matNativeControl required>
+          <option value="">Sport</option>
+          <option value="">Culture</option>
+          <option value="">Art</option>
+          <option value="">Educational</option>
+        </select>
+      </mat-form-field>
     
-    <div class="search-events-bar"></div>
+      <mat-form-field id="start-date-field">
+        <mat-label>Start  date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field id="end-date-field">
+        <mat-label>End date</mat-label>
+        <input matInput [matDatepicker]="picker2">
+        
+        <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <button class="filter">Filter</button>
+    <button class="reset">Reset</button>
 </div>
 <div class="events-container">
     <app-admin-event-card></app-admin-event-card>

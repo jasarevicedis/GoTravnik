@@ -16,6 +16,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
         p {
             font-size: 22px;
         }
@@ -33,28 +34,40 @@
     .eventpage-nav {
         margin-top: 10px;
         width: 90%;
-        height: 80px;
+        height: 90px;
         display: flex;
         background-color: rgb(255, 255, 255);
         align-items: center;
-        select {
+        :nth-child(1) {
+            margin-left: 20px;
+        }
+        mat-form-field {
+            padding: 4px;
+            
+input {
+  font-size: 12px; /* You can adjust this value */
+}
+            margin-top: 20px;
+            width: 200px;
+            // /height: 70px;
+            margin-right: 10px;
+            
+        }
+        button {
             width: 130px;
-            height: 30px;
-            margin-left: 20px;
+            height:35px;
+            margin-left: 10px;
+            border-radius: 8px;
         }
-        input {
-            width: 100px;
-            height: 30px;
-            margin-left: 20px;
-
+        .filter {
+            background-color: rgb(227, 213, 255);
+            border: none;
         }
-        .search-events-bar {
-            width: 260px;
-            height: 30px;
-            border: 1px solid purple;
-            border-radius: 12px;
-            margin-left: 120px;
+        .reset {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid lightgrey;
         }
+        
     }
     .events-container {
         width: 90%;

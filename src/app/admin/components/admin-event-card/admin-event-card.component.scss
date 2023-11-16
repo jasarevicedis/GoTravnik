@@ -8,6 +8,7 @@
     margin-bottom: 20px;
     justify-self: center;
     border-radius: 12px;
+    border: 1px solid rgb(228, 220, 240);
     .event-image-container {
         margin-top: 10px;
         align-self: center;
@@ -45,7 +46,15 @@
             display: flex;
             font-size: 13px;
             margin-top: 10px;
-            p {
+            div {
+                width: 80px;
+                height: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(201, 136, 255);
+                border-radius: 6px;
+                color: white;
             margin-right: 10px;
             }
             
