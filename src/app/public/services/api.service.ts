@@ -14,23 +14,50 @@ export class ApiService {
   getAccommodationData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Accommodation`);
   }
-  
   getAccommodationItemData(id: number ): Observable<any> {
-    return this.http.get(`${this.apiUrl}/Accommodation/${id}`);
+    return this.http.get(`${this.apiUrl}/Accommodation/${id}`); 
+  }
+
+
+  getActivitiesData(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Activity`);
+  }
+  getActivityItemData(id: number ): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Activity/${id}`);
     
   }
-  getActivitiesData(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/Activities`);
-  }
+
+
   getFoodAndDrinkData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/FoodAndDrink`);
   }
+  getFoodAndDrinkItemData(id: number ): Observable<any> {
+    return this.http.get(`${this.apiUrl}/FoodAndDrink/${id}`);
+    
+  }
+
+
+
   getAttractionsData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Attraction`);
   }
+  getAttractionItemData(id: number ): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Attraction/${id}`);
+    
+  }
+
+
+
   getEventData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/Event`);
   }
+  getEventItemData(id: number ): Observable<any> {
+    return this.http.get(`${this.apiUrl}/Event/${id}`);
+    
+  }
+
+  
+
   getAccommodationByName(name: string ): Observable<any> {
     return this.http.get(`${this.apiUrl}/Accommodation/${name}`);
     

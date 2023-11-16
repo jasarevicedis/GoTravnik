@@ -12,6 +12,8 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     .close {
+        outline: none;
+
         align-self: flex-end;
         width: 20px;
         height: 20px;

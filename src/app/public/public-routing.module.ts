@@ -27,7 +27,7 @@ const routes: Routes = [
       {path: '', component: HomepageComponent},
       {path: 'food', children: [
         {path: '', component: FoodpageComponent},
-        {path: 'fooditem/:id', component: FoodItempageComponent}
+        {path: 'fooditem/:number', component: FoodItempageComponent}
       ]},
       {path:'planthetrip', component: PlantrippageComponent},
       {path:'accomodation', children: [
@@ -37,19 +37,23 @@ const routes: Routes = [
       {path:'attractions', 
         children: [
           {path: '', component: AttractionspageComponent},
-          {path:'attractionitem/:id', component: AttractionItempageComponent}
+          {path:'attractionitem/:number', component: AttractionItempageComponent}
         ]
       },
       {path:'events', children: [
         {path: '', component: EventpageComponent},
-        {path:'eventitem/:id', component: EventItempageComponent}
+        {path:'eventitem/:number', component: EventItempageComponent}
       ]},
       {path:'areaguide', component:AreguidepageComponent},
-      {path:'blog', component: BlogpageComponent},
+
+      {path:'blog', children: [
+        {path: '', component: BlogpageComponent},
+        {path: 'blogitem/:number', component: BlogpageComponent}
+      ]},
 
       {path: 'activities', children: [
         {path:'', component: ActivitiespageComponent},
-        {path:'activityitem/:id', component: ActivityItempageComponent}
+        {path:'activityitem/:number', component: ActivityItempageComponent}
       ]},
       {path:'results', component: PlannerResultsComponent},
       {path: 'routes', component: RoutespageComponent},

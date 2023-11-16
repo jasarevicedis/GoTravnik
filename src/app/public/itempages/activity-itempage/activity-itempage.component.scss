@@ -1,0 +1,157 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .item-wallpaper {
+        height: 430px;
+        width: 100%;
+        background-color: pink;
+    }
+    .item-data {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        .object-category {
+            margin-top: 60px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .object-title {
+            margin-top: 10px;
+            font-size: 35px;
+            font-weight: bolder;
+        }
+        .rating-container {
+            margin-top: 20px;
+            width: 150px;
+            height: 30px;
+            //background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .rate {
+                display: flex;
+                svg {
+                    fill: orange;
+                }
+                p {
+                    font-size: 20px;
+                }
+            } p {
+                font-size: 18px;
+            }
+        }
+        .website {
+            margin-top: 30px;
+            width: 150px;
+            height: 35px;
+            background-color: purple;
+            border: none;
+            color: white;
+            margin-bottom: 30px;
+        }
+    }
+    .item-contact {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        div {
+            display: flex;
+            margin-top: 30px;
+            svg {
+                margin-right: 20px;
+            }
+        }
+        padding-bottom: 50px;
+        border-bottom: 1px solid grey;
+    }
+    .item-map {
+        margin-top: 70px;
+        width: 90%;
+        align-self: center;
+        height: 200px;
+        display: flex;
+        background-color: lightgrey;
+    }
+    .item-about {
+        display: flex;
+        flex-direction: column;
+        .about {
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-top: 30px;
+
+        }
+        .about-txt {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: calc(100% - 40px);
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    .reviews-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(230, 255, 255);
+        .banner {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+        .review {
+            width: 430px;
+            align-self: center;
+            //height: 100px;
+            background-color: white;
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            .review-header {
+                align-items: center;
+                min-height: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .review-date {
+                    margin-left: 10px;
+
+                }
+                .rate {
+                    display: flex;
+                    svg {
+                        display: none;
+                        .filled {
+                            display: flex;
+                            fill: orange;
+                        }
+                    }
+                    .filled {
+                        display: flex;
+                        fill: orange;
+                    }
+                    margin-right: 20px;
+                }
+            }
+            .review-body {
+                //margin-top: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                //padding-bottom: 30px;
+                .review-text {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
