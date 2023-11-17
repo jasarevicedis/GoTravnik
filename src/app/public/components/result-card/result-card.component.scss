@@ -1,5 +1,5 @@
 :host {
-    width: 460px;
+    width: 400px;
     margin-bottom: 10px;
     height: 120px;
     background-color: lightblue;
@@ -9,13 +9,19 @@
         width: 120px;
     }
     .data-section {
-        width: 320px;
+        width: 280px;
         p {
-            padding-left: 10px;
+            margin-left: 20px;
             padding-right: 10px;
             font-size: 13px;
             color: rgb(66, 66, 66);;
             
+        }
+        :nth-child(1) {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
     }
 }

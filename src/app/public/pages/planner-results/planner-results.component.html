@@ -1,22 +1,36 @@
-<div class="page-header"></div>
-<div class="itinerary">
-    <div class="itinerary-day">
-        <p class="itinerary-day-num">DAY 1</p>
-        <P class="itinerary-date">22 September 2023</P>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
+    <div  class="page-header">
+        <p>Your itinerary</p>
     </div>
-    <div class="itinerary-day">
-        <p class="itinerary-day-num">DAY 1</p>
-        <P class="itinerary-date">22 September 2023</P>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
-        <app-result-card></app-result-card>
+    <div class="itinerary">
+        <p class="tags-text">Your tags:</p>
+        <div class="tags">
+            <p *ngFor="let item of selectedValues | slice:0:2" class="itinerary-day-num">{{item}}</p>
+        </div>
+        <p class="day">Day 1</p>
+        <div *ngFor="let entry of combinedApiData" class="test">
+            <div class="kartica" *ngIf="entry.data">
+                <!-- Display data properties individually -->
+                <img [src]="entry.data[0]?.image" alt="">
+    <div class="data-section">
+        <p class="title">{{entry.data[0]?.name}}</p>
+        <p class="desc">{{entry.data[0]?.description.substring(0,100)}}</p>
     </div>
-    <button (click)="sendMessage()"></button>
-</div>
+                
+            </div>
+        </div>  
+        <p class="day">Day 2</p>
+        <div *ngFor="let entry of combinedApiData" class="test">
+            <div class="kartica" *ngIf="entry.data">
+                <!-- Display data properties individually -->
+                <img src="../../../../assets/images/travniklogo1.jpg" alt="">
+    <div class="data-section">
+        <p class="title">{{entry.data[0]?.name}}</p>
+        <p class="desc">{{entry.data[0]?.description.substring(0,100)}}</p>
+    </div>
+                
+            </div>
+        </div>    
+            
+        
+        <button (click)="sendMessage()"></button>
+

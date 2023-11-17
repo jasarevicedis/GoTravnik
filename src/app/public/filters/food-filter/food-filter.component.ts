@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FoodanddrinkService } from '../../services/foodanddrink.service';
+import { PlannerService } from '../../services/planner.service';
 
 @Component({
   selector: 'app-food-filter',
@@ -10,7 +11,8 @@ import { FoodanddrinkService } from '../../services/foodanddrink.service';
 })
 export class FoodFilterComponent implements OnInit {
   constructor(private dialogRef: MatDialogRef<FoodFilterComponent>,
-    private api: FoodanddrinkService) {}
+    private api: FoodanddrinkService,
+    private data: PlannerService) {}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
@@ -25,5 +27,8 @@ export class FoodFilterComponent implements OnInit {
 
     // Update the shared service with the filtered data
     this.api.updateData(filteredData);
+  }
+  apply() {
+    
   }
 }

@@ -63,6 +63,7 @@ import { ReloadMapComponent } from './components/reload-map/reload-map.component
 import { ResultCardComponent } from './components/result-card/result-card.component';
 import { AccommodationItempageComponent } from './itempages/accommodation-itempage/accommodation-itempage.component';
 import { AttractionItempageComponent } from './itempages/attraction-itempage/attraction-itempage.component';
+import { RatingFormComponent } from './components/rating-form/rating-form.component';
 
 @NgModule({
   declarations: [
@@ -112,6 +113,7 @@ import { AttractionItempageComponent } from './itempages/attraction-itempage/att
     ResultCardComponent,
     AccommodationItempageComponent,
     AttractionItempageComponent,
+    RatingFormComponent,
     
     //WeatherpageComponent,
     

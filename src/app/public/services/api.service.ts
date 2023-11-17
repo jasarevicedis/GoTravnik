@@ -72,7 +72,7 @@ export class ApiService {
 
   getFilteredFoodAndDrink(category: string[]): Observable<any> {
     const data = {strings: category};
-    return this.http.get(`${this.apiUrl}/FoodAndDrink/filter/${data}`);
+    return this.http.post(`${this.apiUrl}/FoodAndDrink/filter/`,data);
   }
   
 }

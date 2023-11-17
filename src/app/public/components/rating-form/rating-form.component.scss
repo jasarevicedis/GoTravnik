@@ -1,0 +1,24 @@
+:host {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .popup-header {
+        width: 100%;
+        height: 30px;
+    }
+    form {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: lightseagreen;
+            border: none;
+            align-self: center;
+        }
+    }
+}

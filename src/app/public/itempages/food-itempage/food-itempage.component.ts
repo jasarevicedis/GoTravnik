@@ -3,6 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../services/api.service';
 import { Observable } from 'rxjs';
+import { RatingService } from '../../services/rating.service';
 
 @Component({
   templateUrl: './food-itempage.component.html',
@@ -15,7 +16,8 @@ export class FoodItempageComponent implements OnInit {
   item: any; // Change the type based on your API response
 
   constructor(private route: ActivatedRoute, private http: HttpClient,
-    private apiService: ApiService) {}
+    private apiService: ApiService,
+    private rate: RatingService) {}
   ngOnInit(): void {
     this.setupRoute();
     this.getData();
@@ -33,5 +35,8 @@ export class FoodItempageComponent implements OnInit {
       this.item = data;
       this.rates = data.ratings;
     })
+  }
+  openRatingPopup(): void {
+    this.rate.openRatingPopup();
   }
 }

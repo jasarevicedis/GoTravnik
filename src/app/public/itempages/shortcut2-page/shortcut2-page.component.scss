@@ -6,8 +6,8 @@ body::-webkit-scrollbar {
     //width: calc(100vw - 40px);
     
       
-    
-    background-color: rgb(255, 255, 255);
+    color: white;;
+    background-color: #00a9ac;
     
     display: flex;
     flex-direction: column;
@@ -23,7 +23,6 @@ body::-webkit-scrollbar {
         margin-right: 5px;
         margin-top: 5px;
         outline: none;
-
         svg {
             height: 20px;
             width: 20px;
@@ -33,12 +32,11 @@ body::-webkit-scrollbar {
     h1 {
         margin-left: 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
     }
     
     ol {
         list-style-type: decimal;
-        margin-left: 20px;
+        padding-left: 20px;
     }
 
     li {

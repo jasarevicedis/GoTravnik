@@ -42,28 +42,28 @@
     <section class="members-radios">
         
         <label>
-            <input type="radio" name="member-radio" id="member-radio1" (click)="updateSelectedValues()">
+            <input type="radio" name="member-radio" id="member-radio1" [(ngModel)]="selectedRadio" value="SOLO" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/man.svg" alt="">
                 <p>Solo</p>
             </div>
         </label>
         <label>
-            <input type="radio" name="member-radio" id="member-radio2" (click)="updateSelectedValues()">
+            <input type="radio" name="member-radio" id="member-radio2" [(ngModel)]="selectedRadio" value="COUPLE" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/couple.svg" alt="">
                 <p>Couple</p>
             </div>
         </label>
         <label>
-            <input type="radio" name="member-radio" id="member-radio3" (click)="updateSelectedValues()">
+            <input type="radio" name="member-radio" id="member-radio3" [(ngModel)]="selectedRadio" value="FRIENDS" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/friends.svg" alt="">
                 <p>Friends</p>
             </div>
         </label>
         <label>
-            <input type="radio" name="member-radio" id="member-radio4" (click)="updateSelectedValues()">
+            <input type="radio" name="member-radio" id="member-radio4" [(ngModel)]="selectedRadio" value="FAMILY" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/family.svg" alt="">
                 <p>Family</p>
@@ -236,6 +236,6 @@
         
     </section>
 
-    <button routerLink="/results" class="plan-button">Build your trip</button>
+    <button (click)="updateSelectedValues()" routerLink="/results" class="plan-button">Build your trip</button>
 
 </form>
