@@ -10,13 +10,17 @@
     cursor: pointer;
     
     .img-section {
-        background: url("https://cdn.tasteatlas.com/Images/Dishes/a5abc85497774e3f8ba9a7f25c1914df.jpg");
+        //background: url("https://cdn.tasteatlas.com/Images/Dishes/a5abc85497774e3f8ba9a7f25c1914df.jpg");
         background-size: cover;
         height: 130px;
         width: 130px;
         //border-radius: 10px 10px 0 0;
         align-self: center;
         margin-left: 5px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     .food-data {
         height: 140px;

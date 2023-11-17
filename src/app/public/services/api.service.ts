@@ -62,5 +62,17 @@ export class ApiService {
     return this.http.get(`${this.apiUrl}/Accommodation/${name}`);
     
   }
+
+
+
+
+
+
+
+
+  getFilteredFoodAndDrink(category: string[]): Observable<any> {
+    const data = {strings: category};
+    return this.http.get(`${this.apiUrl}/FoodAndDrink/filter/${data}`);
+  }
   
 }

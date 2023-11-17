@@ -42,28 +42,28 @@
     <section class="members-radios">
         
         <label>
-            <input type="radio" name="member-radio" id="member-radio1">
+            <input type="radio" name="member-radio" id="member-radio1" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/man.svg" alt="">
                 <p>Solo</p>
             </div>
         </label>
         <label>
-            <input type="radio" name="member-radio" id="member-radio2">
+            <input type="radio" name="member-radio" id="member-radio2" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/couple.svg" alt="">
                 <p>Couple</p>
             </div>
         </label>
         <label>
-            <input type="radio" name="member-radio" id="member-radio3">
+            <input type="radio" name="member-radio" id="member-radio3" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/friends.svg" alt="">
                 <p>Friends</p>
             </div>
         </label>
         <label>
-            <input type="radio" name="member-radio" id="member-radio4">
+            <input type="radio" name="member-radio" id="member-radio4" (click)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/family.svg" alt="">
                 <p>Family</p>
@@ -75,49 +75,49 @@
 
     <p class="form-question">Interests?</p>
     <div class="interests-select">
-        <label><input type="checkbox" name="interest" id="interest1">
+        <label><input type="checkbox" name="interest" id="interest1" [(ngModel)]="checkbox1" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/city.svg" alt="">
                 <p>City sightseeing</p>
             </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest2">
+        <label><input type="checkbox" name="interest" id="interest2" [(ngModel)]="checkbox2" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/park.svg" alt="">
                 <p>Outdoor activities</p></div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest3">
+        <label><input type="checkbox" name="interest" id="interest3" [(ngModel)]="checkbox3" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/event.svg" alt="">
                 <p>Events</p>
             </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest4">
+        <label><input type="checkbox" name="interest" id="interest4" [(ngModel)]="checkbox4" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/restaurant.svg" alt="">
                 <p>Food exploration</p>
             </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest5">
+        <label><input type="checkbox" name="interest" id="interest5" [(ngModel)]="checkbox5" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/mosque.svg" alt="">
                 <p>History</p>
             </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest6">
+        <label><input type="checkbox" name="interest" id="interest6" [(ngModel)]="checkbox6" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/nature.svg" alt="">
                 <p>Nature</p>
             </div> 
         </label>
-        <label><input type="checkbox" name="interest" id="interest6">
+        <label><input type="checkbox" name="interest" id="interest7" [(ngModel)]="checkbox7" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/relax.svg" alt="">
                 <p>Relaxation</p>
             </div> 
         </label>
 
-        <label><input type="checkbox" name="interest" id="interest6">
+        <label><input type="checkbox" name="interest" id="interest8" [(ngModel)]="checkbox8" (change)="updateSelectedValues()">
             <div class="option">
                 <img src="../../../../assets/images/planner_icons/relax.svg" alt="">
                 <p>Art/Culture</p>
