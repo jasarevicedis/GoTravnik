@@ -400,6 +400,17 @@
 }
     .search-menu {
         position: absolute;
+        .search-container {
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
     }
     
     

@@ -50,8 +50,8 @@
             <p>Transport</p>
         </div>
         <div (click)="openShortcut4()" class="homepage-shortcut">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>
-            <p>WiFi</p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z"/></svg>            
+            <p>Geography</p>
         </div>
         
     </div>
@@ -98,9 +98,7 @@
     </div>
     
       
-    <div *ngFor="let item of eventList" class="event-slider">
-        <app-event-card [item]="item"></app-event-card>
-    </div>
+    <app-event-card></app-event-card>
     <button class="upcoming">View all upcoming events</button>
 </div>
 
@@ -136,6 +134,8 @@
 
 
     </div>
+    
+    
     <button class="view-all">View All</button>
 </div>
 
@@ -205,13 +205,12 @@
 <div class="about-section">
     <p class="about-title">Travnik- Vezirski grad</p>
     <p class="about-desc">
-        When you visit Jeddah, you will have the opportunity to witness a rich heritage celebrated by UNESCO. From “Historical Jeddah” to the antique designs of balconies, stone walkways and ancient sidewalks, this destination unearths secrets that have inspired artists, writers and visitors alike for hundreds of years. Here, you will have a chance to see magnificent sunsets shimmering
-    </p>
+        Nestled in the heart of central Bosnia and Herzegovina, Travnik is a town steeped in history and adorned with captivating Ottoman architecture. This picturesque destination served as the capital of the Ottoman province of Bosnia in the 15th and 16th centuries, leaving behind a legacy of cultural richness. Visitors are drawn to landmarks like the iconic Travnik Castle, the vibrant Old Bazaar, and the elegant Sulejmanija Mosque. Beyond its historical charm, Travnik invites exploration of the surrounding natural beauty, offering a delightful blend of cultural heritage and scenic landscapes.    </p>
     <div class="about-items">
         <mat-accordion>  
             <mat-expansion-panel class="panel" >
               <mat-expansion-panel-header>
-                <mat-panel-title>
+                <mat-panel-title style="font-weight: bold;">
                   Costs of living
                 </mat-panel-title>
               </mat-expansion-panel-header>
@@ -220,38 +219,42 @@
 
             <mat-expansion-panel class="panel" >
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title style="font-weight: bold;">
                     Local cuisines
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
+                <p>Travnik is remarkably affordable. With lower living costs than many European cities, you can enjoy a high quality of life without breaking the bank. From housing to dining out, your budget stretches further in this picturesque Bosnian town.</p>
+
               </mat-expansion-panel>
 
               <mat-expansion-panel class="panel" >
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title style="font-weight: bold;">
                     Community and social life
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
+                <p>Travnik is remarkably affordable. With lower living costs than many European cities, you can enjoy a high quality of life without breaking the bank. From housing to dining out, your budget stretches further in this picturesque Bosnian town.</p>
+
               </mat-expansion-panel>
 
               <mat-expansion-panel class="panel" >
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title style="font-weight: bold;">
                     When to visit?
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
+                <p>Travnik is remarkably affordable. With lower living costs than many European cities, you can enjoy a high quality of life without breaking the bank. From housing to dining out, your budget stretches further in this picturesque Bosnian town.</p>
+
               </mat-expansion-panel>
 
               <mat-expansion-panel class="panel" >
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title style="font-weight: bold;">
                     Guided tours
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <p>I'm visible because I am open</p>
+                <p>Travnik is remarkably affordable. With lower living costs than many European cities, you can enjoy a high quality of life without breaking the bank. From housing to dining out, your budget stretches further in this picturesque Bosnian town.</p>
+
               </mat-expansion-panel>
 
               

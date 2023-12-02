@@ -72,6 +72,7 @@ export class HeaderComponent {
 
   searchTerm: string | undefined;
   accommResults: any;
+  
   hasData = false;
 
   search() {

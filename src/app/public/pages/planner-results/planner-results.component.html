@@ -7,7 +7,7 @@
             <p *ngFor="let item of selectedValues | slice:0:2" class="itinerary-day-num">{{item}}</p>
         </div>
         <p class="day">Day 1</p>
-        <div *ngFor="let entry of combinedApiData" class="test">
+        <div *ngFor="let entry of combinedApiData" class="test" id="test1">
             <div class="kartica" *ngIf="entry.data">
                 <!-- Display data properties individually -->
                 <img [src]="entry.data[0]?.image" alt="">
