@@ -7,6 +7,6 @@ import { ActivityData } from 'src/app/interfaces/ActivityData';
   styleUrls: ['./activity-shortcut.component.scss']
 })
 export class ActivityShortcutComponent {
-  @Input() item: ActivityData | undefined;
+  //@Input() item: ActivityData | undefined;
 
 }

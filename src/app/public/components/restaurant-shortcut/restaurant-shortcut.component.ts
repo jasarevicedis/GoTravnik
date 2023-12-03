@@ -7,6 +7,6 @@ import { FoodAndDrinkData } from 'src/app/interfaces/FoodAndDrinkData';
   styleUrls: ['./restaurant-shortcut.component.scss']
 })
 export class RestaurantShortcutComponent {
-  @Input() item: FoodAndDrinkData| undefined;
+  //@Input() item: FoodAndDrinkData| undefined;
 
 }

@@ -1,19 +1,8 @@
-/*
-<div class="blog-image-container"></div>
-<div class="blog-data">
-    <p class="blog-category">BUDGET TRAVEL</p>
-    <p class="blog-title">How to visit Travnik on a budget</p>
-    <p class="blog-date">SEP 30, 2023</p>
-</div>
-*/
 :host {
     margin-left: 20px;
     width: 100%;
     margin-bottom: 15px;
-    //background-color: rgb(241, 252, 255);
     height: 360px;
-    //border-radius: 8px;
-    //border: 1px solid rgb(199, 211, 238);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +12,6 @@
         display: flex;
         background: url("https://bosniatravel.info/wp-content/uploads/2018/08/Travnik_Panorama_2-Copy.jpg");
         background-size: cover;
-        //background-position-y: -150px;
-        
         background-color: pink;
         border-radius: 15px;
         margin-left: 15px;
@@ -43,8 +30,7 @@
         .blog-title {
             font-size: 20px;
             font-weight: bold;
-            margin-top: 10px;
-            
+            margin-top: 10px;        
         }
         .blog-date {
             margin-top: 20px;

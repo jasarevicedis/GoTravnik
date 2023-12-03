@@ -2,19 +2,15 @@
     width: 90%;
     display: flex;
     border: 1px solid lightgray;
-    //border-radius: 10px;
     height: 140px;
     background-color: white;
-    //border-radius: 10px;
     margin-bottom: 20px;
     cursor: pointer;
-    
     .img-section {
-        //background: url("https://cdn.tasteatlas.com/Images/Dishes/a5abc85497774e3f8ba9a7f25c1914df.jpg");
+        
         background-size: cover;
         height: 130px;
         width: 130px;
-        //border-radius: 10px 10px 0 0;
         align-self: center;
         margin-left: 5px;
         img {
@@ -39,14 +35,12 @@
         .rating-section {
             width: 130px;
             height: 15px;
-            //background-color: lightgreen;
             margin-top: 13px;
             display: flex;
             font-size: 11px;
             svg {
                 fill: orange;
             }
-            
             .num-reviews {
                 margin-left: 40px;
             }

@@ -7,6 +7,6 @@ import { AttractionData } from 'src/app/interfaces/AttractionData';
   styleUrls: ['./attraction-shortcut.component.scss']
 })
 export class AttractionShortcutComponent {
-  @Input() item: any| undefined;
+  //@Input() item: any| undefined;
 
 }

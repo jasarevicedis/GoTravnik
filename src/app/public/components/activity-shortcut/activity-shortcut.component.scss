@@ -3,18 +3,15 @@
     height: 405px;
     display: flex;
     background-color: #8eb74f;
-    
     border-radius: 10px;
     margin-bottom: 10px;
     margin-right: 12px;
-    //margin-left: 7%;
     flex-direction: column;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     img {
         border-radius: 10px 10px 0 0;
         height: 230px;
-        width: 410px;
-        
+        width: 410px; 
     }
     #attraction-name {
         margin-left: 20px;

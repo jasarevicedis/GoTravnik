@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./homepage-shortcut.component.scss']
 })
 export class HomepageShortcutComponent {
-  @Input() text: string = "";
+  //@Input() text: string = "";
   
 }

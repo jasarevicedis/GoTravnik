@@ -2,13 +2,10 @@
     width: 410px;
     height: 405px;
     display: flex;
-            box-sizing: border-box;
-            background-color: rgb(94, 187, 253);
-    
+    box-sizing: border-box;
+    background-color: rgb(94, 187, 253);
     border-radius: 10px;
     margin-bottom: 10px;
-    //margin-right: 20px;
-    //margin-left: 7%;
     flex-direction: column;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     margin-right: 12px;
@@ -26,7 +23,6 @@
     }
     #attraction-short-desc {
         max-width: 350px;
-        
         margin-left: 20px;
         color: rgb(255, 255, 255);
         margin-top: 20px;

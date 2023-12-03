@@ -7,7 +7,11 @@ import { OpenFormsService } from '../../services/open-forms.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  constructor(private openFormService: OpenFormsService) {}
+
+  constructor(
+    private openFormService: OpenFormsService
+  ) {}
+  
   openSubmitEvent(): void {
     this.openFormService.openSubmitEventPopup();
   }

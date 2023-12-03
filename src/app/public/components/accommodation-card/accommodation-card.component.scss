@@ -2,18 +2,13 @@
     width: 90%;
     display: flex;
     border: 1px solid lightgray;
-    //border-radius: 10px;
     height: 140px;
-    
-    //border-radius: 10px;
     margin-bottom: 20px;
-    
     .accommodation-image-container {
         background: url("https://magnum.ba/wp-content/uploads/2020/08/lipa2.jpg");
         background-size: cover;
         height: 130px;
         width: 130px;
-        //border-radius: 10px 10px 0 0;
         align-self: center;
         margin-left: 5px;
         img {
@@ -23,8 +18,7 @@
     }
     .accommodation-data {
         height: 140px;
-        padding-left: 20px;
-        
+        padding-left: 20px; 
         display: flex;
         flex-direction: column;
         .accommodation-name {
