@@ -47,7 +47,11 @@
         .nav-links {
             display: none;
         }
+        
         .nav {
+            .language-picker {
+                display: none;
+            }
             display: flex;
             width: 90px;
             height: 40px;
@@ -462,9 +466,21 @@
                 }
             }
             .nav {
+                min-width: 130px;
+                display: flex;
+                .nav-search-button {
+                    margin-right: 10px;
+                }
+                //background-color: lightblue;
                 .nav-burger-button {
                     display: none;
                     
+                }
+                .language-picker {
+                   // margin-left: 10px;
+                    min-width: 80px;
+                    display: block;
+                    margin-right: 20px;
                 }
                 width: 50px;
             }

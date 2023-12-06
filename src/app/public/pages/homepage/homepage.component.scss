@@ -1,3 +1,4 @@
+
 :host {
     width: 100%;
     min-height: 100vh;
@@ -831,6 +832,7 @@
         
         }
         .info-section {
+            //background-color: lightsteelblue;
             .shortcuts-container {
                 display: flex;
                 width: 100%;
@@ -916,6 +918,9 @@
                 }
             }
             
+        }
+        .plan-section {
+            margin-top:-150px;
         }
     }
     
