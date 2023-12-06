@@ -922,6 +922,16 @@
         .plan-section {
             margin-top:-150px;
         }
+        .events-section {
+            .time-nav {
+                width: 250px;
+            }
+            .caroseul {
+                display: flex;
+                width: 95%;
+                justify-content: space-evenly;
+            }
+        }
     }
     
 }

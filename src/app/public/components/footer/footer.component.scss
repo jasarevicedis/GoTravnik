@@ -90,3 +90,26 @@
         align-self: center;
     }
 }
+
+@media screen and (min-width: 700px) {
+    :host {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        .upper-footer {
+            display: flex;
+            flex-direction: row;
+        }
+        .lower-footer {
+            display: flex;
+            flex-direction: row;
+            
+            .buttons-section {
+                flex-direction: row-reverse;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+}

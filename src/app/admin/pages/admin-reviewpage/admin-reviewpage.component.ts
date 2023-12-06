@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RatingMethodsService } from '../../services/api-methods/rating-methods.service';
+import { OpenAdminPopupService } from '../../services/open-admin-popup.service';
 
 
 @Component({
@@ -10,7 +11,9 @@ import { RatingMethodsService } from '../../services/api-methods/rating-methods.
 export class AdminReviewpageComponent implements OnInit {
   items: any;
   constructor(
-    private apiService: RatingMethodsService) {
+    private apiService: RatingMethodsService,
+    private openService: OpenAdminPopupService  
+  ) {
     
 
     }
@@ -19,6 +22,8 @@ export class AdminReviewpageComponent implements OnInit {
         this.items = data;
       })
     }
-  
+  openReviewItemPopup(): void {
+    this.openService.openReviewItemPopup();
+  }
     
 }
