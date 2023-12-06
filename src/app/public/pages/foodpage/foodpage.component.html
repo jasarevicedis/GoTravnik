@@ -31,12 +31,30 @@
     </div>
     -->
 </div>
+<!--
 <div *ngFor="let item of foodList" class="food-container">
     <app-food-card [routerLink]="['fooditem/', item.id]" [item]="item"></app-food-card>
+</div>-->
+    <div class="food-container">
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+        <app-food-card></app-food-card>
+
+    </div>
     
 
     
-</div>
+
 <mat-paginator class="paginator" [length]="100"
               [pageSize]="10"
               [pageSizeOptions]="[5, 10, 25, 100]"
