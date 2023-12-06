@@ -10,6 +10,7 @@ import { DetailedFoodPopupComponent } from '../components/detailed-food-popup/de
 import { DetailedAttractionPopupComponent } from '../components/detailed-attraction-popup/detailed-attraction-popup.component';
 import { AddactivityPopupComponent } from '../components/addactivity-popup/addactivity-popup.component';
 import { DeleteItemComponent } from '../components/delete-item/delete-item.component';
+import { ReviewItemPopupComponent } from '../components/review-item-popup/review-item-popup.component';
 
 @Injectable({
   providedIn: 'root'
@@ -48,6 +49,10 @@ export class OpenAdminPopupService {
 
   openDeleteItem(): void {
     this.dialog.open(DeleteItemComponent, {});
+  }
+
+  openReviewItemPopup(): void {
+    this.dialog.open(ReviewItemPopupComponent, {});
   }
   
 }

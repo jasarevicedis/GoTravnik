@@ -38,7 +38,7 @@
 <table class="reviews-table">
     <thead></thead>
     <tbody *ngFor="let item of items">
-        <tr>
+        <tr (click)="openReviewItemPopup()">
             <td class="review-id">{{item.id}}</td>
             <td class="review-item">
                 <div class="reviewed-item">

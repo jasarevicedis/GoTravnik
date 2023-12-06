@@ -30,9 +30,17 @@
             border: none;
             color: white;
         }
+        .filter:hover {
+            background-color: rgb(177, 145, 240);
+            cursor: pointer;
+        }
         .reset {
             background-color: rgb(255, 255, 255);
             border: 1px solid lightgrey;
+        }
+        .reset:hover {
+            cursor: pointer;
+            background-color: rgb(255, 136, 136);
         }
         margin-top: 20px;
         width: 90%;
@@ -84,6 +92,7 @@
                 background-color: rgb(255, 255, 255);
                 align-items: center;
                 margin-bottom: 3px;
+                cursor: pointer;
                 td {
                     display: flex;
                     //border: 1px solid green;
@@ -157,6 +166,9 @@
                     }
                     
                 }
+            }
+            tr:hover {
+                background-color: rgb(246, 208, 255);
             }
         }
     }

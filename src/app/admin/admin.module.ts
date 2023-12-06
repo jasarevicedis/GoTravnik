@@ -50,6 +50,8 @@ import { EditFoodComponent } from './pages/subpages/popups/edit-food/edit-food.c
 import { HttpClientModule } from '@angular/common/http';
 import { DetailedReviewPopupComponent } from './components/detailed-review-popup/detailed-review-popup.component';
 import { DeleteItemComponent } from './components/delete-item/delete-item.component';
+
+import { ReviewItemPopupComponent } from './components/review-item-popup/review-item-popup.component';
 @NgModule({
   declarations: [
     AdminComponent,
@@ -87,6 +89,8 @@ import { DeleteItemComponent } from './components/delete-item/delete-item.compon
     EditFoodComponent,
     DetailedReviewPopupComponent,
     DeleteItemComponent,
+   
+    ReviewItemPopupComponent,
     
   ],
   imports: [
