@@ -19,6 +19,7 @@ import { RoutespageComponent } from './pages/routespage/routespage.component';
 import { ReloadMapComponent } from './components/reload-map/reload-map.component';
 import { AccommodationItempageComponent } from './itempages/accommodation-itempage/accommodation-itempage.component';
 import { AttractionItempageComponent } from './itempages/attraction-itempage/attraction-itempage.component';
+import { UnavailablePageComponent } from '../shared/unavailable-page/unavailable-page.component';
 
 
 const routes: Routes = [
@@ -44,7 +45,7 @@ const routes: Routes = [
         {path: '', component: EventpageComponent},
         {path:'eventitem/:number', component: EventItempageComponent}
       ]},
-      {path:'areaguide', component:AreguidepageComponent},
+      {path:'areaguide', component:UnavailablePageComponent},
 
       {path:'blog', children: [
         {path: '', component: BlogpageComponent},

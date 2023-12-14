@@ -70,12 +70,12 @@
             <p>Blog</p>
         </button>
     </div>
-    <a target="_blank" href="areaguide" style="text-decoration: none;">
-    <div   target="_blank" class="main-nav-item">
+    
+    <div [routerLink]="['areaguide']"  class="main-nav-item">
         <button  (click)="toggleMenu()" class="main-nav-button">
             <p>Area Guide</p>
         </button>
-    </div></a>
+    </div>
     <div [routerLink]="['events']" class="main-nav-item">
         <button (click)="toggleMenu()" class="main-nav-button">
             <p>Events</p>
